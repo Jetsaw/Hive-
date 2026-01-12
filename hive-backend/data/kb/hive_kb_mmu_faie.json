@@ -1,0 +1,4746 @@
+{
+  "kb_name": "HIVE_MMU_FAIE_KB",
+  "generated_at": "2026-01-11T16:59:58.939896Z",
+  "sources": [
+    {
+      "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+    },
+    {
+      "file": "BSc-October-2025-T2530.pdf"
+    },
+    {
+      "file": "mmu faie all course.pdf"
+    }
+  ],
+  "intent_catalog": {
+    "programme.info.*": "Programme overview questions (name, intake, duration, general).",
+    "programme.structure.*": "Programme structure / course listing / credit-hour questions.",
+    "programme.requirements.*": "Requirements like MPU, electives, industrial training, final year project.",
+    "programme.content.*": "What the programme covers (AI, robotics, embedded/IoT, math).",
+    "course.details.*": "Course-level details (description/objective, credits, prerequisites, topics)."
+  },
+  "confidence_rubric": {
+    "high": "Directly stated in the source PDFs.",
+    "medium": "Derived from the source with minimal paraphrasing (no new facts).",
+    "low": "Speculative or not fully supported (not used by default)."
+  },
+  "items": [
+    {
+      "id": "mmu_ir_254b4eb978",
+      "question": "What is the programme name?",
+      "answer": "The programme is Bachelor of Science (Hons) Intelligent Robotics.",
+      "intent": "programme.info.name",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_2eb813dd6a",
+      "question": "What is the intake for this programme?",
+      "answer": "The applicable intake is October 2025.",
+      "intent": "programme.info.intake",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_f304ee03a5",
+      "question": "How long is the Intelligent Robotics programme?",
+      "answer": "The programme duration is three academic years.",
+      "intent": "programme.info.duration",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_f393433e5b",
+      "question": "Does the programme include Industrial Training?",
+      "answer": "Yes. Industrial Training is compulsory and carries 6 credit hours.",
+      "intent": "programme.requirements.industrial_training",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_5a63584a2a",
+      "question": "What programming skills will students learn?",
+      "answer": "Students learn C/C++, advanced programming, embedded programming, and robotics programming.",
+      "intent": "programme.info.general",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_d60b2b0433",
+      "question": "Is Artificial Intelligence covered in this programme?",
+      "answer": "Yes. Artificial Intelligence, Machine Learning, Neural Networks, and Deep Learning are included.",
+      "intent": "programme.info.general",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_e135ee40fe",
+      "question": "What robotics-related subjects are offered?",
+      "answer": "Subjects include Robot Programming, Robotics Modelling and Control, Mobile Robots and Drones, and Actuators and Sensors.",
+      "intent": "programme.content.robotics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_cbc3587389",
+      "question": "Are embedded systems part of the curriculum?",
+      "answer": "Yes. Students study microcontrollers, embedded systems, and IoT systems.",
+      "intent": "programme.content.embedded_iot",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_01a90ef957",
+      "question": "What final year projects are required?",
+      "answer": "Students must complete Final Year Project I and Final Year Project II.",
+      "intent": "programme.requirements.fyp",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_fdb3f3c22b",
+      "question": "Which AI-related courses are offered by FAIE?",
+      "answer": "Courses include Artificial Intelligence Systems, Machine Learning, Deep Learning and Generative AI, and Data Science Fundamentals.",
+      "intent": "programme.content.ai",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_60355879e4",
+      "question": "Are cybersecurity and software engineering included?",
+      "answer": "Yes. Cybersecurity, Software Engineering, Operating Systems, and Database Systems are part of the syllabus.",
+      "intent": "programme.info.general",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_dbe2fef5da",
+      "question": "What mathematics subjects are required?",
+      "answer": "Students study Engineering Mathematics, Linear Algebra, Differential Equations, Probability, and Statistics.",
+      "intent": "programme.content.math",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_496d852e41",
+      "question": "Does the programme include MPU courses?",
+      "answer": "Yes. MPU courses such as Ethics, Sustainability, Integrity, and Leadership are compulsory.",
+      "intent": "programme.requirements.mpu",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_e231d4cfbe",
+      "question": "Is machine vision covered?",
+      "answer": "Yes. Machine Vision and Image Processing is an advanced course in the programme.",
+      "intent": "programme.info.general",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_4a162531dc",
+      "question": "What career skills does this programme prepare students for?",
+      "answer": "The programme prepares students for careers in robotics, AI engineering, embedded systems, automation, and research.",
+      "intent": "programme.info.general",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "HIVE_MMU_Intelligent_Robotics_QA.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_8b23b97729",
+      "question": "What is AAP6126 (Industrial Training)?",
+      "answer": "To expose students to the real working environment and get acquainted with the organization structure, business operations and administrative functions. To have hands-on experience in the related fields so that they can relate and reinforce what they have learnt from university. To foster cooperation and to develop synergetic collaboration between industry and university in promoting a knowledgeable society. Pre-Requisite: Completed 60 credit hours",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6126",
+        "course_name": "Industrial Training"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c64de7ecb7",
+      "question": "How many credit hours is AAP6126 (Industrial Training)?",
+      "answer": "AAP6126 (Industrial Training) carries 6 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6126",
+        "course_name": "Industrial Training"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fb9173694c",
+      "question": "What is the prerequisite for AAP6126 (Industrial Training)?",
+      "answer": "The prerequisite for AAP6126 (Industrial Training) is: Completed 60 credit hours.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6126",
+        "course_name": "Industrial Training"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0158456f1c",
+      "question": "What topics are covered in AAP6126 (Industrial Training)?",
+      "answer": "Upon passing ALL the 5 assessment components (logbook, company supervisor's assessment, lecturer's visit, presentation, report) separately, the student will accumulate six credit hours. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6126",
+        "course_name": "Industrial Training"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e3c28c65fb",
+      "question": "What is ACE6113 (Computer and Program Design)?",
+      "answer": "To introduce the students to computing and teach them some basic programming skills. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6113",
+        "course_name": "Computer and Program Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_77a25dc545",
+      "question": "How many credit hours is ACE6113 (Computer and Program Design)?",
+      "answer": "ACE6113 (Computer and Program Design) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6113",
+        "course_name": "Computer and Program Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_09bbff5eb1",
+      "question": "What topics are covered in ACE6113 (Computer and Program Design)?",
+      "answer": "Algorithms, pseudocode, flowcharts, and software development methods. Variables, Operators, and Expressions. Program Control. Arrays, Pointers, and Strings. Functions and Procedures. Structures. File Operations. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6113",
+        "course_name": "Computer and Program Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c546f8963c",
+      "question": "What is ACE6123 (Algorithms and Data Structures)?",
+      "answer": "To provide students with comprehensive knowledge of algorithms and data structures used in computer programming and software development. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6123",
+        "course_name": "Algorithms and Data Structures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e8c9239a00",
+      "question": "How many credit hours is ACE6123 (Algorithms and Data Structures)?",
+      "answer": "ACE6123 (Algorithms and Data Structures) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6123",
+        "course_name": "Algorithms and Data Structures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1aeb590fad",
+      "question": "What is the prerequisite for ACE6123 (Algorithms and Data Structures)?",
+      "answer": "The prerequisite for ACE6123 (Algorithms and Data Structures) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6123",
+        "course_name": "Algorithms and Data Structures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_157d85ac26",
+      "question": "What topics are covered in ACE6123 (Algorithms and Data Structures)?",
+      "answer": "Fundamental algorithms, sorting and searching algorithms, data structures including arrays, linked lists, stacks, queues, trees, graphs, and hash tables. Algorithm analysis and complexity. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6123",
+        "course_name": "Algorithms and Data Structures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ba537ea054",
+      "question": "What is ACE6133 (Computer Organization and Architecture)?",
+      "answer": "To provide students with understanding of computer organization, architecture, and design principles at different levels of abstraction. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6133",
+        "course_name": "Computer Organization and Architecture"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_dc5ff703c9",
+      "question": "How many credit hours is ACE6133 (Computer Organization and Architecture)?",
+      "answer": "ACE6133 (Computer Organization and Architecture) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6133",
+        "course_name": "Computer Organization and Architecture"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_133cca45ba",
+      "question": "What is the prerequisite for ACE6133 (Computer Organization and Architecture)?",
+      "answer": "The prerequisite for ACE6133 (Computer Organization and Architecture) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6133",
+        "course_name": "Computer Organization and Architecture"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_eddcfd3e12",
+      "question": "What topics are covered in ACE6133 (Computer Organization and Architecture)?",
+      "answer": "Digital logic, combinational and sequential circuits, processor design, memory hierarchy, instruction set architecture, assembly language programming, input/output systems. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6133",
+        "course_name": "Computer Organization and Architecture"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_41708cedd9",
+      "question": "What is ACE6143 (Data Communications and Networking)?",
+      "answer": "To provide students with comprehensive knowledge of data communications, networking protocols, and network architecture. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6143",
+        "course_name": "Data Communications and Networking"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a6f8b33083",
+      "question": "How many credit hours is ACE6143 (Data Communications and Networking)?",
+      "answer": "ACE6143 (Data Communications and Networking) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6143",
+        "course_name": "Data Communications and Networking"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a0613d8cec",
+      "question": "What is the prerequisite for ACE6143 (Data Communications and Networking)?",
+      "answer": "The prerequisite for ACE6143 (Data Communications and Networking) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6143",
+        "course_name": "Data Communications and Networking"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_bd3b09dbfe",
+      "question": "What topics are covered in ACE6143 (Data Communications and Networking)?",
+      "answer": "OSI model, TCP/IP protocol suite, physical layer, data link layer, network layer, transport layer, application layer protocols, network security basics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6143",
+        "course_name": "Data Communications and Networking"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_aa49019261",
+      "question": "What is ACE6153 (Operating Systems)?",
+      "answer": "To provide students with comprehensive understanding of operating systems design, implementation, and management. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6153",
+        "course_name": "Operating Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f67dff16a5",
+      "question": "How many credit hours is ACE6153 (Operating Systems)?",
+      "answer": "ACE6153 (Operating Systems) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6153",
+        "course_name": "Operating Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_8c699bc3e6",
+      "question": "What is the prerequisite for ACE6153 (Operating Systems)?",
+      "answer": "The prerequisite for ACE6153 (Operating Systems) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6153",
+        "course_name": "Operating Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c7c5a9d4e2",
+      "question": "What topics are covered in ACE6153 (Operating Systems)?",
+      "answer": "Process management, memory management, file systems, input/output management, concurrency and synchronization, deadlocks, security and protection. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6153",
+        "course_name": "Operating Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c036027f60",
+      "question": "What is ACE6163 (Microcontroller and Microprocessor Systems)?",
+      "answer": "To provide students with practical knowledge of microcontroller and microprocessor systems design and programming. Pre-Requisite: ACE6133",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6163",
+        "course_name": "Microcontroller and Microprocessor Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b2d0fcd024",
+      "question": "How many credit hours is ACE6163 (Microcontroller and Microprocessor Systems)?",
+      "answer": "ACE6163 (Microcontroller and Microprocessor Systems) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6163",
+        "course_name": "Microcontroller and Microprocessor Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_79872d7cda",
+      "question": "What is the prerequisite for ACE6163 (Microcontroller and Microprocessor Systems)?",
+      "answer": "The prerequisite for ACE6163 (Microcontroller and Microprocessor Systems) is: ACE6133.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6163",
+        "course_name": "Microcontroller and Microprocessor Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_896da79ec1",
+      "question": "What topics are covered in ACE6163 (Microcontroller and Microprocessor Systems)?",
+      "answer": "Microprocessor architecture, microcontroller programming, assembly language, interrupt handling, timer and counter operations, analog-to-digital conversion, serial communication. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6163",
+        "course_name": "Microcontroller and Microprocessor Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_cf59f062da",
+      "question": "What is ACE6173 (Software Engineering)?",
+      "answer": "To provide the students with an understanding of theoretical and practical foundation of software engineering. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6173",
+        "course_name": "Software Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_021ec1e786",
+      "question": "How many credit hours is ACE6173 (Software Engineering)?",
+      "answer": "ACE6173 (Software Engineering) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6173",
+        "course_name": "Software Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_980c37a709",
+      "question": "What topics are covered in ACE6173 (Software Engineering)?",
+      "answer": "Principles of software engineering. Software life cycle. Introduction. Requirements and Specification. Software Design. Verification and Validation. Project Management. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6173",
+        "course_name": "Software Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_4cda81cab2",
+      "question": "What is ACE6183 (Advanced Microprocessors)?",
+      "answer": "To provide advanced knowledge of microprocessor design, architecture, and optimization techniques. Pre-Requisite: ACE6163",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6183",
+        "course_name": "Advanced Microprocessors"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0af5d4d8a7",
+      "question": "How many credit hours is ACE6183 (Advanced Microprocessors)?",
+      "answer": "ACE6183 (Advanced Microprocessors) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6183",
+        "course_name": "Advanced Microprocessors"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c687223133",
+      "question": "What is the prerequisite for ACE6183 (Advanced Microprocessors)?",
+      "answer": "The prerequisite for ACE6183 (Advanced Microprocessors) is: ACE6163.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6183",
+        "course_name": "Advanced Microprocessors"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_dd0cf404cb",
+      "question": "What topics are covered in ACE6183 (Advanced Microprocessors)?",
+      "answer": "Advanced processor architectures, pipelining, cache design, memory management, parallel processing, performance optimization, modern processor technologies. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6183",
+        "course_name": "Advanced Microprocessors"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_442b8ccac6",
+      "question": "What is ACE6193 (Object Oriented Programming with C++)?",
+      "answer": "To teach students object-oriented programming concepts and practical implementation using C++. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6193",
+        "course_name": "Object Oriented Programming with C++"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5ce8be0dcf",
+      "question": "How many credit hours is ACE6193 (Object Oriented Programming with C++)?",
+      "answer": "ACE6193 (Object Oriented Programming with C++) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6193",
+        "course_name": "Object Oriented Programming with C++"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fb9359c327",
+      "question": "What is the prerequisite for ACE6193 (Object Oriented Programming with C++)?",
+      "answer": "The prerequisite for ACE6193 (Object Oriented Programming with C++) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6193",
+        "course_name": "Object Oriented Programming with C++"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_913eec05e7",
+      "question": "What topics are covered in ACE6193 (Object Oriented Programming with C++)?",
+      "answer": "Object-oriented concepts, classes and objects, inheritance, polymorphism, encapsulation, templates, STL (Standard Template Library), exception handling, file I/O. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6193",
+        "course_name": "Object Oriented Programming with C++"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5c29db7562",
+      "question": "What is ACE6203 (Digital Computer Design)?",
+      "answer": "To provide students with knowledge of digital computer design principles and implementation. Pre-Requisite: ACE6133",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6203",
+        "course_name": "Digital Computer Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_15d1ca589f",
+      "question": "How many credit hours is ACE6203 (Digital Computer Design)?",
+      "answer": "ACE6203 (Digital Computer Design) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6203",
+        "course_name": "Digital Computer Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fc88b56ec4",
+      "question": "What is the prerequisite for ACE6203 (Digital Computer Design)?",
+      "answer": "The prerequisite for ACE6203 (Digital Computer Design) is: ACE6133.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6203",
+        "course_name": "Digital Computer Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_29704afafb",
+      "question": "What topics are covered in ACE6203 (Digital Computer Design)?",
+      "answer": "Digital logic design, combinational circuits, sequential circuits, state machines, FPGA design, hardware description languages (HDL), computer design methodology. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6203",
+        "course_name": "Digital Computer Design"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_722739a456",
+      "question": "What is ACE6213 (CyberSecurity)?",
+      "answer": "To provide students with comprehensive knowledge of cybersecurity principles, threats, and defense mechanisms. Pre-Requisite: ACE6143",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6213",
+        "course_name": "CyberSecurity"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ebdf256aa7",
+      "question": "How many credit hours is ACE6213 (CyberSecurity)?",
+      "answer": "ACE6213 (CyberSecurity) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6213",
+        "course_name": "CyberSecurity"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1db1c80867",
+      "question": "What is the prerequisite for ACE6213 (CyberSecurity)?",
+      "answer": "The prerequisite for ACE6213 (CyberSecurity) is: ACE6143.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6213",
+        "course_name": "CyberSecurity"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a20acb6b3a",
+      "question": "What topics are covered in ACE6213 (CyberSecurity)?",
+      "answer": "Security fundamentals, cryptography, network security, application security, access control, authentication and authorization, security management, incident response. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6213",
+        "course_name": "CyberSecurity"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1406be35a8",
+      "question": "What is ACE6223 (Multimedia Technology and Applications)?",
+      "answer": "To provide students with knowledge of multimedia technologies, applications, and development. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6223",
+        "course_name": "Multimedia Technology and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3d36db2012",
+      "question": "How many credit hours is ACE6223 (Multimedia Technology and Applications)?",
+      "answer": "ACE6223 (Multimedia Technology and Applications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6223",
+        "course_name": "Multimedia Technology and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c36781e838",
+      "question": "What is the prerequisite for ACE6223 (Multimedia Technology and Applications)?",
+      "answer": "The prerequisite for ACE6223 (Multimedia Technology and Applications) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6223",
+        "course_name": "Multimedia Technology and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b88edbd21e",
+      "question": "What topics are covered in ACE6223 (Multimedia Technology and Applications)?",
+      "answer": "Multimedia fundamentals, image processing, audio processing, video processing, multimedia compression, multimedia applications, multimedia development tools. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6223",
+        "course_name": "Multimedia Technology and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fedd8e0f62",
+      "question": "What is ACE6233 (Artificial Intelligence Systems and Applications)?",
+      "answer": "To provide students with knowledge of artificial intelligence concepts, techniques, and applications. Pre-Requisite: ACE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6233",
+        "course_name": "Artificial Intelligence Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_63dbfa7b2f",
+      "question": "How many credit hours is ACE6233 (Artificial Intelligence Systems and Applications)?",
+      "answer": "ACE6233 (Artificial Intelligence Systems and Applications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6233",
+        "course_name": "Artificial Intelligence Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ab38ae2e04",
+      "question": "What is the prerequisite for ACE6233 (Artificial Intelligence Systems and Applications)?",
+      "answer": "The prerequisite for ACE6233 (Artificial Intelligence Systems and Applications) is: ACE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6233",
+        "course_name": "Artificial Intelligence Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_19a89ea8db",
+      "question": "What topics are covered in ACE6233 (Artificial Intelligence Systems and Applications)?",
+      "answer": "AI fundamentals, knowledge representation, search algorithms, expert systems, natural language processing, computer vision, AI applications and tools. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6233",
+        "course_name": "Artificial Intelligence Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_cb685d6156",
+      "question": "What is ACE6243 (Java Technology)?",
+      "answer": "To teach students Java programming language and development using enterprise technologies. Pre-Requisite: ACE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6243",
+        "course_name": "Java Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3d5d37aedf",
+      "question": "How many credit hours is ACE6243 (Java Technology)?",
+      "answer": "ACE6243 (Java Technology) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6243",
+        "course_name": "Java Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0dd127bfc3",
+      "question": "What is the prerequisite for ACE6243 (Java Technology)?",
+      "answer": "The prerequisite for ACE6243 (Java Technology) is: ACE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6243",
+        "course_name": "Java Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_103ce8ca46",
+      "question": "What topics are covered in ACE6243 (Java Technology)?",
+      "answer": "Java fundamentals, object-oriented programming in Java, exception handling, multithreading, collections, I/O streams, networking, database connectivity, enterprise Java technologies. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6243",
+        "course_name": "Java Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7f0a22fb2b",
+      "question": "What is ACE6253 (Digital Image and Video Processing)?",
+      "answer": "To provide students with knowledge of digital image and video processing techniques and applications. Pre-Requisite: ACE6223",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6253",
+        "course_name": "Digital Image and Video Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b4aa68036a",
+      "question": "How many credit hours is ACE6253 (Digital Image and Video Processing)?",
+      "answer": "ACE6253 (Digital Image and Video Processing) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6253",
+        "course_name": "Digital Image and Video Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_259f09c2f6",
+      "question": "What is the prerequisite for ACE6253 (Digital Image and Video Processing)?",
+      "answer": "The prerequisite for ACE6253 (Digital Image and Video Processing) is: ACE6223.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6253",
+        "course_name": "Digital Image and Video Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e4d77b71df",
+      "question": "What topics are covered in ACE6253 (Digital Image and Video Processing)?",
+      "answer": "Image fundamentals, image enhancement, image restoration, image compression, image segmentation, feature extraction, video processing, video compression, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6253",
+        "course_name": "Digital Image and Video Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_df6717e1b1",
+      "question": "What is ACE6263 (Embedded IoT Systems and Applications)?",
+      "answer": "To provide students with knowledge of embedded systems and Internet of Things (IoT) technologies and applications. Pre-Requisite: ACE6163",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6263",
+        "course_name": "Embedded IoT Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c6154c15b7",
+      "question": "How many credit hours is ACE6263 (Embedded IoT Systems and Applications)?",
+      "answer": "ACE6263 (Embedded IoT Systems and Applications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6263",
+        "course_name": "Embedded IoT Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ca4e6d34b0",
+      "question": "What is the prerequisite for ACE6263 (Embedded IoT Systems and Applications)?",
+      "answer": "The prerequisite for ACE6263 (Embedded IoT Systems and Applications) is: ACE6163.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6263",
+        "course_name": "Embedded IoT Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1139690c64",
+      "question": "What topics are covered in ACE6263 (Embedded IoT Systems and Applications)?",
+      "answer": "Embedded systems fundamentals, IoT architecture, sensors and actuators, wireless communication protocols, IoT platforms, cloud integration, IoT applications and security. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6263",
+        "course_name": "Embedded IoT Systems and Applications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f51f063a0d",
+      "question": "What is ACE6273 (Advanced Object-Oriented Design with Java)?",
+      "answer": "To teach students advanced object-oriented design patterns and principles using Java. Pre-Requisite: ACE6243",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6273",
+        "course_name": "Advanced Object-Oriented Design with Java"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_af9819b33d",
+      "question": "How many credit hours is ACE6273 (Advanced Object-Oriented Design with Java)?",
+      "answer": "ACE6273 (Advanced Object-Oriented Design with Java) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6273",
+        "course_name": "Advanced Object-Oriented Design with Java"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_44efde2776",
+      "question": "What is the prerequisite for ACE6273 (Advanced Object-Oriented Design with Java)?",
+      "answer": "The prerequisite for ACE6273 (Advanced Object-Oriented Design with Java) is: ACE6243.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6273",
+        "course_name": "Advanced Object-Oriented Design with Java"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5c0093e462",
+      "question": "What topics are covered in ACE6273 (Advanced Object-Oriented Design with Java)?",
+      "answer": "Design patterns, SOLID principles, architectural patterns, refactoring, testing and debugging, performance optimization, advanced Java features, enterprise design patterns. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6273",
+        "course_name": "Advanced Object-Oriented Design with Java"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_926aec76d8",
+      "question": "What is ACE6283 (Database Systems)?",
+      "answer": "To provide students with comprehensive knowledge of database design, implementation, and management. Pre-Requisite: ACE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6283",
+        "course_name": "Database Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0a5e15a55a",
+      "question": "How many credit hours is ACE6283 (Database Systems)?",
+      "answer": "ACE6283 (Database Systems) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6283",
+        "course_name": "Database Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f213da79fb",
+      "question": "What is the prerequisite for ACE6283 (Database Systems)?",
+      "answer": "The prerequisite for ACE6283 (Database Systems) is: ACE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6283",
+        "course_name": "Database Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b01ee6c27e",
+      "question": "What topics are covered in ACE6283 (Database Systems)?",
+      "answer": "Database fundamentals, relational model, SQL, database design, normalization, transaction management, concurrency control, query optimization, NoSQL databases. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6283",
+        "course_name": "Database Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_4444dd90f7",
+      "question": "What is ACE6293 (Advanced Computer Architecture and Parallel Computing)?",
+      "answer": "To provide advanced knowledge of computer architecture and parallel computing systems. Pre-Requisite: ACE6133",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6293",
+        "course_name": "Advanced Computer Architecture and Parallel Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5ac0aa5423",
+      "question": "How many credit hours is ACE6293 (Advanced Computer Architecture and Parallel Computing)?",
+      "answer": "ACE6293 (Advanced Computer Architecture and Parallel Computing) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6293",
+        "course_name": "Advanced Computer Architecture and Parallel Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_39d27c09a1",
+      "question": "What is the prerequisite for ACE6293 (Advanced Computer Architecture and Parallel Computing)?",
+      "answer": "The prerequisite for ACE6293 (Advanced Computer Architecture and Parallel Computing) is: ACE6133.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6293",
+        "course_name": "Advanced Computer Architecture and Parallel Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5dc6a53298",
+      "question": "What topics are covered in ACE6293 (Advanced Computer Architecture and Parallel Computing)?",
+      "answer": "Advanced CPU architectures, multiprocessor systems, parallel algorithms, parallel programming models, GPU computing, distributed memory systems, performance analysis. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6293",
+        "course_name": "Advanced Computer Architecture and Parallel Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_eb2fdc31c4",
+      "question": "What is ACE6313 (Machine Learning Concepts and Technologies)?",
+      "answer": "To provide students with comprehensive knowledge of machine learning concepts, algorithms, and applications. Pre-Requisite: ACE6233",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6313",
+        "course_name": "Machine Learning Concepts and Technologies"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2f84212c20",
+      "question": "How many credit hours is ACE6313 (Machine Learning Concepts and Technologies)?",
+      "answer": "ACE6313 (Machine Learning Concepts and Technologies) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6313",
+        "course_name": "Machine Learning Concepts and Technologies"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_facfbf4f81",
+      "question": "What is the prerequisite for ACE6313 (Machine Learning Concepts and Technologies)?",
+      "answer": "The prerequisite for ACE6313 (Machine Learning Concepts and Technologies) is: ACE6233.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6313",
+        "course_name": "Machine Learning Concepts and Technologies"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0bba77744b",
+      "question": "What topics are covered in ACE6313 (Machine Learning Concepts and Technologies)?",
+      "answer": "Machine learning fundamentals, supervised learning, unsupervised learning, reinforcement learning, neural networks, feature engineering, model evaluation, ML applications and tools. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6313",
+        "course_name": "Machine Learning Concepts and Technologies"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_449c73affb",
+      "question": "What is ACE6323 (Cloud Computing)?",
+      "answer": "To provide students with knowledge of cloud computing technologies, platforms, and applications. Pre-Requisite: ACE6153",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6323",
+        "course_name": "Cloud Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d4491c1ece",
+      "question": "How many credit hours is ACE6323 (Cloud Computing)?",
+      "answer": "ACE6323 (Cloud Computing) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6323",
+        "course_name": "Cloud Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5729e21209",
+      "question": "What is the prerequisite for ACE6323 (Cloud Computing)?",
+      "answer": "The prerequisite for ACE6323 (Cloud Computing) is: ACE6153.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6323",
+        "course_name": "Cloud Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ae23ed836f",
+      "question": "What topics are covered in ACE6323 (Cloud Computing)?",
+      "answer": "Cloud computing fundamentals, cloud service models (IaaS, PaaS, SaaS), cloud deployment models, virtualization, cloud platforms (AWS, Azure, Google Cloud), cloud security, cloud applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6323",
+        "course_name": "Cloud Computing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d3ee5d8fb0",
+      "question": "What is ACE6333 (Deep Learning and Generative AI Technology)?",
+      "answer": "To provide students with knowledge of deep learning and generative AI technologies and applications. Pre-Requisite: ACE6313",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6333",
+        "course_name": "Deep Learning and Generative AI Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a89442c620",
+      "question": "How many credit hours is ACE6333 (Deep Learning and Generative AI Technology)?",
+      "answer": "ACE6333 (Deep Learning and Generative AI Technology) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6333",
+        "course_name": "Deep Learning and Generative AI Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_04e9dcddca",
+      "question": "What is the prerequisite for ACE6333 (Deep Learning and Generative AI Technology)?",
+      "answer": "The prerequisite for ACE6333 (Deep Learning and Generative AI Technology) is: ACE6313.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6333",
+        "course_name": "Deep Learning and Generative AI Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6f067d0ca6",
+      "question": "What topics are covered in ACE6333 (Deep Learning and Generative AI Technology)?",
+      "answer": "Deep neural networks, convolutional neural networks, recurrent neural networks, transformers, generative models (GANs, VAE), large language models, transfer learning, AI ethics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6333",
+        "course_name": "Deep Learning and Generative AI Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3d4a9823e7",
+      "question": "What is ACE6343 (System Administration)?",
+      "answer": "To provide students with practical knowledge of system administration and management. Pre-Requisite: ACE6153",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6343",
+        "course_name": "System Administration"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2af52cf472",
+      "question": "How many credit hours is ACE6343 (System Administration)?",
+      "answer": "ACE6343 (System Administration) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6343",
+        "course_name": "System Administration"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_918a6fcf87",
+      "question": "What is the prerequisite for ACE6343 (System Administration)?",
+      "answer": "The prerequisite for ACE6343 (System Administration) is: ACE6153.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6343",
+        "course_name": "System Administration"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_14d92a49fe",
+      "question": "What topics are covered in ACE6343 (System Administration)?",
+      "answer": "System installation and configuration, user and group management, file system management, backup and recovery, performance monitoring, security management, network administration. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ACE6343",
+        "course_name": "System Administration"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_220575f008",
+      "question": "What is ALE6113 (Circuit Theory)?",
+      "answer": "To provide students with fundamental knowledge of electrical circuit analysis and theory. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6113",
+        "course_name": "Circuit Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a65660a54c",
+      "question": "How many credit hours is ALE6113 (Circuit Theory)?",
+      "answer": "ALE6113 (Circuit Theory) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6113",
+        "course_name": "Circuit Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d5a5cf2a38",
+      "question": "What topics are covered in ALE6113 (Circuit Theory)?",
+      "answer": "Basic circuit elements, Kirchhoff's laws, nodal and mesh analysis, circuit theorems, transient analysis, AC circuit analysis, frequency response, power analysis. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6113",
+        "course_name": "Circuit Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6b37e18ec8",
+      "question": "What is ALE6123 (Field Theory)?",
+      "answer": "To provide students with knowledge of electromagnetic field theory and applications. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6123",
+        "course_name": "Field Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_45a7db5fbe",
+      "question": "How many credit hours is ALE6123 (Field Theory)?",
+      "answer": "ALE6123 (Field Theory) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6123",
+        "course_name": "Field Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7166df4659",
+      "question": "What topics are covered in ALE6123 (Field Theory)?",
+      "answer": "Vector analysis, electric fields, magnetic fields, Maxwell's equations, wave propagation, transmission lines, antenna theory, electromagnetic applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6123",
+        "course_name": "Field Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e8b4ae7c7d",
+      "question": "What is ALE6133 (Instrumentation and Measurement Techniques)?",
+      "answer": "To provide students with practical knowledge of electrical instrumentation and measurement techniques. Pre-Requisite: ALE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6133",
+        "course_name": "Instrumentation and Measurement Techniques"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b073ff1525",
+      "question": "How many credit hours is ALE6133 (Instrumentation and Measurement Techniques)?",
+      "answer": "ALE6133 (Instrumentation and Measurement Techniques) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6133",
+        "course_name": "Instrumentation and Measurement Techniques"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_59e97b63aa",
+      "question": "What is the prerequisite for ALE6133 (Instrumentation and Measurement Techniques)?",
+      "answer": "The prerequisite for ALE6133 (Instrumentation and Measurement Techniques) is: ALE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6133",
+        "course_name": "Instrumentation and Measurement Techniques"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_685d11cd52",
+      "question": "What topics are covered in ALE6133 (Instrumentation and Measurement Techniques)?",
+      "answer": "Measurement fundamentals, analog and digital instruments, oscilloscopes, multimeters, signal generators, data acquisition, measurement errors, calibration, testing and troubleshooting. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6133",
+        "course_name": "Instrumentation and Measurement Techniques"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6f29691cd2",
+      "question": "What is ALE6143 (Introduction to Machines and Power Systems)?",
+      "answer": "To provide students with introduction to electrical machines and power systems. Pre-Requisite: ALE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6143",
+        "course_name": "Introduction to Machines and Power Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2e3386d46e",
+      "question": "How many credit hours is ALE6143 (Introduction to Machines and Power Systems)?",
+      "answer": "ALE6143 (Introduction to Machines and Power Systems) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6143",
+        "course_name": "Introduction to Machines and Power Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b5712cb204",
+      "question": "What is the prerequisite for ALE6143 (Introduction to Machines and Power Systems)?",
+      "answer": "The prerequisite for ALE6143 (Introduction to Machines and Power Systems) is: ALE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6143",
+        "course_name": "Introduction to Machines and Power Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f278677744",
+      "question": "What topics are covered in ALE6143 (Introduction to Machines and Power Systems)?",
+      "answer": "DC machines, AC machines, transformers, power generation, transmission and distribution, power system components, power flow analysis, system stability. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6143",
+        "course_name": "Introduction to Machines and Power Systems"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_731d211ca8",
+      "question": "What is ALE6153 (Circuits and Signals)?",
+      "answer": "To provide students with knowledge of circuit analysis and signal processing. Pre-Requisite: ALE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6153",
+        "course_name": "Circuits and Signals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_683061b1ed",
+      "question": "How many credit hours is ALE6153 (Circuits and Signals)?",
+      "answer": "ALE6153 (Circuits and Signals) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6153",
+        "course_name": "Circuits and Signals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7f25ade535",
+      "question": "What is the prerequisite for ALE6153 (Circuits and Signals)?",
+      "answer": "The prerequisite for ALE6153 (Circuits and Signals) is: ALE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6153",
+        "course_name": "Circuits and Signals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_97cbaa1971",
+      "question": "What topics are covered in ALE6153 (Circuits and Signals)?",
+      "answer": "Signal classification, Fourier analysis, Laplace transforms, circuit analysis in frequency domain, filtering, signal processing applications, digital signal processing basics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6153",
+        "course_name": "Circuits and Signals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_986ba77bba",
+      "question": "What is ALE6163 (Control Theory)?",
+      "answer": "To provide students with knowledge of control systems design and analysis. Pre-Requisite: ALE6153",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6163",
+        "course_name": "Control Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6d085cc8b0",
+      "question": "How many credit hours is ALE6163 (Control Theory)?",
+      "answer": "ALE6163 (Control Theory) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6163",
+        "course_name": "Control Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_943fdf99c1",
+      "question": "What is the prerequisite for ALE6163 (Control Theory)?",
+      "answer": "The prerequisite for ALE6163 (Control Theory) is: ALE6153.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6163",
+        "course_name": "Control Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7ceb144c21",
+      "question": "What topics are covered in ALE6163 (Control Theory)?",
+      "answer": "Control system fundamentals, transfer functions, system modeling, feedback control, stability analysis, root locus, frequency response, controller design, digital control. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6163",
+        "course_name": "Control Theory"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_510515cfb9",
+      "question": "What is ALE6173 (Switchgear and Protection)?",
+      "answer": "To provide students with knowledge of electrical switchgear and protection systems. Pre-Requisite: ALE6143",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6173",
+        "course_name": "Switchgear and Protection"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_56a7877032",
+      "question": "How many credit hours is ALE6173 (Switchgear and Protection)?",
+      "answer": "ALE6173 (Switchgear and Protection) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6173",
+        "course_name": "Switchgear and Protection"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d3aac53a3a",
+      "question": "What is the prerequisite for ALE6173 (Switchgear and Protection)?",
+      "answer": "The prerequisite for ALE6173 (Switchgear and Protection) is: ALE6143.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6173",
+        "course_name": "Switchgear and Protection"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_beabe92f5e",
+      "question": "What topics are covered in ALE6173 (Switchgear and Protection)?",
+      "answer": "Switchgear types and operation, protection principles, protective relays, circuit breakers, fuses, grounding systems, protection coordination, testing and maintenance. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6173",
+        "course_name": "Switchgear and Protection"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b362e05e12",
+      "question": "What is ALE6213 (Energy Conversion I)?",
+      "answer": "To provide students with knowledge of energy conversion processes and devices. Pre-Requisite: ALE6143",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6213",
+        "course_name": "Energy Conversion I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b3f7163d59",
+      "question": "How many credit hours is ALE6213 (Energy Conversion I)?",
+      "answer": "ALE6213 (Energy Conversion I) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6213",
+        "course_name": "Energy Conversion I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_03b5823b45",
+      "question": "What is the prerequisite for ALE6213 (Energy Conversion I)?",
+      "answer": "The prerequisite for ALE6213 (Energy Conversion I) is: ALE6143.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6213",
+        "course_name": "Energy Conversion I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_08fa1a7e22",
+      "question": "What topics are covered in ALE6213 (Energy Conversion I)?",
+      "answer": "Energy conversion fundamentals, DC machines, AC induction machines, synchronous machines, machine characteristics, efficiency, losses, thermal management. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6213",
+        "course_name": "Energy Conversion I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_510b35dbd0",
+      "question": "What is ALE6223 (Energy Conversion II)?",
+      "answer": "To provide advanced knowledge of energy conversion and power generation systems. Pre-Requisite: ALE6213",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6223",
+        "course_name": "Energy Conversion II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_33e2470631",
+      "question": "How many credit hours is ALE6223 (Energy Conversion II)?",
+      "answer": "ALE6223 (Energy Conversion II) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6223",
+        "course_name": "Energy Conversion II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d038bfe646",
+      "question": "What is the prerequisite for ALE6223 (Energy Conversion II)?",
+      "answer": "The prerequisite for ALE6223 (Energy Conversion II) is: ALE6213.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6223",
+        "course_name": "Energy Conversion II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0eb1ac23e8",
+      "question": "What topics are covered in ALE6223 (Energy Conversion II)?",
+      "answer": "Advanced machine analysis, power electronics for energy conversion, renewable energy systems, energy storage, power quality, efficiency optimization, smart grids. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6223",
+        "course_name": "Energy Conversion II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7cb315ccc2",
+      "question": "What is ALE6233 (Power Transmission and Distribution)?",
+      "answer": "To provide students with knowledge of power transmission and distribution systems. Pre-Requisite: ALE6143",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6233",
+        "course_name": "Power Transmission and Distribution"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a929e601f9",
+      "question": "How many credit hours is ALE6233 (Power Transmission and Distribution)?",
+      "answer": "ALE6233 (Power Transmission and Distribution) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6233",
+        "course_name": "Power Transmission and Distribution"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_bd45a40855",
+      "question": "What is the prerequisite for ALE6233 (Power Transmission and Distribution)?",
+      "answer": "The prerequisite for ALE6233 (Power Transmission and Distribution) is: ALE6143.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6233",
+        "course_name": "Power Transmission and Distribution"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3f415f7b2b",
+      "question": "What topics are covered in ALE6233 (Power Transmission and Distribution)?",
+      "answer": "Transmission line parameters, transmission line models, power flow, voltage regulation, losses, distribution systems, distribution automation, SCADA systems. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6233",
+        "course_name": "Power Transmission and Distribution"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_97d7889ebd",
+      "question": "What is ALE6243 (Electrical Engineering Materials)?",
+      "answer": "To provide students with knowledge of electrical engineering materials and their properties. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6243",
+        "course_name": "Electrical Engineering Materials"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ec3f7b3911",
+      "question": "How many credit hours is ALE6243 (Electrical Engineering Materials)?",
+      "answer": "ALE6243 (Electrical Engineering Materials) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6243",
+        "course_name": "Electrical Engineering Materials"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b3ea54258b",
+      "question": "What topics are covered in ALE6243 (Electrical Engineering Materials)?",
+      "answer": "Atomic structure, crystal structures, electrical properties of materials, conductors, semiconductors, insulators, magnetic materials, dielectric materials, superconductors. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6243",
+        "course_name": "Electrical Engineering Materials"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_45783d8671",
+      "question": "What is ALE6253 (Power System Analysis)?",
+      "answer": "To provide students with knowledge of power system analysis and operation. Pre-Requisite: ALE6233",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6253",
+        "course_name": "Power System Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_aad2db65cb",
+      "question": "How many credit hours is ALE6253 (Power System Analysis)?",
+      "answer": "ALE6253 (Power System Analysis) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6253",
+        "course_name": "Power System Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3fe041fd91",
+      "question": "What is the prerequisite for ALE6253 (Power System Analysis)?",
+      "answer": "The prerequisite for ALE6253 (Power System Analysis) is: ALE6233.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6253",
+        "course_name": "Power System Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e5aefb62a5",
+      "question": "What topics are covered in ALE6253 (Power System Analysis)?",
+      "answer": "Power system modeling, load flow analysis, fault analysis, transient stability, small signal stability, power system dynamics, control systems, simulation tools. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6253",
+        "course_name": "Power System Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ae1054c3c7",
+      "question": "What is ALE6263 (Electrical Drive)?",
+      "answer": "To provide students with knowledge of electrical drive systems and motor control. Pre-Requisite: ALE6213",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6263",
+        "course_name": "Electrical Drive"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_9848cf52e4",
+      "question": "How many credit hours is ALE6263 (Electrical Drive)?",
+      "answer": "ALE6263 (Electrical Drive) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6263",
+        "course_name": "Electrical Drive"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ad54fbe190",
+      "question": "What is the prerequisite for ALE6263 (Electrical Drive)?",
+      "answer": "The prerequisite for ALE6263 (Electrical Drive) is: ALE6213.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6263",
+        "course_name": "Electrical Drive"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_40c20cb38c",
+      "question": "What topics are covered in ALE6263 (Electrical Drive)?",
+      "answer": "DC motor drives, AC motor drives, power electronics for drives, speed control, torque control, energy efficiency, soft starters, variable frequency drives, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6263",
+        "course_name": "Electrical Drive"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_581d2e965c",
+      "question": "What is ALE6273 (Electric Power Utilization and Installation)?",
+      "answer": "To provide students with practical knowledge of electric power utilization and installation. Pre-Requisite: ALE6273",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6273",
+        "course_name": "Electric Power Utilization and Installation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1e0aba3874",
+      "question": "How many credit hours is ALE6273 (Electric Power Utilization and Installation)?",
+      "answer": "ALE6273 (Electric Power Utilization and Installation) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6273",
+        "course_name": "Electric Power Utilization and Installation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7467eeab23",
+      "question": "What is the prerequisite for ALE6273 (Electric Power Utilization and Installation)?",
+      "answer": "The prerequisite for ALE6273 (Electric Power Utilization and Installation) is: ALE6273.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6273",
+        "course_name": "Electric Power Utilization and Installation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_37a9fd36e5",
+      "question": "What topics are covered in ALE6273 (Electric Power Utilization and Installation)?",
+      "answer": "Electrical wiring, cable sizing, load calculations, power factor correction, energy management, installation codes and standards, safety systems, maintenance. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6273",
+        "course_name": "Electric Power Utilization and Installation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_21164c60e5",
+      "question": "What is ALE6283 (High Voltage Engineering)?",
+      "answer": "To provide students with knowledge of high voltage systems and engineering. Pre-Requisite: ALE6173",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6283",
+        "course_name": "High Voltage Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2352c64650",
+      "question": "How many credit hours is ALE6283 (High Voltage Engineering)?",
+      "answer": "ALE6283 (High Voltage Engineering) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6283",
+        "course_name": "High Voltage Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_13c9a79cab",
+      "question": "What is the prerequisite for ALE6283 (High Voltage Engineering)?",
+      "answer": "The prerequisite for ALE6283 (High Voltage Engineering) is: ALE6173.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6283",
+        "course_name": "High Voltage Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d2a1c8f9dd",
+      "question": "What topics are covered in ALE6283 (High Voltage Engineering)?",
+      "answer": "High voltage generation, breakdown phenomena, insulation systems, surge protection, testing techniques, high voltage equipment, safety procedures, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6283",
+        "course_name": "High Voltage Engineering"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a4066761cd",
+      "question": "What is ALE6293 (Power Stations)?",
+      "answer": "To provide students with knowledge of power generation stations and systems. Pre-Requisite: ALE6213",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6293",
+        "course_name": "Power Stations"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a83b306608",
+      "question": "How many credit hours is ALE6293 (Power Stations)?",
+      "answer": "ALE6293 (Power Stations) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6293",
+        "course_name": "Power Stations"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_70a3679a54",
+      "question": "What is the prerequisite for ALE6293 (Power Stations)?",
+      "answer": "The prerequisite for ALE6293 (Power Stations) is: ALE6213.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6293",
+        "course_name": "Power Stations"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d3d44c095d",
+      "question": "What topics are covered in ALE6293 (Power Stations)?",
+      "answer": "Thermal power stations, hydroelectric stations, nuclear power plants, renewable energy stations, power plant equipment, efficiency, environmental aspects, operation and control. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6293",
+        "course_name": "Power Stations"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e6dd3c253e",
+      "question": "What is ALE6303 (Power System Operation and Control)?",
+      "answer": "To provide students with knowledge of power system operation, control, and management. Pre-Requisite: ALE6253",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6303",
+        "course_name": "Power System Operation and Control"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_239b34b2e1",
+      "question": "How many credit hours is ALE6303 (Power System Operation and Control)?",
+      "answer": "ALE6303 (Power System Operation and Control) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6303",
+        "course_name": "Power System Operation and Control"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e3e32c79d4",
+      "question": "What is the prerequisite for ALE6303 (Power System Operation and Control)?",
+      "answer": "The prerequisite for ALE6303 (Power System Operation and Control) is: ALE6253.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6303",
+        "course_name": "Power System Operation and Control"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_03642af81d",
+      "question": "What topics are covered in ALE6303 (Power System Operation and Control)?",
+      "answer": "System operation, frequency control, voltage control, economic dispatch, unit commitment, state estimation, security assessment, emergency control, SCADA and EMS. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6303",
+        "course_name": "Power System Operation and Control"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b9c175cf11",
+      "question": "What is ALE6313 (Renewable Energy Technology)?",
+      "answer": "To provide students with knowledge of renewable energy technologies and systems. Pre-Requisite: ALE6213",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6313",
+        "course_name": "Renewable Energy Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1bd39aabe0",
+      "question": "How many credit hours is ALE6313 (Renewable Energy Technology)?",
+      "answer": "ALE6313 (Renewable Energy Technology) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6313",
+        "course_name": "Renewable Energy Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1908fc48a4",
+      "question": "What is the prerequisite for ALE6313 (Renewable Energy Technology)?",
+      "answer": "The prerequisite for ALE6313 (Renewable Energy Technology) is: ALE6213.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6313",
+        "course_name": "Renewable Energy Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2773b0fdae",
+      "question": "What topics are covered in ALE6313 (Renewable Energy Technology)?",
+      "answer": "Solar energy systems, wind energy systems, hydroelectric systems, geothermal systems, biomass energy, energy storage, grid integration, economics and environmental impact. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ALE6313",
+        "course_name": "Renewable Energy Technology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e8c5fa8b83",
+      "question": "What is AEE6113 (Electronics I)?",
+      "answer": "To provide students with fundamental knowledge of electronic devices and circuits. Pre-Requisite: ALE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6113",
+        "course_name": "Electronics I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7b13175fcf",
+      "question": "How many credit hours is AEE6113 (Electronics I)?",
+      "answer": "AEE6113 (Electronics I) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6113",
+        "course_name": "Electronics I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2683a05c8a",
+      "question": "What is the prerequisite for AEE6113 (Electronics I)?",
+      "answer": "The prerequisite for AEE6113 (Electronics I) is: ALE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6113",
+        "course_name": "Electronics I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0625c7ff93",
+      "question": "What topics are covered in AEE6113 (Electronics I)?",
+      "answer": "Semiconductor fundamentals, diodes, transistors (BJT, FET), amplifiers, frequency response, feedback, oscillators, power electronics basics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6113",
+        "course_name": "Electronics I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1285bd5f78",
+      "question": "What is AEE6123 (Electronics II)?",
+      "answer": "To provide advanced knowledge of electronic circuits and systems. Pre-Requisite: AEE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6123",
+        "course_name": "Electronics II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_47c7e73363",
+      "question": "How many credit hours is AEE6123 (Electronics II)?",
+      "answer": "AEE6123 (Electronics II) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6123",
+        "course_name": "Electronics II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2880e4a378",
+      "question": "What is the prerequisite for AEE6123 (Electronics II)?",
+      "answer": "The prerequisite for AEE6123 (Electronics II) is: AEE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6123",
+        "course_name": "Electronics II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3ec62f8a13",
+      "question": "What topics are covered in AEE6123 (Electronics II)?",
+      "answer": "Operational amplifiers, analog integrated circuits, active filters, comparators, data converters, signal conditioning, power amplifiers, integrated circuit applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6123",
+        "course_name": "Electronics II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_31a65d84b2",
+      "question": "What is AEE6133 (Electronics III)?",
+      "answer": "To provide students with knowledge of digital electronics and logic circuits. Pre-Requisite: AEE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6133",
+        "course_name": "Electronics III"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5b8e8a356e",
+      "question": "How many credit hours is AEE6133 (Electronics III)?",
+      "answer": "AEE6133 (Electronics III) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6133",
+        "course_name": "Electronics III"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_cce8a7023f",
+      "question": "What is the prerequisite for AEE6133 (Electronics III)?",
+      "answer": "The prerequisite for AEE6133 (Electronics III) is: AEE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6133",
+        "course_name": "Electronics III"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_25d45330b0",
+      "question": "What topics are covered in AEE6133 (Electronics III)?",
+      "answer": "Digital logic gates, Boolean algebra, combinational circuits, sequential circuits, flip-flops, counters, shift registers, memory circuits, digital system design. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6133",
+        "course_name": "Electronics III"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_79c68853ff",
+      "question": "What is AEE6143 (Power Electronics)?",
+      "answer": "To provide students with knowledge of power electronic devices and applications. Pre-Requisite: AEE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6143",
+        "course_name": "Power Electronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_81ab93bb86",
+      "question": "How many credit hours is AEE6143 (Power Electronics)?",
+      "answer": "AEE6143 (Power Electronics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6143",
+        "course_name": "Power Electronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7ba7af634a",
+      "question": "What is the prerequisite for AEE6143 (Power Electronics)?",
+      "answer": "The prerequisite for AEE6143 (Power Electronics) is: AEE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6143",
+        "course_name": "Power Electronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_218bbf1e9b",
+      "question": "What topics are covered in AEE6143 (Power Electronics)?",
+      "answer": "Power semiconductor devices, converters (AC-DC, DC-DC, DC-AC), PWM techniques, control circuits, thermal management, reliability, industrial applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6143",
+        "course_name": "Power Electronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_390301bb4b",
+      "question": "What is AEE6153 (Telecommunications)?",
+      "answer": "To provide students with knowledge of telecommunications systems and technologies. Pre-Requisite: AEE6133",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6153",
+        "course_name": "Telecommunications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c7be31e2ae",
+      "question": "How many credit hours is AEE6153 (Telecommunications)?",
+      "answer": "AEE6153 (Telecommunications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6153",
+        "course_name": "Telecommunications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_be68e0a06d",
+      "question": "What is the prerequisite for AEE6153 (Telecommunications)?",
+      "answer": "The prerequisite for AEE6153 (Telecommunications) is: AEE6133.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6153",
+        "course_name": "Telecommunications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5898c7e18c",
+      "question": "What topics are covered in AEE6153 (Telecommunications)?",
+      "answer": "Analog and digital communication, modulation techniques, multiplexing, transmission media, telephone systems, wireless communications, satellite communications, network basics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6153",
+        "course_name": "Telecommunications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b0f7ab145b",
+      "question": "What is AEE6163 (Signal Processing)?",
+      "answer": "To provide students with knowledge of signal processing techniques and applications. Pre-Requisite: ALE6153",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6163",
+        "course_name": "Signal Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1a1c3a209b",
+      "question": "How many credit hours is AEE6163 (Signal Processing)?",
+      "answer": "AEE6163 (Signal Processing) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6163",
+        "course_name": "Signal Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_255cb6fe03",
+      "question": "What is the prerequisite for AEE6163 (Signal Processing)?",
+      "answer": "The prerequisite for AEE6163 (Signal Processing) is: ALE6153.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6163",
+        "course_name": "Signal Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1336f86480",
+      "question": "What topics are covered in AEE6163 (Signal Processing)?",
+      "answer": "Discrete-time signals, digital filters, FFT, spectral analysis, adaptive filtering, multirate processing, signal compression, audio and image processing. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6163",
+        "course_name": "Signal Processing"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7208be7691",
+      "question": "What is AEE6173 (Microelectronics)?",
+      "answer": "To provide students with knowledge of microelectronic devices and integrated circuits. Pre-Requisite: AEE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6173",
+        "course_name": "Microelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0bc848fe1a",
+      "question": "How many credit hours is AEE6173 (Microelectronics)?",
+      "answer": "AEE6173 (Microelectronics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6173",
+        "course_name": "Microelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2f7c7a02c5",
+      "question": "What is the prerequisite for AEE6173 (Microelectronics)?",
+      "answer": "The prerequisite for AEE6173 (Microelectronics) is: AEE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6173",
+        "course_name": "Microelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1481d9fa5c",
+      "question": "What topics are covered in AEE6173 (Microelectronics)?",
+      "answer": "IC fabrication, CMOS technology, logic families, memory circuits, microprocessor design, analog IC design, IC testing, reliability and yield. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AEE6173",
+        "course_name": "Microelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_828448bf73",
+      "question": "What is ATE6113 (Telecommunications I)?",
+      "answer": "To provide students with fundamental knowledge of telecommunications systems. Pre-Requisite: AEE6153",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6113",
+        "course_name": "Telecommunications I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c7922d6fd0",
+      "question": "How many credit hours is ATE6113 (Telecommunications I)?",
+      "answer": "ATE6113 (Telecommunications I) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6113",
+        "course_name": "Telecommunications I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_478a8b2663",
+      "question": "What is the prerequisite for ATE6113 (Telecommunications I)?",
+      "answer": "The prerequisite for ATE6113 (Telecommunications I) is: AEE6153.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6113",
+        "course_name": "Telecommunications I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_56be05eb09",
+      "question": "What topics are covered in ATE6113 (Telecommunications I)?",
+      "answer": "Analog communications, modulation techniques (AM, FM, PM), demodulation, noise analysis, bandwidth and capacity, transmission systems, analog telephone systems. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6113",
+        "course_name": "Telecommunications I"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_75585b8811",
+      "question": "What is ATE6123 (Telecommunications II)?",
+      "answer": "To provide students with knowledge of digital telecommunications systems. Pre-Requisite: ATE6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6123",
+        "course_name": "Telecommunications II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5fa313e871",
+      "question": "How many credit hours is ATE6123 (Telecommunications II)?",
+      "answer": "ATE6123 (Telecommunications II) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6123",
+        "course_name": "Telecommunications II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1100270ec1",
+      "question": "What is the prerequisite for ATE6123 (Telecommunications II)?",
+      "answer": "The prerequisite for ATE6123 (Telecommunications II) is: ATE6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6123",
+        "course_name": "Telecommunications II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f1228f9c6c",
+      "question": "What topics are covered in ATE6123 (Telecommunications II)?",
+      "answer": "Digital communications, digital modulation, line coding, error detection and correction, digital transmission, digital telephone systems, PCM, data communications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6123",
+        "course_name": "Telecommunications II"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c7ede76ad9",
+      "question": "What is ATE6133 (Wireless Communications)?",
+      "answer": "To provide students with knowledge of wireless communication systems and technologies. Pre-Requisite: ATE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6133",
+        "course_name": "Wireless Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ec59260f14",
+      "question": "How many credit hours is ATE6133 (Wireless Communications)?",
+      "answer": "ATE6133 (Wireless Communications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6133",
+        "course_name": "Wireless Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_52e7ca99d4",
+      "question": "What is the prerequisite for ATE6133 (Wireless Communications)?",
+      "answer": "The prerequisite for ATE6133 (Wireless Communications) is: ATE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6133",
+        "course_name": "Wireless Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fe830f5d31",
+      "question": "What topics are covered in ATE6133 (Wireless Communications)?",
+      "answer": "Wireless propagation, fading channels, cellular systems, multiple access techniques, 4G/5G technologies, wireless security, antenna systems, spectrum management. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6133",
+        "course_name": "Wireless Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_4044cdd90c",
+      "question": "What is ATE6143 (Optical Communications)?",
+      "answer": "To provide students with knowledge of optical communication systems. Pre-Requisite: ATE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6143",
+        "course_name": "Optical Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_314c5ad9ae",
+      "question": "How many credit hours is ATE6143 (Optical Communications)?",
+      "answer": "ATE6143 (Optical Communications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6143",
+        "course_name": "Optical Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ca323770e4",
+      "question": "What is the prerequisite for ATE6143 (Optical Communications)?",
+      "answer": "The prerequisite for ATE6143 (Optical Communications) is: ATE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6143",
+        "course_name": "Optical Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ad0d75695d",
+      "question": "What topics are covered in ATE6143 (Optical Communications)?",
+      "answer": "Optical fibers, optical transmitters and receivers, optical amplifiers, wavelength division multiplexing, optical networks, fiber-optic communication systems, optical switching. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6143",
+        "course_name": "Optical Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_06cf5f5837",
+      "question": "What is ATE6153 (Satellite Communications)?",
+      "answer": "To provide students with knowledge of satellite communication systems. Pre-Requisite: ATE6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6153",
+        "course_name": "Satellite Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5b6ea7a6b7",
+      "question": "How many credit hours is ATE6153 (Satellite Communications)?",
+      "answer": "ATE6153 (Satellite Communications) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6153",
+        "course_name": "Satellite Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1557c08acb",
+      "question": "What is the prerequisite for ATE6153 (Satellite Communications)?",
+      "answer": "The prerequisite for ATE6153 (Satellite Communications) is: ATE6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6153",
+        "course_name": "Satellite Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_05ced4a38b",
+      "question": "What topics are covered in ATE6153 (Satellite Communications)?",
+      "answer": "Satellite orbits, satellite systems, uplink and downlink, modulation and coding, multiple access, satellite networks, GPS systems, satellite applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ATE6153",
+        "course_name": "Satellite Communications"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f8ccd13bf6",
+      "question": "What is ANT6113 (Nanotechnology Fundamentals)?",
+      "answer": "To provide students with fundamental knowledge of nanotechnology and nanomaterials. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6113",
+        "course_name": "Nanotechnology Fundamentals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_4bfa0bba9b",
+      "question": "How many credit hours is ANT6113 (Nanotechnology Fundamentals)?",
+      "answer": "ANT6113 (Nanotechnology Fundamentals) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6113",
+        "course_name": "Nanotechnology Fundamentals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_60c516c9da",
+      "question": "What topics are covered in ANT6113 (Nanotechnology Fundamentals)?",
+      "answer": "Nanotechnology fundamentals, nanomaterials, nanostructures, synthesis methods, characterization techniques, properties of nanomaterials, applications, safety and ethics. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6113",
+        "course_name": "Nanotechnology Fundamentals"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_517abb85df",
+      "question": "What is ANT6123 (Nanomaterials and Nanostructures)?",
+      "answer": "To provide students with knowledge of nanomaterials and nanostructure design. Pre-Requisite: ANT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6123",
+        "course_name": "Nanomaterials and Nanostructures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_216ea87663",
+      "question": "How many credit hours is ANT6123 (Nanomaterials and Nanostructures)?",
+      "answer": "ANT6123 (Nanomaterials and Nanostructures) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6123",
+        "course_name": "Nanomaterials and Nanostructures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_880c024354",
+      "question": "What is the prerequisite for ANT6123 (Nanomaterials and Nanostructures)?",
+      "answer": "The prerequisite for ANT6123 (Nanomaterials and Nanostructures) is: ANT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6123",
+        "course_name": "Nanomaterials and Nanostructures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_8607478f64",
+      "question": "What topics are covered in ANT6123 (Nanomaterials and Nanostructures)?",
+      "answer": "Carbon nanotubes, graphene, nanoparticles, quantum dots, nanofibers, nanocomposites, synthesis methods, structural properties, functional properties, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6123",
+        "course_name": "Nanomaterials and Nanostructures"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_267a80387e",
+      "question": "What is ANT6133 (Nanoelectronics)?",
+      "answer": "To provide students with knowledge of nanoelectronic devices and systems. Pre-Requisite: ANT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6133",
+        "course_name": "Nanoelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_b9fd8df373",
+      "question": "How many credit hours is ANT6133 (Nanoelectronics)?",
+      "answer": "ANT6133 (Nanoelectronics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6133",
+        "course_name": "Nanoelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_9025c3c447",
+      "question": "What is the prerequisite for ANT6133 (Nanoelectronics)?",
+      "answer": "The prerequisite for ANT6133 (Nanoelectronics) is: ANT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6133",
+        "course_name": "Nanoelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3e63da5fa4",
+      "question": "What topics are covered in ANT6133 (Nanoelectronics)?",
+      "answer": "Nanoscale transistors, quantum effects in nanodevices, molecular electronics, carbon nanotube devices, graphene electronics, nanophotonics, nanoelectronic circuits. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6133",
+        "course_name": "Nanoelectronics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_28fb1b615c",
+      "question": "What is ANT6143 (Nanophotonics)?",
+      "answer": "To provide students with knowledge of nanophotonics and optical nanostructures. Pre-Requisite: ANT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6143",
+        "course_name": "Nanophotonics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0bbd09b6b1",
+      "question": "How many credit hours is ANT6143 (Nanophotonics)?",
+      "answer": "ANT6143 (Nanophotonics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6143",
+        "course_name": "Nanophotonics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f76776a718",
+      "question": "What is the prerequisite for ANT6143 (Nanophotonics)?",
+      "answer": "The prerequisite for ANT6143 (Nanophotonics) is: ANT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6143",
+        "course_name": "Nanophotonics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e2a61e857b",
+      "question": "What topics are covered in ANT6143 (Nanophotonics)?",
+      "answer": "Plasmonics, photonic crystals, metamaterials, optical nanostructures, light-matter interaction at nanoscale, nanolasers, nanophotonic devices, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6143",
+        "course_name": "Nanophotonics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_c5ac414e0f",
+      "question": "What is ANT6153 (Nano-Biotechnology)?",
+      "answer": "To provide students with knowledge of nano-biotechnology applications. Pre-Requisite: ANT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6153",
+        "course_name": "Nano-Biotechnology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_8d6559329e",
+      "question": "How many credit hours is ANT6153 (Nano-Biotechnology)?",
+      "answer": "ANT6153 (Nano-Biotechnology) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6153",
+        "course_name": "Nano-Biotechnology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_449225b4eb",
+      "question": "What is the prerequisite for ANT6153 (Nano-Biotechnology)?",
+      "answer": "The prerequisite for ANT6153 (Nano-Biotechnology) is: ANT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6153",
+        "course_name": "Nano-Biotechnology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f7f3ed968d",
+      "question": "What topics are covered in ANT6153 (Nano-Biotechnology)?",
+      "answer": "Nanoparticles for drug delivery, nanobiosensors, nanostructured biomaterials, protein engineering at nanoscale, DNA nanotechnology, medical applications, biocompatibility. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6153",
+        "course_name": "Nano-Biotechnology"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_45272ca44d",
+      "question": "What is ANT6163 (Nanosensors and Nanodevices)?",
+      "answer": "To provide students with knowledge of nanosensors and nanodevices. Pre-Requisite: ANT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6163",
+        "course_name": "Nanosensors and Nanodevices"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a4bb95cc77",
+      "question": "How many credit hours is ANT6163 (Nanosensors and Nanodevices)?",
+      "answer": "ANT6163 (Nanosensors and Nanodevices) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6163",
+        "course_name": "Nanosensors and Nanodevices"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2e4ab15cd3",
+      "question": "What is the prerequisite for ANT6163 (Nanosensors and Nanodevices)?",
+      "answer": "The prerequisite for ANT6163 (Nanosensors and Nanodevices) is: ANT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6163",
+        "course_name": "Nanosensors and Nanodevices"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_7708567919",
+      "question": "What topics are covered in ANT6163 (Nanosensors and Nanodevices)?",
+      "answer": "Nanosensor principles, chemical sensors, biosensors, mechanical sensors, optical sensors, nanodevice fabrication, characterization, signal processing, applications. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "ANT6163",
+        "course_name": "Nanosensors and Nanodevices"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_59db5a761b",
+      "question": "What is AMT6113 (Engineering Mathematics 1)?",
+      "answer": "To provide various mathematical concepts and analysis methods in calculus, vectors, complex functions, Fourier analysis and probability in the engineering context. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6113",
+        "course_name": "Engineering Mathematics 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_82016ec722",
+      "question": "How many credit hours is AMT6113 (Engineering Mathematics 1)?",
+      "answer": "AMT6113 (Engineering Mathematics 1) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6113",
+        "course_name": "Engineering Mathematics 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_05ea794d89",
+      "question": "What topics are covered in AMT6113 (Engineering Mathematics 1)?",
+      "answer": "Calculus of One Variable: Elementary functions, limits, continuity, differentiation, integration. Sequences and Series. Fourier Series. Complex Functions and Vector Algebra. Probability. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6113",
+        "course_name": "Engineering Mathematics 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_439cb822af",
+      "question": "What is AMT6123 (Engineering Mathematics 2)?",
+      "answer": "To provide various mathematical concepts and analysis methods in multivariable calculus, differential equations, and linear algebra in the engineering context. Pre-Requisite: AMT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6123",
+        "course_name": "Engineering Mathematics 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_22c4433f05",
+      "question": "How many credit hours is AMT6123 (Engineering Mathematics 2)?",
+      "answer": "AMT6123 (Engineering Mathematics 2) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6123",
+        "course_name": "Engineering Mathematics 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2a1bba367a",
+      "question": "What is the prerequisite for AMT6123 (Engineering Mathematics 2)?",
+      "answer": "The prerequisite for AMT6123 (Engineering Mathematics 2) is: AMT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6123",
+        "course_name": "Engineering Mathematics 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_cf71598b73",
+      "question": "What topics are covered in AMT6123 (Engineering Mathematics 2)?",
+      "answer": "Multivariable Calculus: Partial derivatives, multiple integrals, vector calculus. Differential Equations: First-order and second-order ODEs, systems of ODEs. Linear Algebra: Matrices, determinants, eigenvalues, eigenvectors. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6123",
+        "course_name": "Engineering Mathematics 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_d5ad0dcd60",
+      "question": "What is AMT6133 (Engineering Mathematics 3)?",
+      "answer": "To provide various mathematical concepts and analysis methods in numerical methods, optimization, and statistics in the engineering context. Pre-Requisite: AMT6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6133",
+        "course_name": "Engineering Mathematics 3"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2ed02bb61b",
+      "question": "How many credit hours is AMT6133 (Engineering Mathematics 3)?",
+      "answer": "AMT6133 (Engineering Mathematics 3) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6133",
+        "course_name": "Engineering Mathematics 3"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_3a7477d2d8",
+      "question": "What is the prerequisite for AMT6133 (Engineering Mathematics 3)?",
+      "answer": "The prerequisite for AMT6133 (Engineering Mathematics 3) is: AMT6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6133",
+        "course_name": "Engineering Mathematics 3"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6c2cc63b25",
+      "question": "What topics are covered in AMT6133 (Engineering Mathematics 3)?",
+      "answer": "Numerical Methods: Root finding, interpolation, numerical integration and differentiation, solving ODEs numerically. Optimization: Linear and nonlinear optimization. Statistics: Descriptive statistics, hypothesis testing, regression analysis. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6133",
+        "course_name": "Engineering Mathematics 3"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_137d197113",
+      "question": "What is AMT6143 (Discrete Mathematics)?",
+      "answer": "To provide students with knowledge of discrete mathematics concepts and applications. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6143",
+        "course_name": "Discrete Mathematics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1324b1aa20",
+      "question": "How many credit hours is AMT6143 (Discrete Mathematics)?",
+      "answer": "AMT6143 (Discrete Mathematics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6143",
+        "course_name": "Discrete Mathematics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e27b30e78d",
+      "question": "What topics are covered in AMT6143 (Discrete Mathematics)?",
+      "answer": "Set theory, logic, relations and functions, combinatorics, graph theory, trees, Boolean algebra, formal languages, computability. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6143",
+        "course_name": "Discrete Mathematics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_e96abee611",
+      "question": "What is AMT6153 (Probability and Statistics)?",
+      "answer": "To provide students with comprehensive knowledge of probability theory and statistical methods. Pre-Requisite: AMT6113",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6153",
+        "course_name": "Probability and Statistics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_ab13b67170",
+      "question": "How many credit hours is AMT6153 (Probability and Statistics)?",
+      "answer": "AMT6153 (Probability and Statistics) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6153",
+        "course_name": "Probability and Statistics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_509e1317e4",
+      "question": "What is the prerequisite for AMT6153 (Probability and Statistics)?",
+      "answer": "The prerequisite for AMT6153 (Probability and Statistics) is: AMT6113.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6153",
+        "course_name": "Probability and Statistics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_67f18c21e7",
+      "question": "What topics are covered in AMT6153 (Probability and Statistics)?",
+      "answer": "Probability fundamentals, random variables, probability distributions, sampling, estimation, hypothesis testing, regression analysis, correlation, ANOVA. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6153",
+        "course_name": "Probability and Statistics"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_946ad7534c",
+      "question": "What is AMT6163 (Numerical Analysis)?",
+      "answer": "To provide students with knowledge of numerical analysis methods and algorithms. Pre-Requisite: AMT6123",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6163",
+        "course_name": "Numerical Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_166f13c053",
+      "question": "How many credit hours is AMT6163 (Numerical Analysis)?",
+      "answer": "AMT6163 (Numerical Analysis) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6163",
+        "course_name": "Numerical Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_9c4bfad4ef",
+      "question": "What is the prerequisite for AMT6163 (Numerical Analysis)?",
+      "answer": "The prerequisite for AMT6163 (Numerical Analysis) is: AMT6123.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6163",
+        "course_name": "Numerical Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_25547a4372",
+      "question": "What topics are covered in AMT6163 (Numerical Analysis)?",
+      "answer": "Error analysis, root finding methods, interpolation and approximation, numerical differentiation and integration, numerical solution of ODEs and PDEs, matrix computations. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AMT6163",
+        "course_name": "Numerical Analysis"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1236d521d3",
+      "question": "What is AHS6113 (Technical Communication)?",
+      "answer": "To provide students with skills in technical writing and communication. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6113",
+        "course_name": "Technical Communication"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0feb98cea9",
+      "question": "How many credit hours is AHS6113 (Technical Communication)?",
+      "answer": "AHS6113 (Technical Communication) carries 2 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6113",
+        "course_name": "Technical Communication"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_10e6ad579b",
+      "question": "What topics are covered in AHS6113 (Technical Communication)?",
+      "answer": "Technical writing fundamentals, report writing, proposal writing, presentation skills, visual communication, documentation, communication tools and technologies. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6113",
+        "course_name": "Technical Communication"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_09a5e01a45",
+      "question": "What is AHS6123 (Professional Ethics and Responsibility)?",
+      "answer": "To provide students with knowledge of professional ethics and responsibility in engineering. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6123",
+        "course_name": "Professional Ethics and Responsibility"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_f8ea1d0bbc",
+      "question": "How many credit hours is AHS6123 (Professional Ethics and Responsibility)?",
+      "answer": "AHS6123 (Professional Ethics and Responsibility) carries 2 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6123",
+        "course_name": "Professional Ethics and Responsibility"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_9eaaef1cec",
+      "question": "What topics are covered in AHS6123 (Professional Ethics and Responsibility)?",
+      "answer": "Engineering ethics, professional responsibility, codes of ethics, ethical decision-making, social and environmental responsibility, intellectual property, professional conduct. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6123",
+        "course_name": "Professional Ethics and Responsibility"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_99ba2366c2",
+      "question": "What is AHS6133 (Entrepreneurship and Innovation)?",
+      "answer": "To provide students with knowledge of entrepreneurship and innovation in technology. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6133",
+        "course_name": "Entrepreneurship and Innovation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_a372bb647d",
+      "question": "How many credit hours is AHS6133 (Entrepreneurship and Innovation)?",
+      "answer": "AHS6133 (Entrepreneurship and Innovation) carries 2 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6133",
+        "course_name": "Entrepreneurship and Innovation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_31267cb034",
+      "question": "What topics are covered in AHS6133 (Entrepreneurship and Innovation)?",
+      "answer": "Entrepreneurship fundamentals, business planning, innovation management, technology commercialization, startup ecosystems, intellectual property, venture capital, business models. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6133",
+        "course_name": "Entrepreneurship and Innovation"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_fe6d3ca357",
+      "question": "What is AHS6143 (Project Management)?",
+      "answer": "To provide students with knowledge of project management principles and practices. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6143",
+        "course_name": "Project Management"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_917cf0c1c5",
+      "question": "How many credit hours is AHS6143 (Project Management)?",
+      "answer": "AHS6143 (Project Management) carries 2 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6143",
+        "course_name": "Project Management"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_aec2540870",
+      "question": "What topics are covered in AHS6143 (Project Management)?",
+      "answer": "Project management fundamentals, project planning, scheduling, resource management, risk management, quality management, project monitoring and control, team management. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6143",
+        "course_name": "Project Management"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6cc8a5b474",
+      "question": "What is AHS6153 (Environmental Sustainability)?",
+      "answer": "To provide students with knowledge of environmental sustainability in engineering. Pre-Requisite: None",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6153",
+        "course_name": "Environmental Sustainability"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_2d731b5b09",
+      "question": "How many credit hours is AHS6153 (Environmental Sustainability)?",
+      "answer": "AHS6153 (Environmental Sustainability) carries 2 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6153",
+        "course_name": "Environmental Sustainability"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5f59bd136e",
+      "question": "What topics are covered in AHS6153 (Environmental Sustainability)?",
+      "answer": "Sustainability fundamentals, environmental impact assessment, green engineering, renewable energy, waste management, life cycle assessment, sustainable development, corporate social responsibility. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AHS6153",
+        "course_name": "Environmental Sustainability"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6cbdf35c7e",
+      "question": "What is AAP6136 (Final Year Project 1)?",
+      "answer": "To provide students with opportunity to conduct independent research and develop practical engineering solutions. Pre-Requisite: Completed 60 credit hours",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6136",
+        "course_name": "Final Year Project 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_4989c58775",
+      "question": "How many credit hours is AAP6136 (Final Year Project 1)?",
+      "answer": "AAP6136 (Final Year Project 1) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6136",
+        "course_name": "Final Year Project 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_6fd4728263",
+      "question": "What is the prerequisite for AAP6136 (Final Year Project 1)?",
+      "answer": "The prerequisite for AAP6136 (Final Year Project 1) is: Completed 60 credit hours.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6136",
+        "course_name": "Final Year Project 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_0fa9ad9e7e",
+      "question": "What topics are covered in AAP6136 (Final Year Project 1)?",
+      "answer": "Project planning, literature review, research methodology, project execution, data analysis, documentation, technical writing, project presentation. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6136",
+        "course_name": "Final Year Project 1"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_1292f77afb",
+      "question": "What is AAP6146 (Final Year Project 2)?",
+      "answer": "To provide students with opportunity to complete independent research and develop practical engineering solutions. Pre-Requisite: AAP6136",
+      "intent": "course.details.description",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6146",
+        "course_name": "Final Year Project 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_68f57de177",
+      "question": "How many credit hours is AAP6146 (Final Year Project 2)?",
+      "answer": "AAP6146 (Final Year Project 2) carries 3 credit hours.",
+      "intent": "course.details.credits",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6146",
+        "course_name": "Final Year Project 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_5ce45565e3",
+      "question": "What is the prerequisite for AAP6146 (Final Year Project 2)?",
+      "answer": "The prerequisite for AAP6146 (Final Year Project 2) is: AAP6136.",
+      "intent": "course.details.prerequisite",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6146",
+        "course_name": "Final Year Project 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_course_edfd58c3fe",
+      "question": "What topics are covered in AAP6146 (Final Year Project 2)?",
+      "answer": "Project completion, final analysis and optimization, final documentation, final presentation, project defense, knowledge dissemination. Course Learning",
+      "intent": "course.details.topics",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "course_code": "AAP6146",
+        "course_name": "Final Year Project 2"
+      },
+      "source": {
+        "file": "mmu faie all course.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_plan_ebc74642af",
+      "question": "Are MPU courses compulsory for the Intelligent Robotics bachelor's programme?",
+      "answer": "Yes. MPU (Mata Pelajaran Umum) courses are compulsory for Bachelor's degree students in Malaysia and must be passed before the degree is awarded.",
+      "intent": "programme.requirements.mpu",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU",
+        "faculty": "FAIE",
+        "programme": "BSc (Hons) Intelligent Robotics"
+      },
+      "source": {
+        "file": "BSc-October-2025-T2530.pdf"
+      }
+    },
+    {
+      "id": "mmu_ir_plan_d3bc1a7df6",
+      "question": "What are free electives at MMU?",
+      "answer": "Free elective courses at MMU usually have course codes starting with the letter 'F'. They may be taken within or outside a student's area of study, depending on the programme requirements, and their credit hours contribute to the total graduating credit.",
+      "intent": "programme.requirements.electives",
+      "confidence": "high",
+      "tags": {
+        "institution": "MMU"
+      },
+      "source": {
+        "file": "BSc-October-2025-T2530.pdf"
+      }
+    }
+  ]
+}

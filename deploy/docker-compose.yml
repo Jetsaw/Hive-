@@ -1,0 +1,23 @@
+services:
+  backend:
+    build: ../hive-backend
+    env_file:
+      - ../hive-backend/.env
+    volumes:
+      - ../hive-backend/data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build: ../hive-frontend
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
+      - frontend
+    restart: unless-stopped

@@ -1,0 +1,846 @@
+{
+  "AAP6126": {
+    "code": "AAP6126",
+    "name": "Industrial Training",
+    "credits": 6,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 2
+    }
+  },
+  "ACE6113": {
+    "code": "ACE6113",
+    "name": "Computer and Program Design",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 2
+    }
+  },
+  "ACE6123": {
+    "code": "ACE6123",
+    "name": "Algorithms and Data Structures",
+    "credits": 3,
+    "prereq": [
+      "ACE6123"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 3
+    }
+  },
+  "ACE6133": {
+    "code": "ACE6133",
+    "name": "Computer Organization and Architecture",
+    "credits": 3,
+    "prereq": [
+      "ACE6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 4
+    }
+  },
+  "ACE6143": {
+    "code": "ACE6143",
+    "name": "Data Communications and Networking",
+    "credits": 3,
+    "prereq": [
+      "ACE6143"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 4
+    }
+  },
+  "ACE6153": {
+    "code": "ACE6153",
+    "name": "Operating Systems",
+    "credits": 3,
+    "prereq": [
+      "ACE6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 5
+    }
+  },
+  "ACE6163": {
+    "code": "ACE6163",
+    "name": "Microcontroller and Microprocessor Systems",
+    "credits": 3,
+    "prereq": [
+      "ACE6163"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 6
+    }
+  },
+  "ACE6173": {
+    "code": "ACE6173",
+    "name": "Software Engineering",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 6
+    }
+  },
+  "ACE6183": {
+    "code": "ACE6183",
+    "name": "Advanced Microprocessors",
+    "credits": 3,
+    "prereq": [
+      "ACE6183"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 7
+    }
+  },
+  "ACE6193": {
+    "code": "ACE6193",
+    "name": "Object Oriented Programming with C++",
+    "credits": 3,
+    "prereq": [
+      "ACE6193"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 8
+    }
+  },
+  "ACE6203": {
+    "code": "ACE6203",
+    "name": "Digital Computer Design",
+    "credits": 3,
+    "prereq": [
+      "ACE6203"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 8
+    }
+  },
+  "ACE6213": {
+    "code": "ACE6213",
+    "name": "CyberSecurity",
+    "credits": 3,
+    "prereq": [
+      "ACE6213"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 9
+    }
+  },
+  "ACE6223": {
+    "code": "ACE6223",
+    "name": "Multimedia Technology and Applications",
+    "credits": 3,
+    "prereq": [
+      "ACE6223"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 10
+    }
+  },
+  "ACE6233": {
+    "code": "ACE6233",
+    "name": "Artificial Intelligence Systems and Applications",
+    "credits": 3,
+    "prereq": [
+      "ACE6233"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 10
+    }
+  },
+  "ACE6243": {
+    "code": "ACE6243",
+    "name": "Java Technology",
+    "credits": 3,
+    "prereq": [
+      "ACE6243"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 11
+    }
+  },
+  "ACE6253": {
+    "code": "ACE6253",
+    "name": "Digital Image and Video Processing",
+    "credits": 3,
+    "prereq": [
+      "ACE6253"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 12
+    }
+  },
+  "ACE6263": {
+    "code": "ACE6263",
+    "name": "Embedded IoT Systems and Applications",
+    "credits": 3,
+    "prereq": [
+      "ACE6263"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 12
+    }
+  },
+  "ACE6273": {
+    "code": "ACE6273",
+    "name": "Advanced Object-Oriented Design with Java",
+    "credits": 3,
+    "prereq": [
+      "ACE6273"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 13
+    }
+  },
+  "ACE6283": {
+    "code": "ACE6283",
+    "name": "Database Systems",
+    "credits": 3,
+    "prereq": [
+      "ACE6283"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 14
+    }
+  },
+  "ACE6293": {
+    "code": "ACE6293",
+    "name": "Advanced Computer Architecture and Parallel Computing",
+    "credits": 3,
+    "prereq": [
+      "ACE6293"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 14
+    }
+  },
+  "ACE6313": {
+    "code": "ACE6313",
+    "name": "Machine Learning Concepts and Technologies",
+    "credits": 3,
+    "prereq": [
+      "ACE6313"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 15
+    }
+  },
+  "ACE6323": {
+    "code": "ACE6323",
+    "name": "Cloud Computing",
+    "credits": 3,
+    "prereq": [
+      "ACE6323"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 16
+    }
+  },
+  "ACE6333": {
+    "code": "ACE6333",
+    "name": "Deep Learning and Generative AI Technology",
+    "credits": 3,
+    "prereq": [
+      "ACE6333"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 16
+    }
+  },
+  "ACE6343": {
+    "code": "ACE6343",
+    "name": "System Administration",
+    "credits": 3,
+    "prereq": [
+      "ACE6343"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 17
+    }
+  },
+  "ALE6113": {
+    "code": "ALE6113",
+    "name": "Circuit Theory",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 18
+    }
+  },
+  "ALE6123": {
+    "code": "ALE6123",
+    "name": "Field Theory",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 18
+    }
+  },
+  "ALE6133": {
+    "code": "ALE6133",
+    "name": "Instrumentation and Measurement Techniques",
+    "credits": 3,
+    "prereq": [
+      "ALE6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 19
+    }
+  },
+  "ALE6143": {
+    "code": "ALE6143",
+    "name": "Introduction to Machines and Power Systems",
+    "credits": 3,
+    "prereq": [
+      "ALE6143"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 20
+    }
+  },
+  "ALE6153": {
+    "code": "ALE6153",
+    "name": "Circuits and Signals",
+    "credits": 3,
+    "prereq": [
+      "ALE6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 20
+    }
+  },
+  "ALE6163": {
+    "code": "ALE6163",
+    "name": "Control Theory",
+    "credits": 3,
+    "prereq": [
+      "ALE6163"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 21
+    }
+  },
+  "ALE6173": {
+    "code": "ALE6173",
+    "name": "Switchgear and Protection",
+    "credits": 3,
+    "prereq": [
+      "ALE6173"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 22
+    }
+  },
+  "ALE6213": {
+    "code": "ALE6213",
+    "name": "Energy Conversion I",
+    "credits": 3,
+    "prereq": [
+      "ALE6213"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 22
+    }
+  },
+  "ALE6223": {
+    "code": "ALE6223",
+    "name": "Energy Conversion II",
+    "credits": 3,
+    "prereq": [
+      "ALE6223"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 23
+    }
+  },
+  "ALE6233": {
+    "code": "ALE6233",
+    "name": "Power Transmission and Distribution",
+    "credits": 3,
+    "prereq": [
+      "ALE6233"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 24
+    }
+  },
+  "ALE6243": {
+    "code": "ALE6243",
+    "name": "Electrical Engineering Materials",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 24
+    }
+  },
+  "ALE6253": {
+    "code": "ALE6253",
+    "name": "Power System Analysis",
+    "credits": 3,
+    "prereq": [
+      "ALE6253"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 25
+    }
+  },
+  "ALE6263": {
+    "code": "ALE6263",
+    "name": "Electrical Drive",
+    "credits": 3,
+    "prereq": [
+      "ALE6263"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 26
+    }
+  },
+  "ALE6273": {
+    "code": "ALE6273",
+    "name": "Electric Power Utilization and Installation",
+    "credits": 3,
+    "prereq": [
+      "ALE6273"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 26
+    }
+  },
+  "ALE6283": {
+    "code": "ALE6283",
+    "name": "High Voltage Engineering",
+    "credits": 3,
+    "prereq": [
+      "ALE6283"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 27
+    }
+  },
+  "ALE6293": {
+    "code": "ALE6293",
+    "name": "Power Stations",
+    "credits": 3,
+    "prereq": [
+      "ALE6293"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 28
+    }
+  },
+  "ALE6303": {
+    "code": "ALE6303",
+    "name": "Power System Operation and Control",
+    "credits": 3,
+    "prereq": [
+      "ALE6303"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 28
+    }
+  },
+  "ALE6313": {
+    "code": "ALE6313",
+    "name": "Renewable Energy Technology",
+    "credits": 3,
+    "prereq": [
+      "ALE6313"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 29
+    }
+  },
+  "AEE6113": {
+    "code": "AEE6113",
+    "name": "Electronics I",
+    "credits": 3,
+    "prereq": [
+      "AEE6113"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 30
+    }
+  },
+  "AEE6123": {
+    "code": "AEE6123",
+    "name": "Electronics II",
+    "credits": 3,
+    "prereq": [
+      "AEE6123"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 30
+    }
+  },
+  "AEE6133": {
+    "code": "AEE6133",
+    "name": "Electronics III",
+    "credits": 3,
+    "prereq": [
+      "AEE6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 31
+    }
+  },
+  "AEE6143": {
+    "code": "AEE6143",
+    "name": "Power Electronics",
+    "credits": 3,
+    "prereq": [
+      "AEE6143"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 32
+    }
+  },
+  "AEE6153": {
+    "code": "AEE6153",
+    "name": "Telecommunications",
+    "credits": 3,
+    "prereq": [
+      "AEE6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 32
+    }
+  },
+  "AEE6163": {
+    "code": "AEE6163",
+    "name": "Signal Processing",
+    "credits": 3,
+    "prereq": [
+      "AEE6163"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 33
+    }
+  },
+  "AEE6173": {
+    "code": "AEE6173",
+    "name": "Microelectronics",
+    "credits": 3,
+    "prereq": [
+      "AEE6173"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 33
+    }
+  },
+  "ATE6113": {
+    "code": "ATE6113",
+    "name": "Telecommunications I",
+    "credits": 3,
+    "prereq": [
+      "ATE6113"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 34
+    }
+  },
+  "ATE6123": {
+    "code": "ATE6123",
+    "name": "Telecommunications II",
+    "credits": 3,
+    "prereq": [
+      "ATE6123"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 35
+    }
+  },
+  "ATE6133": {
+    "code": "ATE6133",
+    "name": "Wireless Communications",
+    "credits": 3,
+    "prereq": [
+      "ATE6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 35
+    }
+  },
+  "ATE6143": {
+    "code": "ATE6143",
+    "name": "Optical Communications",
+    "credits": 3,
+    "prereq": [
+      "ATE6143"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 36
+    }
+  },
+  "ATE6153": {
+    "code": "ATE6153",
+    "name": "Satellite Communications",
+    "credits": 3,
+    "prereq": [
+      "ATE6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 37
+    }
+  },
+  "ANT6113": {
+    "code": "ANT6113",
+    "name": "Nanotechnology Fundamentals",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 37
+    }
+  },
+  "ANT6123": {
+    "code": "ANT6123",
+    "name": "Nanomaterials and Nanostructures",
+    "credits": 3,
+    "prereq": [
+      "ANT6123"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 38
+    }
+  },
+  "ANT6133": {
+    "code": "ANT6133",
+    "name": "Nanoelectronics",
+    "credits": 3,
+    "prereq": [
+      "ANT6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 39
+    }
+  },
+  "ANT6143": {
+    "code": "ANT6143",
+    "name": "Nanophotonics",
+    "credits": 3,
+    "prereq": [
+      "ANT6143"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 39
+    }
+  },
+  "ANT6153": {
+    "code": "ANT6153",
+    "name": "Nano-Biotechnology",
+    "credits": 3,
+    "prereq": [
+      "ANT6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 40
+    }
+  },
+  "ANT6163": {
+    "code": "ANT6163",
+    "name": "Nanosensors and Nanodevices",
+    "credits": 3,
+    "prereq": [
+      "ANT6163"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 41
+    }
+  },
+  "AMT6113": {
+    "code": "AMT6113",
+    "name": "Engineering Mathematics 1",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 41
+    }
+  },
+  "AMT6123": {
+    "code": "AMT6123",
+    "name": "Engineering Mathematics 2",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 42
+    }
+  },
+  "AMT6133": {
+    "code": "AMT6133",
+    "name": "Engineering Mathematics 3",
+    "credits": 3,
+    "prereq": [
+      "AMT6133"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 43
+    }
+  },
+  "AMT6143": {
+    "code": "AMT6143",
+    "name": "Discrete Mathematics",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 44
+    }
+  },
+  "AMT6153": {
+    "code": "AMT6153",
+    "name": "Probability and Statistics",
+    "credits": 3,
+    "prereq": [
+      "AMT6153"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 44
+    }
+  },
+  "AMT6163": {
+    "code": "AMT6163",
+    "name": "Numerical Analysis",
+    "credits": 3,
+    "prereq": [
+      "AMT6163"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 45
+    }
+  },
+  "AHS6113": {
+    "code": "AHS6113",
+    "name": "Technical Communication",
+    "credits": 2,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 45
+    }
+  },
+  "AHS6123": {
+    "code": "AHS6123",
+    "name": "Professional Ethics and Responsibility",
+    "credits": 2,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 46
+    }
+  },
+  "AHS6133": {
+    "code": "AHS6133",
+    "name": "Entrepreneurship and Innovation",
+    "credits": 2,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 47
+    }
+  },
+  "AHS6143": {
+    "code": "AHS6143",
+    "name": "Project Management",
+    "credits": 2,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 47
+    }
+  },
+  "AHS6153": {
+    "code": "AHS6153",
+    "name": "Environmental Sustainability",
+    "credits": 2,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 48
+    }
+  },
+  "AAP6136": {
+    "code": "AAP6136",
+    "name": "Final Year Project 1",
+    "credits": 3,
+    "prereq": [],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 48
+    }
+  },
+  "AAP6146": {
+    "code": "AAP6146",
+    "name": "Final Year Project 2",
+    "credits": 3,
+    "prereq": [
+      "AAP6146"
+    ],
+    "source": {
+      "file": "mmu faie all course.pdf",
+      "page": 49
+    }
+  }
+}

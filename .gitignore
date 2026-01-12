@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+
+data/indexes/
+data/global_docs/
+
+*.db
+*.sqlite
+
+node_modules/
+dist/
