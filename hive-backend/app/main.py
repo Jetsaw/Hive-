@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.core.logging import setup_logging
 from app.core.config import settings
 from app.memory.db import init_db
-from app.rag.indexer import build_or_load_global_index
+from app.agents import IngestionAgent, Trace
 
 from app.api.health import router as health_router
 from app.api.chat import router as chat_router
@@ -28,7 +28,9 @@ def create_app() -> FastAPI:
     )
 
     # Build/load preloaded global KB index
-    index, metas = build_or_load_global_index()
+    ingestion = IngestionAgent()
+    trace = Trace()
+    index, metas = ingestion.build_or_load(trace)
     chat_module.GLOBAL_INDEX = index
     chat_module.GLOBAL_METAS = metas
 
