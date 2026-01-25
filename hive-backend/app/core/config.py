@@ -12,6 +12,7 @@ class Settings(BaseSettings):
 
     # Paths
     DATA_DIR: str = Field(default="./data")
+    KB_DIR: str = Field(default="./data/kb")
     GLOBAL_DOCS_DIR: str = Field(default="./data/global_docs")
     GLOBAL_INDEX_DIR: str = Field(default="./data/indexes/global")
     SQLITE_PATH: str = Field(default="./data/hive.db")

@@ -256,8 +256,16 @@ def answer_fail_question(question: str, passed: List[str], failed: List[str], ca
         return "Tell me the course name or code so I can check eligibility."
 
     target = codes[-1]
+    
+    # Check if course exists in catalog
+    if target not in catalog:
+        return f"I don't have information about {target} in my database. Please check the course code."
+    
     ok, missing = eligibility_check(target, passed, catalog)
 
     if ok:
         return f"Yes, you can take {target}. Its prerequisites are satisfied."
-    return f"No. You must complete {', '.join(missing)} before taking {target}."
+    
+    # Format prerequisite list
+    prereq_list = ", ".join(missing) if missing else "None"
+    return f"No, you cannot take {target} yet. You need to complete these prerequisites first: {prereq_list}"

@@ -1,0 +1,29 @@
+# Exclude from context
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+env
+venv
+pip-log.txt
+pip-delete-this-directory.txt
+.tox
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git
+.gitignore
+.mypy_cache
+pytest_cache
+.pytest_cache
+
+# Data (if you want fresh container data)
+# data/
+
+# Config
+.env

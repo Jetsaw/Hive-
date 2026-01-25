@@ -1,36 +1,157 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>HIVE</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI VE - MMU Engineering Academic Advisor</title>
+    <link rel="stylesheet" href="./styles.css?v=3">
 </head>
 
 <body>
     <div class="app">
-        <header class="topbar">
-            <div class="brand">
-                <div class="logo">HIVE</div>
-                <div class="subtitle">Intelligent Robotics Academic Advisor</div>
-            </div>
-            <div class="user">
-                <span id="userNameLabel">Jet</span>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="brand">
+                    <div class="logo">
+                        <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <span>HIVE</span>
+                    </div>
+                    <div class="subtitle">MMU Engineering Academic Advisor</div>
+                </div>
+                <div class="header-actions">
+                    <!-- Memory Status Display -->
+                    <div id="headerMemoryStatus" class="memory-status" style="display: none;">
+                        <span>💬</span>
+                        <span id="memoryText">0 pairs</span>
+                    </div>
+
+                    <button class="new-session-btn" id="newSessionBtn" title="Start New Session">
+                        <span>🔄</span>
+                        <span>New Session</span>
+                    </button>
+
+                    <button class="settings-btn" id="settingsBtn" title="Settings">
+                        ⚙
+                    </button>
+                </div>
             </div>
         </header>
 
-        <main id="chat" class="chat"></main>
+        <!-- Chat Container -->
+        <main class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Welcome message -->
+                <div class="welcome-card">
+                    <h2>Welcome to HIVE 🎓</h2>
+                    <p>Your intelligent academic companion for MMU Engineering Faculty</p>
+                    <div class="quick-actions">
+                        <button class="quick-action-btn" data-query="What subjects are in Year 1 Trimester 1?">
+                            📚 Year 1 Courses
+                        </button>
+                        <button class="quick-action-btn" data-query="Tell me about the Intelligent Robotics programme">
+                            🤖 Intelligent Robotics
+                        </button>
+                        <button class="quick-action-btn" data-query="What is machine learning?">
+                            🧠 Machine Learning
+                        </button>
+                    </div>
+                </div>
+            </div>
 
-        <footer class="composer">
-            <button id="plusBtn" class="icon-btn" title="Upload (coming soon)">+</button>
-            <input id="input" class="input" placeholder="Message HIVE..." />
-            <button id="micBtn" class="icon-btn" title="Voice mode">🎤</button>
-            <button id="sendBtn" class="send-btn">Send</button>
+            <!-- Voice Recording Indicator -->
+            <div class="voice-indicator" id="voiceIndicator" style="display: none;">
+                <div class="voice-wave">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <p>Listening...</p>
+            </div>
+        </main>
+
+        <!-- Input Area -->
+        <footer class="input-area">
+            <div class="input-container">
+                <button class="icon-btn" id="attachBtn" title="Attach file (coming soon)">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21.44 11.05L12.25 20.24C11.1242 21.3658 9.59723 21.9983 8.005 21.9983C6.41277 21.9983 4.88583 21.3658 3.76 20.24C2.63417 19.1142 2.00166 17.5872 2.00166 15.995C2.00166 14.4028 2.63417 12.8758 3.76 11.75L12.33 3.18C13.0806 2.42944 14.0991 2.00667 15.16 2.00667C16.2209 2.00667 17.2394 2.42944 17.99 3.18C18.7406 3.93056 19.1633 4.94908 19.1633 6.01C19.1633 7.07092 18.7406 8.08944 17.99 8.84L9.41 17.41C9.03472 17.7853 8.52541 17.9966 7.995 17.9966C7.46459 17.9966 6.95528 17.7853 6.58 17.41C6.20472 17.0347 5.99335 16.5254 5.99335 15.995C5.99335 15.4646 6.20472 14.9553 6.58 14.58L15.07 6.1"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <div class="input-wrapper">
+                    <textarea id="messageInput" class="message-input"
+                        placeholder="Ask about courses, programmes, or study planning..." rows="1"></textarea>
+                </div>
+
+                <button class="icon-btn voice-btn" id="voiceBtn" title="Voice input">
+                    <svg class="mic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 1C11.2044 1 10.4413 1.31607 9.87868 1.87868C9.31607 2.44129 9 3.20435 9 4V12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12V4C15 3.20435 14.6839 2.44129 14.1213 1.87868C13.5587 1.31607 12.7956 1 12 1Z"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M19 10V12C19 13.8565 18.2625 15.637 16.9497 16.9497C15.637 18.2625 13.8565 19 12 19C10.1435 19 8.36301 18.2625 7.05025 16.9497C5.7375 15.637 5 13.8565 5 12V10"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 19V23" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8 23H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+
+                <button class="send-btn" id="sendBtn">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <span>Send</span>
+                </button>
+            </div>
         </footer>
     </div>
 
-    <script src="./app.js"></script>
+    <!-- Settings Modal -->
+    <div class="modal" id="settingsModal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Settings</h3>
+                <button class="close-btn" id="closeSettings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label>Voice Profile</label>
+                    <select id="voiceProfile" class="setting-select">
+                        <option value="female_en">Female (English)</option>
+                        <option value="male_en">Male (English)</option>
+                        <option value="female_ms">Female (Malay)</option>
+                        <option value="male_ms">Male (Malay)</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label>
+                        <input type="checkbox" id="autoPlayVoice" checked>
+                        Auto-play voice responses
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js?v=3" type="module"></script>
 </body>
 
 </html>

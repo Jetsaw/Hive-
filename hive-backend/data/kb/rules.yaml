@@ -1,0 +1,110 @@
+version: 1
+description: Deterministic flow control before RAG. Route to programme_structure first,
+  then subject_details.
+stores:
+  programme_structure: programme_structure.jsonl (or its FAISS index)
+  subject_details: faie_ai_robotics_combined_qa.jsonl (or its FAISS index)
+entities:
+  course_code_regex: \\b[A-Z]{3}\\d{4}\\b
+  structure_keywords:
+  - term
+  - trimester
+  - year
+  - course structure
+  - study plan
+  - what subjects
+  - what courses
+  - next term
+  - course list
+routing_rules:
+- id: R1_course_code
+  when:
+    matches_regex: \\b[A-Z]{3}\\d{4}\\b
+  then:
+  - set:
+      selected_course_code: '{{course_code}}'
+  - set:
+      mode: DETAILS
+  - action: query_subject_details_store
+    with:
+      course_code: '{{course_code}}'
+- id: R2_alias_mapping
+  when:
+    alias_match: true
+  then:
+  - set:
+      selected_course_code: '{{alias_course_code}}'
+  - set:
+      mode: DETAILS
+  - action: query_subject_details_store
+    with:
+      course_code: '{{alias_course_code}}'
+- id: R3_structure_questions
+  when:
+    contains_any:
+    - term
+    - trimester
+    - course structure
+    - study plan
+    - what subjects
+    - what courses
+    - next term
+    - year 1
+    - year 2
+    - year 3
+  then:
+  - set:
+      mode: STRUCTURE
+  - action: detect_programme_if_missing
+  - action: query_programme_structure_store
+    with:
+      programme: '{{programme}}'
+      message: '{{message}}'
+- id: R4_mixed_structure_plus_details
+  when:
+    and:
+    - contains_any:
+      - term
+      - trimester
+      - year
+    - or:
+      - matches_regex: \\b[A-Z]{3}\\d{4}\\b
+      - alias_match: true
+  then:
+  - set:
+      mode: STRUCTURE
+  - action: detect_programme_if_missing
+  - action: query_programme_structure_store
+    with:
+      programme: '{{programme}}'
+      message: '{{message}}'
+  - set:
+      mode: DETAILS
+  - action: query_subject_details_store
+    with:
+      course_code: '{{selected_course_code}}'
+- id: R5_programme_detection_only
+  when:
+    contains_any:
+    - applied ai
+    - applied artificial intelligence
+    - intelligent robotics
+    - robotics
+  then:
+  - action: detect_programme
+  - reply: 'Got it. Do you want the course structure (by term) or details about a
+      specific subject? Example: ''Term 2620 subjects'' or ''What is AAC6153?''.'
+- id: R6_fallback
+  when:
+    otherwise: true
+  then:
+  - action: detect_programme_if_missing
+  - reply: Do you want (1) programme course structure by term, or (2) subject details?
+      For subject details, provide a course code (e.g., AAC6153) or a keyword like
+      'AI ethics'.
+implementation_notes:
+- 'alias_match: load alias_mapping.yaml and match against user message; set alias_course_code
+  if found.'
+- 'detect_programme_if_missing: if session.programme is None, call detect_programme(message)
+  from programme_detection.py.'
+- 'course_code: extract using course_code_regex; set into session.selected_course_code.'

@@ -8,6 +8,8 @@ from app.agents import IngestionAgent, Trace
 
 from app.api.health import router as health_router
 from app.api.chat import router as chat_router
+from app.api.voice import router as voice_router
+from app.api.admin import router as admin_router
 import app.api.chat as chat_module
 
 
@@ -16,6 +18,10 @@ def create_app() -> FastAPI:
     init_db()
 
     app = FastAPI(title="HIVE Backend", version="1.0")
+    
+    # Track start time for uptime
+    import time
+    app.state.start_time = time.time()
 
     # When running behind nginx (localhost:8080), frontend calls /api/* (same origin).
     # But we still allow origin for direct testing if needed.
@@ -36,6 +42,8 @@ def create_app() -> FastAPI:
 
     app.include_router(health_router, prefix="/api")
     app.include_router(chat_router, prefix="/api")
+    app.include_router(voice_router, prefix="/api")
+    app.include_router(admin_router, prefix="/api")
     return app
 
 

@@ -1,3 +1,98 @@
 {
-  "Intelligent Robotics": {}
+  "Intelligent Robotics": {
+    "Year1_T1": [
+      "ACE6113",
+      "AMT6113",
+      "ALE6113",
+      "AHS6113"
+    ],
+    "Year1_T2": [
+      "ACE6123",
+      "AMT6123",
+      "ALE6123",
+      "AEE6113"
+    ],
+    "Year2_T1": [
+      "ACE6133",
+      "AMT6133",
+      "ALE6133",
+      "AEE6123"
+    ],
+    "Year2_T2": [
+      "ACE6143",
+      "AMT6143",
+      "ALE6143",
+      "AEE6133"
+    ],
+    "Year3_T1": [
+      "ACE6153",
+      "ACE6163",
+      "ACE6173",
+      "AMT6153"
+    ],
+    "Year3_T2": [
+      "ACE6183",
+      "ACE6193",
+      "ACE6203",
+      "AHS6123"
+    ],
+    "Year4_T1": [
+      "ACE6213",
+      "ACE6223",
+      "ACE6233",
+      "AAP6136"
+    ],
+    "Year4_T2": [
+      "ACE6243",
+      "ACE6253",
+      "AAP6146"
+    ]
+  },
+  "Applied AI": {
+    "Year1_T1": [
+      "ACE6113",
+      "AMT6113",
+      "ALE6113",
+      "AHS6113"
+    ],
+    "Year1_T2": [
+      "ACE6123",
+      "AMT6123",
+      "ALE6123",
+      "AEE6113"
+    ],
+    "Year2_T1": [
+      "ACE6133",
+      "AMT6133",
+      "ALE6133",
+      "AEE6123"
+    ],
+    "Year2_T2": [
+      "ACE6143",
+      "AMT6143",
+      "ALE6143",
+      "AEE6133"
+    ],
+    "Year3_T1": [
+      "ACE6153",
+      "ACE6313",
+      "ACE6283",
+      "AMT6153"
+    ],
+    "Year3_T2": [
+      "ACE6323",
+      "ACE6333",
+      "ACE6243",
+      "AHS6123"
+    ],
+    "Year4_T1": [
+      "ACE6343",
+      "ACE6253",
+      "ACE6263",
+      "AAP6136"
+    ],
+    "Year4_T2": [
+      "AAP6146"
+    ]
+  }
 }

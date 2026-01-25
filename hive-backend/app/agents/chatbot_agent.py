@@ -36,7 +36,7 @@ class ChatbotAgent:
         if self._faie_kb is None or self._faie_code_map is None or self._faie_name_map is None:
             self._faie_kb, self._faie_code_map, self._faie_name_map = load_faie_kb()
 
-    def answer(
+    async def answer(
         self,
         question: str,
         trace: Trace,
@@ -58,20 +58,34 @@ class ChatbotAgent:
             trimester_key = parse_trimester(question)
             if trimester_key:
                 plan = (self._programme_plan or {}).get("Intelligent Robotics", {})
-                result = recommend_for_trimester(
-                    trimester_key,
-                    passed,
-                    failed,
-                    plan,
-                    self._course_catalog or {},
-                )
+                
+                # Check if the trimester exists in the plan
+                if trimester_key not in plan:
+                    answer = f"I don't have course information for {trimester_key.replace('_', ' ').replace('T', 'Semester ')}. Please check the year and semester."
+                    answer_type = "planning_error"
+                else:
+                    result = recommend_for_trimester(
+                        trimester_key,
+                        passed,
+                        failed,
+                        plan,
+                        self._course_catalog or {},
+                    )
 
-                pretty = trimester_key.replace("_", " ").replace("T", "Sem ")
-                rec = "\n".join(f"- {c}" for c in result["recommended"]) or "- (none)"
-                blk = "\n".join(f"- {c}" for c in result["blocked"]) or "- (none)"
+                    pretty = trimester_key.replace("_", " ").replace("T", "Semester ")
+                    
+                    if result["recommended"]:
+                        rec = "\n".join(f"- {c}" for c in result["recommended"])
+                    else:
+                        rec = "- (none available)"
+                    
+                    if result["blocked"]:
+                        blk = "\n".join(f"- {c}" for c in result["blocked"])
+                    else:
+                        blk = "- (none)"
 
-                answer = f"Recommended for {pretty}:\n{rec}\n\nNot eligible yet:\n{blk}"
-                answer_type = "planning"
+                    answer = f"📚 Recommended courses for {pretty}:\n{rec}\n\n🔒 Not eligible yet:\n{blk}"
+                    answer_type = "planning"
             else:
                 answer = answer_fail_question(
                     question,
@@ -133,8 +147,44 @@ class ChatbotAgent:
                     answer_type = "course_info"
                 else:
                     if use_context and context:
-                        answer = "Here is what I found in the documents:\n\n" + context
-                        answer_type = "retrieval"
+                        # RAG Generation via LLM
+                        from app.llm.deepseek import deepseek_chat
+                        
+                        msgs = [
+                            {
+                                "role": "system",
+                                "content": """You are HIVE, an intelligent academic advisor for MMU Engineering Faculty.
+
+Your role:
+- Help students understand course requirements, prerequisites, and program structures
+- Guide students in planning their academic journey
+- Provide accurate information about Intelligent Robotics and Applied AI programs
+- Answer questions about course content, credits, and assessments
+
+Guidelines:
+- Use the provided context to answer accurately
+- If the context doesn't contain the answer, politely say you don't have that information
+- Format responses clearly with bullet points or numbered lists when appropriate
+- Be encouraging and supportive
+- Mention course codes (e.g., ACE6143) when relevant
+- If asked about prerequisites, be specific about which courses are required
+
+Context will be provided from:
+- Course catalog with detailed course information
+- Program structures for Intelligent Robotics and Applied AI
+- Q&A pairs about common student questions"""
+                            },
+                            {
+                                "role": "user",
+                                "content": f"Context:\n{context}\n\nStudent Question: {question}"
+                            }
+                        ]
+                        try:
+                            answer = await deepseek_chat(msgs, temperature=0.3)
+                            answer_type = "retrieval_generation"
+                        except Exception:
+                            answer = "I'm having trouble connecting to my brain. Please try again."
+                            answer_type = "error"
                     else:
                         answer = FALLBACK_ANSWER
                         answer_type = "fallback"
