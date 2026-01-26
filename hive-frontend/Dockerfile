@@ -5,6 +5,7 @@ COPY index.html /usr/share/nginx/html/
 COPY admin-enhanced.html /usr/share/nginx/html/
 COPY *.css /usr/share/nginx/html/
 COPY *.js /usr/share/nginx/html/
+COPY logo.png /usr/share/nginx/html/
 
 # Health check for container monitoring
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \

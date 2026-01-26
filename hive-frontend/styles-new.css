@@ -370,16 +370,12 @@ textarea {
     }
 }
 
-/* User messages - align right */
-.message.user {
-    margin-left: auto;
-    margin-right: 0;
+.message-container.user-message {
+    justify-content: flex-end;
 }
 
-/* Assistant messages - align left */
-.message.assistant {
-    margin-left: 0;
-    margin-right: auto;
+.message-container.assistant-message {
+    justify-content: flex-start;
 }
 
 /* ===== MESSAGE BUBBLES ===== */
@@ -479,7 +475,7 @@ textarea {
 }
 
 /* ===== INPUT FIELD ===== */
-.input-area textarea {
+.message-input {
     flex: 1;
     min-height: 44px;
     max-height: 200px;
@@ -493,23 +489,14 @@ textarea {
     resize: none;
     transition: all var(--transition-normal);
     line-height: 1.5;
-    box-shadow: var(--shadow-sm);
-    outline: none;
-    overflow-y: auto;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
 }
 
-.input-area textarea::-webkit-scrollbar {
-    display: none;
-}
-
-.input-area textarea:focus {
+.message-input:focus {
     border-color: hsl(var(--color-primary));
     box-shadow: 0 0 0 3px hsl(var(--color-primary) / 0.1);
 }
 
-.input-area textarea::placeholder {
+.message-input::placeholder {
     color: hsl(var(--color-text-muted));
 }
 

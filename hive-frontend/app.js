@@ -131,6 +131,14 @@ function autoResize() {
     messageInput.style.height = Math.min(messageInput.scrollHeight, 120) + "px";
 }
 
+function handleKeyPress(e) {
+    // Enter key sends message (unless Shift is held for new line)
+    if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        sendMessage();
+    }
+}
+
 async function sendMessage() {
     const message = messageInput.value.trim();
     if (!message) return;
