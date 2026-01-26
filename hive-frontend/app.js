@@ -1,5 +1,13 @@
 import { API_BASE, USER_ID_KEY, VOICE_SETTINGS_KEY } from './config.js';
 
+// Voice settings state
+let voiceSettings = {
+    default_voice: "female_en",
+    provider: "browser",
+    auto_play: true
+};
+let wasLastInputVoice = false;
+
 // DOM Elements
 const chatMessages = document.getElementById("chatMessages");
 const messageInput = document.getElementById("messageInput");
@@ -7,56 +15,94 @@ const sendBtn = document.getElementById("sendBtn");
 const voiceBtn = document.getElementById("voiceBtn");
 const attachBtn = document.getElementById("attachBtn");
 const settingsBtn = document.getElementById("settingsBtn");
-const voiceIndicator = document.getElementById("voiceIndicator");
 const settingsModal = document.getElementById("settingsModal");
 const closeSettings = document.getElementById("closeSettings");
 const voiceProfile = document.getElementById("voiceProfile");
 const autoPlayVoice = document.getElementById("autoPlayVoice");
+const themeToggle = document.getElementById("themeToggle");
+const newSessionBtn = document.getElementById("newSessionBtn");
 
 const userId = localStorage.getItem(USER_ID_KEY) || crypto.randomUUID();
 localStorage.setItem(USER_ID_KEY, userId);
 
+// Voice state
 let isRecording = false;
 let mediaRecorder = null;
 let audioChunks = [];
-let wasLastInputVoice = false;
-let voiceSettings = {
-    default_voice: "female_en",
-    provider: "browser",
-    auto_play: true,
-};
+let recognition = null;
 
-init();
+// Initialize
+document.addEventListener("DOMContentLoaded", init);
+
+// Theme Management
+function loadTheme() {
+    const savedTheme = localStorage.getItem("hive_theme") || "light";
+    document.body.setAttribute("data-theme", savedTheme);
+    // Also set dark-mode class for CSS compatibility
+    document.body.classList.toggle("dark-mode", savedTheme === "dark");
+    updateThemeIcon(savedTheme);
+}
+
+function toggleTheme() {
+    const currentTheme = document.body.getAttribute("data-theme") || "light";
+    const newTheme = currentTheme === "light" ? "dark" : "light";
+    document.body.setAttribute("data-theme", newTheme);
+    // Also toggle dark-mode class for CSS compatibility
+    document.body.classList.toggle("dark-mode", newTheme === "dark");
+    localStorage.setItem("hive_theme", newTheme);
+    updateThemeIcon(newTheme);
+}
+
+function updateThemeIcon(theme) {
+    const themeBtn = document.getElementById("themeToggle");
+    if (themeBtn) {
+        // Icon rotation is handled by CSS based on data-theme attribute
+        // No need to change icon content since we're using CSS transform
+    }
+}
 
 function init() {
+    // Load theme preference
+    loadTheme();
+
     // Auto-resize textarea
     messageInput.addEventListener("input", autoResize);
 
     // Send message handlers
     sendBtn.addEventListener("click", sendMessage);
-    messageInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" && !e.shiftKey) {
-            e.preventDefault();
-            sendMessage();
-        }
-    });
+    messageInput.addEventListener("keydown", handleKeyPress);
 
     // Voice button
     voiceBtn.addEventListener("click", toggleVoiceRecording);
 
-    // Settings
-    settingsBtn.addEventListener("click", () => settingsModal.style.display = "flex");
-    closeSettings.addEventListener("click", () => settingsModal.style.display = "none");
-    settingsModal.addEventListener("click", (e) => {
-        if (e.target === settingsModal) settingsModal.style.display = "none";
+    // Settings modal
+    settingsBtn.addEventListener("click", () => {
+        settingsModal.classList.add("active");
     });
 
+    closeSettings.addEventListener("click", () => {
+        settingsModal.classList.remove("active");
+    });
+
+    settingsModal.addEventListener("click", (e) => {
+        if (e.target === settingsModal) {
+            settingsModal.classList.remove("active");
+        }
+    });
     // Voice settings
     voiceProfile.addEventListener("change", updateVoiceSettings);
     autoPlayVoice.addEventListener("change", updateVoiceSettings);
 
+    // Theme toggle
+    themeToggle.addEventListener("click", toggleTheme);
+
+    // New session
+    if (newSessionBtn) {
+        newSessionBtn.addEventListener("click", resetSession);
+    }
+
     // Quick actions
-    document.querySelectorAll(".quick-action-btn").forEach(btn => {
+    document.querySelectorAll(".quick-action-card").forEach(btn => {
         btn.addEventListener("click", () => {
             const query = btn.getAttribute("data-query");
             messageInput.value = query;
@@ -67,6 +113,13 @@ function init() {
     // Attach button (placeholder)
     attachBtn.addEventListener("click", () => {
         alert("File upload coming soon!");
+    });
+
+    // Close modal with Escape key
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && settingsModal.classList.contains("active")) {
+            settingsModal.classList.remove("active");
+        }
     });
 
     // Load voice settings
@@ -85,6 +138,10 @@ async function sendMessage() {
     messageInput.value = "";
     autoResize();
     addMessage("user", message);
+
+    // Add loading state to send button
+    sendBtn.disabled = true;
+    sendBtn.classList.add('loading');
 
     const loadingId = addThinkingMessage();
 
@@ -114,6 +171,10 @@ async function sendMessage() {
         addMessage("assistant", "Sorry, I'm having trouble connecting. Please try again.");
         console.error("Chat error:", error);
         wasLastInputVoice = false;
+    } finally {
+        // Remove loading state
+        sendBtn.disabled = false;
+        sendBtn.classList.remove('loading');
     }
 }
 
@@ -122,15 +183,20 @@ function addMessage(role, text) {
     messageDiv.className = `message ${role}`;
 
     const avatar = document.createElement("div");
-    avatar.className = "message-avatar";
-    avatar.textContent = role === "user" ? "You" : "🤖";
+    avatar.className = "avatar";
+    avatar.textContent = role === "user" ? "U" : "H";
 
-    const content = document.createElement("div");
-    content.className = "message-content";
-    content.textContent = text;
+    const card = document.createElement("div");
+    card.className = "card";
 
+    const cardContent = document.createElement("div");
+    cardContent.className = "card-content";
+    cardContent.style.padding = "1rem";
+    cardContent.textContent = text;
+
+    card.appendChild(cardContent);
     messageDiv.appendChild(avatar);
-    messageDiv.appendChild(content);
+    messageDiv.appendChild(card);
 
     chatMessages.appendChild(messageDiv);
     scrollToBottom();
@@ -140,30 +206,24 @@ function addMessage(role, text) {
 
 function addThinkingMessage() {
     const thinkingDiv = document.createElement("div");
-    thinkingDiv.className = "message assistant";
+    thinkingDiv.className = "message assistant thinking";
     thinkingDiv.id = `thinking-${Date.now()}`;
 
     const avatar = document.createElement("div");
-    avatar.className = "message-avatar";
-    avatar.textContent = "🤖";
+    avatar.className = "avatar";
+    avatar.textContent = "H";
 
-    const content = document.createElement("div");
-    content.className = "message-content";
-    content.style.fontStyle = "italic";
-    content.style.color = "#666";
+    const card = document.createElement("div");
+    card.className = "card";
 
-    const thinking = document.createElement("div");
-    thinking.className = "message-loading";
-    thinking.innerHTML = "<span></span><span></span><span></span>";
+    const cardContent = document.createElement("div");
+    cardContent.className = "card-content";
+    cardContent.style.padding = "1rem";
+    cardContent.textContent = "Thinking...";
 
-    const thinkingText = document.createElement("span");
-    thinkingText.textContent = " Thinking...";
-    thinkingText.style.marginLeft = "10px";
-
-    content.appendChild(thinking);
-    content.appendChild(thinkingText);
+    card.appendChild(cardContent);
     thinkingDiv.appendChild(avatar);
-    thinkingDiv.appendChild(content);
+    thinkingDiv.appendChild(card);
 
     chatMessages.appendChild(thinkingDiv);
     scrollToBottom();
@@ -211,9 +271,8 @@ async function startRecording() {
         mediaRecorder.start();
         isRecording = true;
 
-        // Update UI
+        // Update UI - add recording class to button
         voiceBtn.classList.add("recording");
-        voiceIndicator.style.display = "flex";
 
     } catch (error) {
         console.error("Microphone access error:", error);
@@ -222,13 +281,13 @@ async function startRecording() {
 }
 
 function stopRecording() {
-    if (mediaRecorder && mediaRecorder.state !== "inactive") {
+    if (mediaRecorder && isRecording) {
         mediaRecorder.stop();
-    }
+        isRecording = false;
 
-    isRecording = false;
-    voiceBtn.classList.remove("recording");
-    voiceIndicator.style.display = "none";
+        // Update UI - remove recording class
+        voiceBtn.classList.remove("recording");
+    }
 }
 
 async function transcribeAudio(audioBlob) {
@@ -266,11 +325,14 @@ async function transcribeAudio(audioBlob) {
 
 // Text-to-Speech
 function speakText(text) {
-    if ("speechSynthesis" in window) {
+    if ("speechSynthesis" in window && voiceSettings.auto_play) {
         // Cancel any ongoing speech
         window.speechSynthesis.cancel();
 
-        const utterance = new SpeechSynthesisUtterance(text);
+        // Remove emojis from text before speaking
+        const cleanText = removeEmojis(text);
+
+        const utterance = new SpeechSynthesisUtterance(cleanText);
 
         // Get available voices
         const voices = window.speechSynthesis.getVoices();
@@ -287,23 +349,35 @@ function speakText(text) {
             selectedVoice = voices.find(v => v.lang.startsWith("en") && v.name.toLowerCase().includes("male")) ||
                 voices.find(v => v.lang.startsWith("en") && v.name.toLowerCase().includes("david")) ||
                 voices.find(v => v.lang.startsWith("en"));
-        } else if (profile === "female_ms") {
-            selectedVoice = voices.find(v => v.lang.startsWith("ms")) ||
-                voices.find(v => v.lang.startsWith("id"));
-        } else if (profile === "male_ms") {
-            selectedVoice = voices.find(v => v.lang.startsWith("ms")) ||
-                voices.find(v => v.lang.startsWith("id"));
         }
 
         if (selectedVoice) {
             utterance.voice = selectedVoice;
         }
 
-        utterance.rate = 0.9;
+        utterance.rate = 1.0;
         utterance.pitch = 1.0;
+        utterance.volume = 1.0;
 
         window.speechSynthesis.speak(utterance);
     }
+}
+
+// Remove emojis from text
+function removeEmojis(text) {
+    // Remove all emojis using regex
+    return text.replace(/[\u{1F600}-\u{1F64F}]/gu, '') // Emoticons
+        .replace(/[\u{1F300}-\u{1F5FF}]/gu, '') // Misc Symbols and Pictographs
+        .replace(/[\u{1F680}-\u{1F6FF}]/gu, '') // Transport and Map
+        .replace(/[\u{1F1E0}-\u{1F1FF}]/gu, '') // Flags
+        .replace(/[\u{2600}-\u{26FF}]/gu, '') // Misc symbols
+        .replace(/[\u{2700}-\u{27BF}]/gu, '') // Dingbats
+        .replace(/[\u{1F900}-\u{1F9FF}]/gu, '') // Supplemental Symbols and Pictographs
+        .replace(/[\u{1FA00}-\u{1FA6F}]/gu, '') // Chess Symbols
+        .replace(/[\u{1FA70}-\u{1FAFF}]/gu, '') // Symbols and Pictographs Extended-A
+        .replace(/[\u{FE00}-\u{FE0F}]/gu, '') // Variation Selectors
+        .replace(/[\u{200D}]/gu, '') // Zero Width Joiner
+        .trim();
 }
 
 // Voice Settings - Using localStorage for persistence
@@ -408,21 +482,17 @@ async function resetSession() {
     }
 }
 
-// Initialize new handlers
+// Update memory status after assistant messages
 document.addEventListener("DOMContentLoaded", () => {
-    const newSessionBtn = document.getElementById("newSessionBtn");
-    if (newSessionBtn) {
-        newSessionBtn.addEventListener("click", resetSession);
-    }
-
-    // Update memory status after each response
+    // Override addMessage to update memory status after assistant responses
     const originalAddMessage = addMessage;
     window.addMessage = function (role, text) {
-        originalAddMessage(role, text);
+        const result = originalAddMessage(role, text);
         if (role === "assistant") {
             // Update memory status after assistant response
             setTimeout(updateMemoryStatus, 500);
         }
+        return result;
     };
 });
 

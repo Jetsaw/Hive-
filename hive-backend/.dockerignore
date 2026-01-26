@@ -1,11 +1,11 @@
-# Exclude from context
+# Python cache & artifacts
 __pycache__
 *.pyc
 *.pyo
 *.pyd
 .Python
-env
-venv
+*.so
+*.egg-info/
 pip-log.txt
 pip-delete-this-directory.txt
 .tox
@@ -16,14 +16,40 @@ nosetests.xml
 coverage.xml
 *.cover
 *.log
-.git
-.gitignore
+
+# Virtual environments
+env
+venv
+.venv
+ENV/
+
+# Testing
 .mypy_cache
 pytest_cache
 .pytest_cache
 
-# Data (if you want fresh container data)
-# data/
+# Test files (CRITICAL - saves 79KB+ from JSON results)
+*_test_results.json
+*_results.json
+test_*.py
+tests/
+test-results/
 
-# Config
+# Development files
 .env
+README.md
+README*.md
+
+# Git
+.git
+.gitignore
+
+# OS & IDE
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Optional: Exclude data folder if you want fresh container data
+# data/

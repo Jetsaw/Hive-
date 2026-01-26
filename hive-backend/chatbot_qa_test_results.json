@@ -1,0 +1,482 @@
+[
+  {
+    "question": "What subjects are in Year 1?",
+    "answer": "ACE6173 \u2014 Software Engineering\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "What courses do I take in Trimester 1?",
+    "answer": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+    "length": 60,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Show me Year 2 Trimester 3 courses",
+    "answer": "AAP6136 \u2014 Final Year Project 1\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What's the course structure for Year 3?",
+    "answer": "ACE6123 \u2014 Algorithms and Data Structures\nCredits: 3\nPrerequisite: None",
+    "length": 70,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "List all subjects in first semester",
+    "answer": "ACE6293 \u2014 Advanced Computer Architecture and Parallel Computing\nCredits: 3\nPrerequisite: None",
+    "length": 93,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "What subjects are in Year 1 for Applied AI?",
+    "answer": "ACE6173 \u2014 Software Engineering\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "Show me Intelligent Robotics Year 2 courses",
+    "answer": "AAP6136 \u2014 Final Year Project 1\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What's in Applied AI Trimester 2620?",
+    "answer": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+    "length": 60,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Intelligent Robotics Year 1 subjects",
+    "answer": "AAP6136 \u2014 Final Year Project 1\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "Applied AI course list for Year 3",
+    "answer": "AAP6136 \u2014 Final Year Project 1\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What is ACE6313?",
+    "answer": "ACE6313 \u2014 Machine Learning Concepts and Technologies\nCredits: 3\nPrerequisite: None",
+    "length": 82,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 11
+  },
+  {
+    "question": "Tell me about AMT6113",
+    "answer": "AMT6113 \u2014 Engineering Mathematics 1\nCredits: 3\nPrerequisite: None",
+    "length": 65,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "What is ACE6143?",
+    "answer": "ACE6143 \u2014 Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+    "length": 74,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "Explain ACE6123",
+    "answer": "ACE6123 \u2014 Algorithms and Data Structures\nCredits: 3\nPrerequisite: None",
+    "length": 70,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What's ACE6153?",
+    "answer": "ACE6153 \u2014 Operating Systems\nCredits: 3\nPrerequisite: None",
+    "length": 57,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "What are the prerequisites for ACE6313?",
+    "answer": "Yes, you can take ACE6313. Its prerequisites are satisfied.",
+    "length": 59,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Prerequisites for Machine Learning?",
+    "answer": "Tell me the course name or code so I can check eligibility.",
+    "length": 59,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "What do I need before taking ACE6323?",
+    "answer": "ACE6323 \u2014 Cloud Computing\nCredits: 3\nPrerequisite: None",
+    "length": 55,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "Requirements for Deep Learning?",
+    "answer": "ACE6333 \u2014 Deep Learning and Generative AI Technology\nCredits: 3\nPrerequisite: None",
+    "length": 82,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "Prerequisites for NLP course?",
+    "answer": "Tell me the course name or code so I can check eligibility.",
+    "length": 59,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "Tell me about machine learning",
+    "answer": "ACE6313 \u2014 Machine Learning Concepts and Technologies\nCredits: 3\nPrerequisite: None",
+    "length": 82,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 11
+  },
+  {
+    "question": "What is deep learning?",
+    "answer": "ACE6333 \u2014 Deep Learning and Generative AI Technology\nCredits: 3\nPrerequisite: None",
+    "length": 82,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "Explain computer vision",
+    "answer": "ACE6113 \u2014 Computer and Program Design\nCredits: 3\nPrerequisite: None",
+    "length": 67,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What's NLP?",
+    "answer": "I can help with prerequisites and planning.\nTry: \u201cIf I fail Math 1, can I take Math 2?\u201d or \u201cPlan Year 1 Sem 2\u201d.",
+    "length": 111,
+    "sentences": 3,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 24
+  },
+  {
+    "question": "Tell me about robotics fundamentals",
+    "answer": "ACE6233 \u2014 Artificial Intelligence Systems and Applications\nCredits: 3\nPrerequisite: None",
+    "length": 88,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 11
+  },
+  {
+    "question": "How many credits is ACE6313?",
+    "answer": "ACE6313 \u2014 Machine Learning Concepts and Technologies\nCredits: 3\nPrerequisite: None",
+    "length": 82,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 11
+  },
+  {
+    "question": "What's the credit value of Math 1?",
+    "answer": "AMT6113 \u2014 Engineering Mathematics 1\nCredits: 3\nPrerequisite: None",
+    "length": 65,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Credits for programming fundamentals",
+    "answer": "ACE6193 \u2014 Object Oriented Programming with C++\nCredits: 3\nPrerequisite: None",
+    "length": 76,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 11
+  },
+  {
+    "question": "Can I take ACE6313 if I failed AMT6113?",
+    "answer": "Yes, you can take AMT6113. Its prerequisites are satisfied.",
+    "length": 59,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "What can I take if I passed Math 1?",
+    "answer": "Tell me the course name or code so I can check eligibility.",
+    "length": 59,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "Plan my Year 1 Semester 2",
+    "answer": "\ud83d\udcda Recommended courses for Year1 Semester 2:\n- ACE6123\n- AMT6123\n- ALE6123\n- AEE6113\n\n\ud83d\udd12 Not eligible yet:\n- (none)",
+    "length": 113,
+    "sentences": 1,
+    "has_emoji": true,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 21
+  },
+  {
+    "question": "What programming courses are there?",
+    "answer": "ACE6173 \u2014 Software Engineering\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "List all math courses",
+    "answer": "ACE6293 \u2014 Advanced Computer Architecture and Parallel Computing\nCredits: 3\nPrerequisite: None",
+    "length": 93,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "What AI courses are available?",
+    "answer": "ACE6173 \u2014 Software Engineering\nCredits: 3\nPrerequisite: None",
+    "length": 60,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "Show me robotics courses",
+    "answer": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+    "length": 60,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "What language courses do I need?",
+    "answer": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+    "length": 60,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "What is the weather?",
+    "answer": "ALE6113 \u2014 Circuit Theory\nCredits: 3\nPrerequisite: None",
+    "length": 54,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "Who is the dean?",
+    "answer": "ALE6113 \u2014 Circuit Theory\nCredits: 3\nPrerequisite: None",
+    "length": 54,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "When is registration?",
+    "answer": "I can help with prerequisites and planning.\nTry: \u201cIf I fail Math 1, can I take Math 2?\u201d or \u201cPlan Year 1 Sem 2\u201d.",
+    "length": 111,
+    "sentences": 3,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 24
+  },
+  {
+    "question": "How do I apply?",
+    "answer": "I can help with prerequisites and planning.\nTry: \u201cIf I fail Math 1, can I take Math 2?\u201d or \u201cPlan Year 1 Sem 2\u201d.",
+    "length": 111,
+    "sentences": 3,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 24
+  },
+  {
+    "question": "What's the tuition fee?",
+    "answer": "ALE6113 \u2014 Circuit Theory\nCredits: 3\nPrerequisite: None",
+    "length": 54,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 8
+  },
+  {
+    "question": "What are prerequisites for ACE6313 and is it in Year 2?",
+    "answer": "Yes, you can take ACE6313. Its prerequisites are satisfied.",
+    "length": 59,
+    "sentences": 2,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Tell me about Applied AI programme structure",
+    "answer": "ACE6123 \u2014 Algorithms and Data Structures\nCredits: 3\nPrerequisite: None",
+    "length": 70,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "What's different between Applied AI and Robotics?",
+    "answer": "ACE6113 \u2014 Computer and Program Design\nCredits: 3\nPrerequisite: None",
+    "length": 67,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 10
+  },
+  {
+    "question": "Can I switch from Robotics to Applied AI?",
+    "answer": "Tell me the course name or code so I can check eligibility.",
+    "length": 59,
+    "sentences": 1,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 12
+  },
+  {
+    "question": "Hi",
+    "answer": "Hi \ud83d\udc4b I\u2019m HIVE, your Intelligent Robotics academic advisor.",
+    "length": 58,
+    "sentences": 1,
+    "has_emoji": true,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Hello",
+    "answer": "Hi \ud83d\udc4b I\u2019m HIVE, your Intelligent Robotics academic advisor.",
+    "length": 58,
+    "sentences": 1,
+    "has_emoji": true,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 9
+  },
+  {
+    "question": "Hey there",
+    "answer": "I can help with prerequisites and planning.\nTry: \u201cIf I fail Math 1, can I take Math 2?\u201d or \u201cPlan Year 1 Sem 2\u201d.",
+    "length": 111,
+    "sentences": 3,
+    "has_emoji": false,
+    "is_error": false,
+    "is_concise": true,
+    "word_count": 24
+  }
+]

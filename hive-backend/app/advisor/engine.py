@@ -6,7 +6,7 @@ from typing import Dict, List, Tuple, Optional
 
 COURSE_CODE_RE = re.compile(r"\b[A-Z]{3}\d{4}\b")
 
-# ---------- Normalization ----------
+
 def _norm(s: str) -> str:
     s = (s or "").lower().strip()
     s = re.sub(r"[^a-z0-9\s]", " ", s)
@@ -14,7 +14,11 @@ def _norm(s: str) -> str:
     return s
 
 
-# ---------- Common student aliases ----------
+MIN_COURSES_FOR_VALID_CATALOG = 20
+FUZZY_MATCH_CUTOFF = 0.72
+MIN_TOKEN_LENGTH = 3
+MIN_TOKEN_OVERLAP_SCORE = 1
+
 ALIASES = {
     "math 1": "AMT6113",
     "math 2": "AMT6123",
@@ -31,7 +35,6 @@ ALIASES = {
 }
 
 
-# ---------- Load FAIE KB ----------
 def load_faie_kb() -> Tuple[Dict, Dict, Dict]:
     """
     Returns (kb_raw, code_map, name_map)
@@ -77,8 +80,7 @@ def load_faie_kb() -> Tuple[Dict, Dict, Dict]:
 
         code_map, name_map = build_maps_from_courses(courses)
 
-        # ✅ If it looks like a real catalog (many courses), use it
-        if len(code_map) >= 20:
+        if len(code_map) >= MIN_COURSES_FOR_VALID_CATALOG:
             return raw, code_map, name_map
 
         # Otherwise: fall through to course_catalog.json
@@ -100,92 +102,79 @@ def load_faie_kb() -> Tuple[Dict, Dict, Dict]:
     return catalog, code_map, name_map
 
 
-
-# ---------- Resolve course from student text ----------
 def resolve_course_from_text(
     text: str, code_map: Dict, name_map: Dict
 ) -> Optional[str]:
     raw = text or ""
 
-    # 1) Explicit course code
-    m = COURSE_CODE_RE.search(raw.upper())
-    if m:
-        code = m.group(0)
+    match = COURSE_CODE_RE.search(raw.upper())
+    if match:
+        code = match.group(0)
         if code in code_map:
             return code
 
-    q = _norm(raw)
-    if not q:
+    normalized_query = _norm(raw)
+    if not normalized_query:
         return None
 
-    # 2) Alias contains
-    for k, v in ALIASES.items():
-        if k in q:
-            if v == "ITT":
-                for nm, cc in name_map.items():
-                    if "industrial training" in nm:
-                        return cc
-            if v in code_map:
-                return v
+    for alias, course_code in ALIASES.items():
+        if alias in normalized_query:
+            if course_code == "ITT":
+                for course_name, code in name_map.items():
+                    if "industrial training" in course_name:
+                        return code
+            if course_code in code_map:
+                return course_code
 
-    # 3) Exact name
-    if q in name_map:
-        return name_map[q]
+    if normalized_query in name_map:
+        return name_map[normalized_query]
 
-    # 4) Token overlap scoring (BEST for "data communication")
-    tokens = [t for t in q.split() if len(t) >= 3]
-    best = (0, None)
-    for nm, cc in name_map.items():
-        score = sum(1 for t in tokens if t in nm)
-        if score > best[0]:
-            best = (score, cc)
-    if best[0] >= 1:
-        return best[1]
+    tokens = [token for token in normalized_query.split() if len(token) >= MIN_TOKEN_LENGTH]
+    best_score = 0
+    best_course_code = None
+    for course_name, code in name_map.items():
+        score = sum(1 for token in tokens if token in course_name)
+        if score > best_score:
+            best_score = score
+            best_course_code = code
+    if best_score >= MIN_TOKEN_OVERLAP_SCORE:
+        return best_course_code
 
-    # 5) Fuzzy fallback (typos)
     names = list(name_map.keys())
-    hit = difflib.get_close_matches(q, names, n=1, cutoff=0.72)
-    if hit:
-        return name_map[hit[0]]
+    matches = difflib.get_close_matches(normalized_query, names, n=1, cutoff=FUZZY_MATCH_CUTOFF)
+    if matches:
+        return name_map[matches[0]]
 
     return None
 
 
-
 def resolve_course_mentions(text: str, code_map: Dict, name_map: Dict) -> List[str]:
-    t = text or ""
-    nt = _norm(t)
+    raw_text = text or ""
+    normalized_text = _norm(raw_text)
 
     found: List[str] = []
 
-    # 1) Explicit course codes
-    for m in COURSE_CODE_RE.findall(t.upper()):
-        if m not in found:
-            found.append(m)
+    for match in COURSE_CODE_RE.findall(raw_text.upper()):
+        if match not in found:
+            found.append(match)
 
-    # 2) Strong math alias patterns (handles math1/math 1/math2/math 2)
     alias_patterns = [
         (r"\bmath\s*1\b", "AMT6113"),
         (r"\bmath\s*2\b", "AMT6123"),
         (r"\bengineering\s*math\s*1\b", "AMT6113"),
         (r"\bengineering\s*math\s*2\b", "AMT6123"),
     ]
-    for pat, code in alias_patterns:
-        if re.search(pat, nt) and code not in found:
+    for pattern, code in alias_patterns:
+        if re.search(pattern, normalized_text) and code not in found:
             found.append(code)
 
-    # 3) Name substring matches (general courses)
-    # longer names first
-    for nm, cc in sorted(name_map.items(), key=lambda x: len(x[0]), reverse=True):
-        if nm and nm in nt and cc not in found:
-            found.append(cc)
+    for course_name, course_code in sorted(name_map.items(), key=lambda x: len(x[0]), reverse=True):
+        if course_name and course_name in normalized_text and course_code not in found:
+            found.append(course_code)
 
     return found
 
 
-
-
-# ---------- Adviser Logic (unchanged) ----------
 def load_kb() -> Tuple[dict, dict, dict]:
     kb = Path("./data/kb")
     course_catalog = json.loads((kb / "course_catalog.json").read_text(encoding="utf-8"))

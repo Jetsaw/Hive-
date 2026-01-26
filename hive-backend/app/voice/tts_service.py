@@ -26,12 +26,11 @@ class TTSProvider(str, Enum):
     AZURE = "azure"
 
 
-# Voice profile mappings for different providers
 VOICE_MAPPINGS = {
     TTSProvider.OPENAI: {
         VoiceProfile.MALE_EN: "onyx",
         VoiceProfile.FEMALE_EN: "nova",
-        VoiceProfile.MALE_MS: "onyx",  # Fallback to English
+        VoiceProfile.MALE_MS: "onyx",
         VoiceProfile.FEMALE_MS: "nova",
     },
     TTSProvider.ELEVENLABS: {
@@ -69,7 +68,6 @@ async def synthesize_speech(
         provider_str = os.getenv("VOICE_PROVIDER", "browser")
         provider = TTSProvider(provider_str)
     
-    # Browser-native doesn't need backend processing
     if provider == TTSProvider.BROWSER:
         return {
             "audio_data": None,
@@ -78,7 +76,6 @@ async def synthesize_speech(
             "voice": voice_profile.value,
         }
     
-    # Route to appropriate provider
     if provider == TTSProvider.OPENAI:
         return await _synthesize_openai(text, voice_profile)
     elif provider == TTSProvider.ELEVENLABS:

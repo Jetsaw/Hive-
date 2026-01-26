@@ -92,16 +92,27 @@ routing_rules:
     - robotics
   then:
   - action: detect_programme
-  - reply: 'Got it. Do you want the course structure (by term) or details about a
-      specific subject? Example: ''Term 2620 subjects'' or ''What is AAC6153?''.'
-- id: R6_fallback
+  - reply: 'Got it. What do you need? (1) Course structure by term, or (2) Details about a specific subject?'
+- id: R6_structure_without_programme
+  when:
+    and:
+    - contains_any:
+      - term
+      - trimester
+      - year
+      - course structure
+      - study plan
+      - what subjects
+      - what courses
+    - programme_not_set: true
+  then:
+  - reply: 'Which programme? (1) Applied AI or (2) Intelligent Robotics?'
+- id: R7_fallback
   when:
     otherwise: true
   then:
   - action: detect_programme_if_missing
-  - reply: Do you want (1) programme course structure by term, or (2) subject details?
-      For subject details, provide a course code (e.g., AAC6153) or a keyword like
-      'AI ethics'.
+  - reply: 'What do you need? (1) Course structure by term, or (2) Subject details (provide course code like ACE6153)?'
 implementation_notes:
 - 'alias_match: load alias_mapping.yaml and match against user message; set alias_course_code
   if found.'

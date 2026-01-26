@@ -7,25 +7,18 @@ and flags them for admin review.
 
 from typing import Tuple
 
-
-# ===== CONSTANTS =====
-
-# Confidence penalty scores
 PENALTY_UNCERTAIN_PHRASE = 0.4
 PENALTY_NO_RAG_RESULTS = 0.3
 PENALTY_FEW_RAG_RESULTS = 0.15
 PENALTY_SHORT_ANSWER = 0.2
 PENALTY_GENERIC_RESPONSE = 0.25
 
-# Confidence bonus scores
 BONUS_COURSE_CODE_MENTIONED = 0.1
 
-# Thresholds
 MIN_ANSWER_LENGTH = 50
 MIN_RAG_RESULTS_THRESHOLD = 2
 DEFAULT_CONFIDENCE_THRESHOLD = 0.6
 
-# Phrase patterns for detection
 UNCERTAIN_PHRASES = [
     "i don't know",
     "i'm not sure",
@@ -48,8 +41,6 @@ GENERIC_PHRASES = [
 COURSE_CODE_PATTERNS = ["ACE", "MPU", "FKE"]
 
 
-# ===== HELPER FUNCTIONS =====
-
 def has_uncertain_phrases(text: str) -> bool:
     """Check if text contains uncertain phrases."""
     return any(phrase in text for phrase in UNCERTAIN_PHRASES)
@@ -63,9 +54,6 @@ def has_generic_phrases(text: str) -> bool:
 def has_course_code(text: str) -> bool:
     """Check if text mentions specific course codes."""
     return any(code in text.upper() for code in COURSE_CODE_PATTERNS)
-
-
-# ===== MAIN FUNCTIONS =====
 
 def calculate_confidence(
     answer: str,
@@ -86,25 +74,20 @@ def calculate_confidence(
     score = 1.0
     answer_lower = answer.lower()
     
-    # Penalty for uncertain phrases
     if has_uncertain_phrases(answer_lower):
         score -= PENALTY_UNCERTAIN_PHRASE
     
-    # Penalty for no/few RAG results
     if rag_results_count == 0:
         score -= PENALTY_NO_RAG_RESULTS
     elif rag_results_count < MIN_RAG_RESULTS_THRESHOLD:
         score -= PENALTY_FEW_RAG_RESULTS
     
-    # Penalty for very short answers (likely incomplete)
     if len(answer) < MIN_ANSWER_LENGTH:
         score -= PENALTY_SHORT_ANSWER
     
-    # Penalty for generic/vague responses
     if has_generic_phrases(answer_lower):
         score -= PENALTY_GENERIC_RESPONSE
     
-    # Bonus for specific course codes (indicates relevant answer)
     if has_course_code(answer):
         score += BONUS_COURSE_CODE_MENTIONED
     

@@ -1,0 +1,84 @@
+/**
+ * HIVE UI/UX Phase 1-2 Enhancements
+ * Additional styles for improved user experience
+ */
+
+/* ===== MESSAGE ACTIONS & TIMESTAMPS ===== */
+.message-timestamp {
+    font-size: 0.6875rem;
+    color: hsl(var(--muted-foreground));
+    margin-top: 0.25rem;
+    opacity: 0.7;
+}
+
+.message-actions {
+    display: flex;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.message:hover .message-actions {
+    opacity: 1;
+}
+
+.action-btn {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8125rem;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.action-btn:hover {
+    background: hsl(var(--accent));
+    transform: scale(1.05);
+}
+
+.action-btn.active {
+    background: hsl(var(--primary) / 0.1);
+    border-color: hsl(var(--primary));
+    color: hsl(var(--primary));
+}
+
+/* ===== SUGGESTED REPLIES ===== */
+.suggested-replies {
+    margin-top: 1rem;
+}
+
+.suggested-label {
+    font-size: 0.8125rem;
+    color: hsl(var(--muted-foreground));
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.suggestion-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.suggestion-chip {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.8125rem;
+    background: hsl(var(--muted));
+    border: 1px solid hsl(var(--border));
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.suggestion-chip:hover {
+    background: hsl(var(--accent));
+    border-color: hsl(var(--primary));
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.08);
+}

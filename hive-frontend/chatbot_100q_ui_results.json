@@ -1,0 +1,902 @@
+[
+  {
+    "question": "What subjects are in Year 1 Trimester 1?",
+    "answer": "ERROR: page.waitForSelector: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.message.bot:last-of-type') to be visible\u001b[22m\n",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about ACE6313",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is AMT6113?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Programming Fundamentals?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about English for Communication",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What courses are in Year 1 Trimester 2?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is AMT6123?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Data Structures",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Object Oriented Programming?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What math courses are in Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the credit value for ACE6173?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Engineering Mathematics 1",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is ARC6113?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Introduction to Robotics",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What programming languages are taught in Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the total credits for Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Are there any electives in Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is MPU?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about soft skills courses",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the structure of Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about the Intelligent Robotics programme",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Applied AI about?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What's the difference between Robotics and AI programmes?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How long is the Intelligent Robotics programme?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What specializations are available?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I take AI courses as a Robotics student?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What careers can I pursue with Intelligent Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about the Applied AI curriculum",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the focus of Intelligent Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Are there any internship opportunities?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What companies hire Robotics graduates?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Is there a final year project?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is industrial training?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How many trimesters are there?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the programme structure?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Are there any competitions or hackathons?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I do research?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What labs and equipment are available?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Is there international collaboration?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What makes this programme unique?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "If I fail Math 1, can I take Math 2?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What are the prerequisites for Machine Learning?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I take OOP without Programming Fundamentals?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What courses can I take if I passed Math 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Do I need Math 2 before taking Statistics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What are the core courses for Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I skip any prerequisites?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What happens if I fail a prerequisite course?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How do I plan my Year 2 courses?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What electives are available?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I take courses from other faculties?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What if I want to change my specialization?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How many courses can I take per trimester?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is the minimum credit requirement?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I graduate early?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What if I need to repeat a course?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How do prerequisites work?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Can I take advanced courses in Year 1?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is academic advising?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "How do I check my progress?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Machine Learning Fundamentals?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Neural Networks",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Deep Learning?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Computer Vision",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Natural Language Processing?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Reinforcement Learning",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is AI Ethics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Pattern Recognition",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Data Mining?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Big Data Analytics",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Intelligent Systems?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Expert Systems",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Knowledge Representation?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Fuzzy Logic",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Genetic Algorithms?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about AI Applications",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Cognitive Computing?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about AI in Healthcare",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Autonomous Systems?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about AI and IoT",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Robotics Fundamentals",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Robot Vision?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Control Systems",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Mechatronics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Sensors and Actuators",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Robot Kinematics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Robot Dynamics",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Mobile Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Manipulation and Grasping",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Human-Robot Interaction?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Robot Operating System",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is SLAM?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Path Planning",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Swarm Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Industrial Automation",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Embedded Systems for Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Robot Design",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Soft Robotics?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "Tell me about Collaborative Robots",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  },
+  {
+    "question": "What is Robot Simulation?",
+    "answer": "ERROR: locator.fill: Target page, context or browser has been closed",
+    "sentences": 0,
+    "words": 0,
+    "hasEmoji": false,
+    "isConcise": false,
+    "error": true
+  }
+]

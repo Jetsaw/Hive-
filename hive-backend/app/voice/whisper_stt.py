@@ -10,7 +10,6 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-# Lazy import to avoid loading model at startup
 _whisper_model = None
 
 
@@ -46,7 +45,6 @@ async def transcribe_audio(
     Returns:
         dict with 'text', 'language', and 'confidence'
     """
-    # Save to temporary file
     suffix = Path(filename).suffix or ".wav"
     with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:
         tmp.write(audio_data)
@@ -55,7 +53,6 @@ async def transcribe_audio(
     try:
         model = get_whisper_model()
         
-        # Transcribe with optional language hint
         options = {}
         if language:
             options["language"] = language
@@ -73,7 +70,6 @@ async def transcribe_audio(
         raise
     
     finally:
-        # Cleanup temp file
         try:
             os.unlink(tmp_path)
         except Exception as e:
@@ -94,7 +90,6 @@ def _calculate_confidence(result: dict) -> float:
     if not segments:
         return 0.0
     
-    # Average the 'no_speech_prob' (inverted)
     confidences = [1.0 - seg.get("no_speech_prob", 0.5) for seg in segments]
     return sum(confidences) / len(confidences)
 

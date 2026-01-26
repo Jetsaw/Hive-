@@ -1,4 +1,30 @@
+# Git
 .git
 .gitignore
+
+# Dependencies (not needed - using static files only)
 node_modules
+
+# Test artifacts (CRITICAL - saves 100KB+)
+test-results/
+playwright-report/
+tests/
+*.spec.js
+playwright.config.js
+
+# Development/Documentation
+README-TESTING.md
+package.json
+package-lock.json
+
+# Build files
 Dockerfile
+.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

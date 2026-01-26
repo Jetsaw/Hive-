@@ -12,17 +12,19 @@ from app.rag.query_router import route_query
 
 router = APIRouter()
 
-# Global caches for OLD system (kept for backward compatibility)
+PROGRAMME_DETECTION_CONFIDENCE_THRESHOLD = 0.7
+MAX_CONTEXT_CHUNKS = 6
+STRUCTURE_LAYER_TOP_K = 3
+DETAILS_LAYER_TOP_K = 3
+
 GLOBAL_INDEX = None
 GLOBAL_METAS = None
 
-# NEW dual-layer indices
 STRUCTURE_INDEX = None
 STRUCTURE_METAS = None
 DETAILS_INDEX = None
 DETAILS_METAS = None
 
-# Session manager
 SESSION_MANAGER = None
 
 CHATBOT_AGENT = ChatbotAgent()
@@ -63,31 +65,25 @@ async def chat(req: ChatReq):
     trace = Trace()
     save_message(user_id, "user", question)
 
-    # === NEW RAG SYSTEM ===
-    # Get or create session
     session = SESSION_MANAGER.get_session(user_id)
     
-    # 1. Programme Detection
     detection = detect_programme(
         question, 
         SESSION_MANAGER.get_context(user_id)
     )
     
-    if detection.programme and detection.confidence > 0.7 and not session.programme:
+    if detection.programme and detection.confidence > PROGRAMME_DETECTION_CONFIDENCE_THRESHOLD and not session.programme:
         SESSION_MANAGER.set_programme(user_id, detection.programme)
         session = SESSION_MANAGER.get_session(user_id)
     
-    # 2. Query Routing
     route = route_query(question, session)
     
-    # 3. Alias Resolution
     course_codes = route.detected_course_codes.copy() if route.detected_course_codes else []
     
     if route.requires_course_code and not course_codes:
         resolved = resolve_aliases(question, session.programme)
         course_codes.extend([r['course_code'] for r in resolved])
     
-    # 4. Layer-aware Retrieval
     results = []
     context_parts = []
     
@@ -97,7 +93,7 @@ async def chat(req: ChatReq):
             STRUCTURE_METAS,
             question,
             programme=session.programme,
-            top_k=3
+            top_k=STRUCTURE_LAYER_TOP_K
         )
         results.extend(structure_results)
         
@@ -110,14 +106,13 @@ async def chat(req: ChatReq):
             DETAILS_METAS,
             question,
             course_codes=course_codes,
-            top_k=3
+            top_k=DETAILS_LAYER_TOP_K
         )
         results.extend(details_results)
         
         for r in details_results:
             context_parts.append(f"[DETAILS - {r.get('course_code', 'N/A')}] {r.get('text', '')}")
     
-    # Fallback to OLD system if new system has no results
     if not context_parts and GLOBAL_INDEX and GLOBAL_METAS:
         reflection = await REFLECTION_AGENT.reflect(question, trace)
         retrieval = RETRIEVER_AGENT.retrieve(
@@ -128,18 +123,15 @@ async def chat(req: ChatReq):
         )
         context = retrieval["context"]
     else:
-        # Use new system context
-        context = "\n\n".join(context_parts[:6])  # Limit to top 6 chunks
+        context = "\n\n".join(context_parts[:MAX_CONTEXT_CHUNKS])
     
-    # 5. Generate Response
     response = await CHATBOT_AGENT.answer(
         question,
         trace,
         context=context,
         use_context=True if context else False,
     )
-
-    # 6. Evaluation (optional - can be disabled for speed)
+    
     evaluation = await REFLECTION_AGENT.evaluate(
         question,
         response["answer"],
@@ -155,27 +147,20 @@ async def chat(req: ChatReq):
             use_context=True,
         )
 
-    # 7. Update Session with Conversation Pair
-    # Add conversation pair (auto-summarizes if needed)
     await SESSION_MANAGER.add_conversation_pair(user_id, question, response["answer"])
     
-    # Also update old history system for backward compatibility
     SESSION_MANAGER.add_to_history(user_id, "user", question)
     SESSION_MANAGER.add_to_history(user_id, "assistant", response["answer"])
     
-    # Update session mode based on query type
     if route.query_type == "STRUCTURE_ONLY":
         SESSION_MANAGER.update_session(user_id, {"mode": "STRUCTURE"})
     elif route.query_type == "DETAILS_ONLY":
         SESSION_MANAGER.update_session(user_id, {"mode": "DETAILS"})
     
-    # Save to database
     save_message(user_id, "assistant", response["answer"])
     
-    # Get memory status for response metadata
     memory_status = SESSION_MANAGER.get_memory_status(user_id)
     
-    # 8. Detect and Store Unanswered Questions
     from app.services.unanswered_detector import is_unanswered, get_uncertainty_reason
     from app.repositories.unanswered_repo import save_unanswered_question
     
@@ -185,7 +170,6 @@ async def chat(req: ChatReq):
         rag_results_count=len(results)
     )
     
-    # Store if confidence is low
     if is_low_confidence:
         try:
             uncertainty_reason = get_uncertainty_reason(response["answer"], len(results))
@@ -200,7 +184,6 @@ async def chat(req: ChatReq):
         except Exception as e:
             print(f"Failed to save unanswered question: {e}")
     
-    # Return response with metadata including memory status
     return {
         "answer": response["answer"],
         "trace": trace.to_dict(),
