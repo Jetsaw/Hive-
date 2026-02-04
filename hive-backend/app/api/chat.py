@@ -1,14 +1,21 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from app.agents import ChatbotAgent, ReflectionAgent, RetrieverAgent, Trace
-from app.memory.repo import save_message
 from app.rag.indexer import build_or_load_structure_index, build_or_load_details_index
 from app.rag.retriever import search_structure_layer, search_details_layer
+from app.rag.query_router import route_query
+from app.advisor.alias_resolver import resolve_aliases
+from app.agents.chatbot_agent import ChatbotAgent
+from app.agents.retriever_agent import RetrieverAgent
+from app.agents.reflection_agent import ReflectionAgent
 from app.advisor.session_manager import get_session_manager
 from app.advisor.programme_detection import detect_programme
-from app.advisor.alias_resolver import resolve_aliases
-from app.rag.query_router import route_query
+from app.advisor.context_filters import parse_year_level, apply_context_filters
+from app.agents.trace import Trace
+from app.memory.repo import save_message
+from pathlib import Path
+
+
 
 router = APIRouter()
 
@@ -48,7 +55,10 @@ def initialize_new_rag_system():
         DETAILS_INDEX, DETAILS_METAS = build_or_load_details_index()
     
     if SESSION_MANAGER is None:
-        SESSION_MANAGER = get_session_manager()
+        from pathlib import Path
+        from app.core.config import settings
+        session_storage = Path(settings.DATA_DIR) / "sessions"
+        SESSION_MANAGER = get_session_manager(storage_dir=session_storage)
 
 
 @router.post("/chat")
@@ -72,9 +82,97 @@ async def chat(req: ChatReq):
         SESSION_MANAGER.get_context(user_id)
     )
     
+    print(f"[CHAT] Programme detection result: programme={detection.programme}, confidence={detection.confidence}, threshold={PROGRAMME_DETECTION_CONFIDENCE_THRESHOLD}")
+    print(f"[CHAT] Session programme before: {session.programme}")
+    
+    # NEW: Extract name from introduction if present
+    import re
+    name_patterns = [
+        r"I'm ([A-Z][a-z]+)",
+        r"I am ([A-Z][a-z]+)",
+        r"my name is ([A-Z][a-z]+)",
+        r"call me ([A-Z][a-z]+)",
+        r"this is ([A-Z][a-z]+)"
+    ]
+    
+    for pattern in name_patterns:
+        match = re.search(pattern, question, re.IGNORECASE)
+        if match:
+            name = match.group(1).capitalize()
+            if not session.user_name:
+                SESSION_MANAGER.set_user_name(user_id, name)
+                session = SESSION_MANAGER.get_session(user_id)
+                print(f"[CHAT] Extracted and stored user name: {name}")
+            break
+    
+    # NEW: If programme was just detected, return acknowledgment response
+    programme_just_detected = False
     if detection.programme and detection.confidence > PROGRAMME_DETECTION_CONFIDENCE_THRESHOLD and not session.programme:
+        print(f"[CHAT] Setting programme to: {detection.programme}")
         SESSION_MANAGER.set_programme(user_id, detection.programme)
         session = SESSION_MANAGER.get_session(user_id)
+        print(f"[CHAT] Session programme after: {session.programme}")
+        programme_just_detected = True
+        
+        # PRIORITY FIX: Don't immediately return greeting if user asked a detailed question
+        # Check if this is an actual course question that needs RAG answer
+        detailed_question_keywords = [
+            "what is", "about", "prerequisite", "credit", "assessment",
+            "topics", "cover", "lab", "how is", "does", "how many"
+        ]
+        is_detailed_question = any(kw in question.lower() for kw in detailed_question_keywords)
+        
+        # Only return greeting if this is NOT a detailed question
+        if not is_detailed_question:
+            # Format programme name for display
+            programme_name = detection.programme.value.replace('_', ' ').title() if hasattr(detection.programme, 'value') else str(detection.programme)
+            
+            # Include name in greeting if we have it
+            greeting = f"Hi{' ' + session.user_name if session.user_name else ''}! Great to meet you!"
+            welcome_response = f"{greeting} I see you're interested in {programme_name}. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?"
+            save_message(user_id, "assistant", welcome_response)
+            SESSION_MANAGER.add_to_history(user_id, "assistant", welcome_response)
+            return {"response": welcome_response, "type": "programme_acknowledgment"}
+        # If it IS a detailed question, continue to RAG retrieval below
+    
+    # NEW: Handle recap/memory queries
+    recap_intents = [
+        "what's my name", "whats my name", "who am i",
+        "what programme", "which programme", "my programme",
+        "remind me what", "what did i", "what was my"
+    ]
+    
+    query_lower = question.lower()
+    if any(intent in query_lower for intent in recap_intents):
+        # Build recap response based on available session data
+        recap_parts = []
+        
+        if "name" in query_lower:
+            if session.user_name:
+                recap_parts.append(f"Your name is {session.user_name}.")
+            else:
+                recap_parts.append("I don't have your name stored yet. Feel free to introduce yourself!")
+        
+        if "programme" in query_lower or "studying" in query_lower:
+            if session.programme:
+                programme_name = session.programme.value.replace('_', ' ').title() if hasattr(session.programme, 'value') else str(session.programme)
+                recap_parts.append(f"You're interested in {programme_name}.")
+            else:
+                recap_parts.append("You haven't mentioned a programme yet. What programme are you interested in?")
+        
+        # If we have both and query is general
+        if not recap_parts and (session.user_name or session.programme):
+            if session.user_name:
+                recap_parts.append(f"Your name is {session.user_name}.")
+            if session.programme:
+                programme_name = session.programme.value.replace('_', ' ').title() if hasattr(session.programme, 'value') else str(session.programme)
+                recap_parts.append(f"You're studying {programme_name}.")
+        
+        if recap_parts:
+            recap_response = " ".join(recap_parts)
+            save_message(user_id, "assistant", recap_response)
+            SESSION_MANAGER.add_to_history(user_id, "assistant", recap_response)
+            return {"response": recap_response, "type": "recap"}
     
     route = route_query(question, session)
     
@@ -100,12 +198,12 @@ async def chat(req: ChatReq):
         for r in structure_results:
             context_parts.append(f"[STRUCTURE] {r.get('text', '')}")
     
-    if route.should_query_details and course_codes and DETAILS_INDEX and DETAILS_INDEX.ntotal > 0:
+    if route.should_query_details and DETAILS_INDEX and DETAILS_INDEX.ntotal > 0:
         details_results = search_details_layer(
             DETAILS_INDEX,
             DETAILS_METAS,
             question,
-            course_codes=course_codes,
+            course_codes=course_codes if course_codes else None,
             top_k=DETAILS_LAYER_TOP_K
         )
         results.extend(details_results)
@@ -125,29 +223,47 @@ async def chat(req: ChatReq):
     else:
         context = "\n\n".join(context_parts[:MAX_CONTEXT_CHUNKS])
     
-    response = await CHATBOT_AGENT.answer(
-        question,
-        trace,
-        context=context,
-        use_context=True if context else False,
-    )
-    
-    evaluation = await REFLECTION_AGENT.evaluate(
-        question,
-        response["answer"],
-        context,
-        trace,
-    )
-    
-    if evaluation["should_rerun"]:
+    try:
         response = await CHATBOT_AGENT.answer(
             question,
             trace,
             context=context,
-            use_context=True,
+            use_context=True if context else False,
         )
+    except Exception as e:
+        print(f"[ERROR] CHATBOT_AGENT.answer failed: {e}")
+        import traceback
+        traceback.print_exc()
+        return {
+            "answer": f"Sorry, I encountered an error while processing your question. Please try again.",
+            "error": str(e),
+            "trace": trace.to_dict()
+        }
+    
+    try:
+        evaluation = await REFLECTION_AGENT.evaluate(
+            question,
+            response["answer"],
+            context,
+            trace,
+        )
+        
+        if evaluation["should_rerun"]:
+            response = await CHATBOT_AGENT.answer(
+                question,
+                trace,
+                context=context,
+                use_context=True,
+            )
+    except Exception as e:
+        print(f"[ERROR] REFLECTION_AGENT.evaluate failed: {e}")
+        # Continue without reflection if it fails
 
-    await SESSION_MANAGER.add_conversation_pair(user_id, question, response["answer"])
+    try:
+        await SESSION_MANAGER.add_conversation_pair(user_id, question, response["answer"])
+    except Exception as e:
+        print(f"[ERROR] SESSION_MANAGER.add_conversation_pair failed: {e}")
+        # Continue even if session storage fails
     
     SESSION_MANAGER.add_to_history(user_id, "user", question)
     SESSION_MANAGER.add_to_history(user_id, "assistant", response["answer"])

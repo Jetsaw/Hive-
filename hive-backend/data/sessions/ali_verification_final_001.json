@@ -1,0 +1,91 @@
+{
+  "session_id": "ali_verification_final_001",
+  "programme": "Intelligent Robotics",
+  "current_term": null,
+  "selected_course_code": null,
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "Hi! I'm Ali and I'm interested in studying Intelligent Robotics at MMU.",
+        "assistant_message": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T17:56:37.705642",
+        "metadata": {}
+      },
+      {
+        "user_message": "What courses will I take in my first year?",
+        "assistant_message": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T17:59:16.158229",
+        "metadata": {}
+      },
+      {
+        "user_message": "What is Computer and Program Design about?",
+        "assistant_message": "Computer and Program Design covers computer organization, architecture, and design principles at different levels of abstraction. It includes microcontroller programming and hardware interfacing.",
+        "timestamp": "2026-01-28T17:59:42.098047",
+        "metadata": {}
+      },
+      {
+        "user_message": "How is it assessed?",
+        "assistant_message": "Assessment: Project Progress: 30%, Project Report: 40%, Presentation: 30%.",
+        "timestamp": "2026-01-28T18:00:19.857694",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "Hi! I'm Ali and I'm interested in studying Intelligent Robotics at MMU.",
+      "timestamp": "2026-01-28T17:56:37.710778",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T17:56:37.740375",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses will I take in my first year?",
+      "timestamp": "2026-01-28T17:59:16.166674",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T17:59:16.197804",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is Computer and Program Design about?",
+      "timestamp": "2026-01-28T17:59:42.105238",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Computer and Program Design covers computer organization, architecture, and design principles at different levels of abstraction. It includes microcontroller programming and hardware interfacing.",
+      "timestamp": "2026-01-28T17:59:42.147843",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "How is it assessed?",
+      "timestamp": "2026-01-28T18:00:19.863132",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Assessment: Project Progress: 30%, Project Report: 40%, Presentation: 30%.",
+      "timestamp": "2026-01-28T18:00:19.885691",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T17:56:35.902172",
+  "updated_at": "2026-01-28T18:00:19.885718",
+  "metadata": {}
+}

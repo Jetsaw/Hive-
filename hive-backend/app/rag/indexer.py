@@ -191,8 +191,12 @@ def build_or_load_details_index() -> tuple[faiss.Index, list[dict]]:
                 metas.append(json.loads(line))
         return index, metas
     
-    # Build from faie_ai_robotics_combined_qa.jsonl
-    details_file = os.path.join(settings.KB_DIR, "faie_ai_robotics_combined_qa.jsonl")
+    # Build from hive_course_qa_pairs.jsonl (new cleaned data)
+    details_file = os.path.join(settings.KB_DIR, "hive_course_qa_pairs.jsonl")
+    
+    # Fallback to old file if new one doesn't exist
+    if not os.path.exists(details_file):
+        details_file = os.path.join(settings.KB_DIR, "faie_ai_robotics_combined_qa.jsonl")
     
     if not os.path.exists(details_file):
         # Return empty index
@@ -219,10 +223,14 @@ def build_or_load_details_index() -> tuple[faiss.Index, list[dict]]:
                 'course_name': data.get('course_name'),
                 'question': question,
                 'answer': answer,
-                'source': data.get('source'),
+                'source': data.get('source', ''),  # Optional in new schema
                 'layer': 'details',
-                'source_file': 'faie_ai_robotics_combined_qa.jsonl'
+                'source_file': os.path.basename(details_file)
             }
+            
+            # Add tags if present (new schema)
+            if 'tags' in data:
+                meta['tags'] = data['tags']
             
             chunks.extend(simple_chunk(text, meta=meta))
     

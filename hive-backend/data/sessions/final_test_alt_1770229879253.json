@@ -1,0 +1,27 @@
+{
+  "session_id": "final_test_alt_1770229879253",
+  "programme": "Intelligent Robotics",
+  "user_name": "Interested",
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi Interested! Great to meet you! I see you're interested in Intelligent Robotics. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-02-04T18:31:19.586145",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T18:31:19.577549",
+  "updated_at": "2026-02-04T18:31:19.586145",
+  "metadata": {}
+}

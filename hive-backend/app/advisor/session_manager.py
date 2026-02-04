@@ -95,8 +95,11 @@ class SessionState:
     """Session state for a conversation."""
     session_id: str
     programme: Optional[str] = None
-    current_term: Optional[str] = None
-    selected_course_code: Optional[str] = None
+    user_name: Optional[str] = None  # NEW: Store user's name for personalization
+    current_term: Optional[str] = None  # RESTORED: Needed by other code
+    selected_course_code: Optional[str] = None  # RESTORED: Needed by other code
+    passed_courses: List[str] = field(default_factory=list)
+    failed_courses: List[str] = field(default_factory=list)
     mode: str = "GENERAL"  # STRUCTURE | DETAILS | GENERAL
     conversation_window: ConversationWindow = field(default_factory=ConversationWindow)
     history: List[Dict[str, Any]] = field(default_factory=list)  # Deprecated, use conversation_window
@@ -249,6 +252,10 @@ class SessionManager:
     def set_programme(self, session_id: str, programme: str):
         """Set programme for session."""
         self.update_session(session_id, {'programme': programme})
+    
+    def set_user_name(self, session_id: str, user_name: str):
+        """Set user's name for session."""
+        self.update_session(session_id, {'user_name': user_name})
     
     def set_current_term(self, session_id: str, term: str):
         """Set current term for session."""

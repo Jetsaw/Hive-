@@ -79,23 +79,71 @@ class ProgrammeDetector:
         programme = None
         detected_code = None
         
-        # 1. Check explicit programme mention
+        # 1. Check explicit programme mention with natural language patterns
         query_lower = query.lower()
-        if 'applied ai' in query_lower or 'applied artificial intelligence' in query_lower:
-            return DetectionResult(
-                programme=Programme.APPLIED_AI,
-                confidence=1.0,
-                reasons=["Explicit programme mention: Applied AI"],
-                detected_course_code=None
-            )
+        print(f"[PROG DETECT] Query: '{query}'")
+        print(f"[PROG DETECT] Lower: '{query_lower}'")
         
-        if 'intelligent robotics' in query_lower or 'robotics programme' in query_lower:
-            return DetectionResult(
-                programme=Programme.INTELLIGENT_ROBOTICS,
-                confidence=1.0,
-                reasons=["Explicit programme mention: Intelligent Robotics"],
-                detected_course_code=None
-            )
+        # Applied AI detection patterns
+        applied_ai_patterns = [
+            'applied ai',
+            'applied artificial intelligence',
+            'study applied ai',
+            'studying applied ai',
+            'interested in applied ai',
+            'want to study applied ai',
+            'take applied ai',
+            'enroll in applied ai',
+            'enrolled in applied ai',
+            'apply for applied ai',
+            'applying for applied ai'
+        ]
+        
+        for pattern in applied_ai_patterns:
+            if pattern in query_lower:
+                return DetectionResult(
+                    programme=Programme.APPLIED_AI,
+                    confidence=1.0,
+                    reasons=[f"Explicit programme mention: '{pattern}'"],
+                    detected_course_code=None
+                )
+        
+        # Intelligent Robotics detection patterns
+        robotics_patterns = [
+            'intelligent robotics',
+            'robotics programme',
+            'robotics program',
+            'study intelligent robotics',
+            'studying intelligent robotics',
+            'study robotics',
+            'studying robotics',
+            'interested in intelligent robotics',
+            'interested in robotics',
+            'interested in studying intelligent robotics',
+            'interested in studying robotics',
+            'want to study intelligent robotics',
+            'want to study robotics',
+            'take intelligent robotics',
+            'take robotics',
+            'enroll in intelligent robotics',
+            'enroll in robotics',
+            'enrolled in intelligent robotics',
+            'enrolled in robotics',
+            'apply for intelligent robotics',
+            'apply for robotics',
+            'applying for intelligent robotics',
+            'applying for robotics'
+        ]
+        
+        for pattern in robotics_patterns:
+            if pattern in query_lower:
+                print(f"[PROG DETECT] MATCH! Pattern: '{pattern}'")
+                return DetectionResult(
+                    programme=Programme.INTELLIGENT_ROBOTICS,
+                    confidence=1.0,
+                    reasons=[f"Explicit programme mention: '{pattern}'"],
+                    detected_course_code=None
+                )
         
         # 2. Check context for stored programme
         if context and context.get('programme'):

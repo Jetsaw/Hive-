@@ -203,9 +203,6 @@ def search_details_layer(
     if index is None or metas is None or index.ntotal == 0:
         return []
     
-    if not course_codes:
-        return []
-    
     q = embed_query(query).reshape(1, -1)
     scores, ids = index.search(q, min(top_k * FILTER_SEARCH_MULTIPLIER, index.ntotal))
     
@@ -215,21 +212,66 @@ def search_details_layer(
             continue
         meta = metas[idx]
         
-        meta_course_code = meta.get('course_code', '')
-        if meta_course_code not in course_codes:
-            continue
+        # If course_codes provided, filter by them
+        if course_codes:
+            meta_course_code = meta.get('course_code', '')
+            if meta_course_code not in course_codes:
+                continue
         
         results.append({
             "score": float(score),
             "id": meta.get("id"),
-            "course_code": meta_course_code,
+            "course_code": meta.get("course_code"),
             "course_name": meta.get("course_name"),
             "question": meta.get("question"),
             "answer": meta.get("answer"),
             "layer": "details",
             "text": meta.get("text", ""),
-            "source": meta.get("source")
+            "source": meta.get("source"),
+            "tags": meta.get("tags", [])
         })
     
+    # SEMANTIC RE-RANKING: Boost answers matching query intent
+    query_lower = query.lower()
+    
+    for result in results:
+        boost = 0.0
+        tags = result.get("tags", [])
+        question_text = result.get("question", "").lower()
+        
+        # Boost for "about/overview" questions
+        if any(keyword in query_lower for keyword in ["what is", "about", "overview", "describe"]):
+            if "overview" in tags or "topics" in tags:
+                boost += 0.5  # Strong boost for matching tags
+            elif "prerequisite" in tags or "credit" in tags or "assessment" in tags:
+                boost -= 0.3  # Strong penalty for non-overview answers
+        
+        # Boost for prerequisite questions
+        elif any(keyword in query_lower for keyword in ["prerequisite", "pre-req", "prereq", "require"]):
+            if "prerequisite" in tags:
+                boost += 0.5
+            elif "overview" in tags:
+                boost -= 0.2
+        
+        # Boost for assessment questions
+        elif any(keyword in query_lower for keyword in ["assess", "exam", "test", "graded"]):
+            if "assessment" in tags:
+                boost += 0.5
+        
+        # Boost for credit hours questions
+        elif any(keyword in query_lower for keyword in ["credit", "hours", "how many"]):
+            if "credit_hours" in tags:
+                boost += 0.5
+        
+        # Boost for topic questions
+        elif any(keyword in query_lower for keyword in ["topics", "cover", "learn", "content"]):
+            if "topics" in tags or "overview" in tags:
+                boost += 0.5
+        
+        # Apply boost to score (higher score = better match)
+        result["score"] = result["score"] + boost
+        result["boost"] = boost  # For debugging
+    
+    # Re-sort by adjusted score
     results.sort(key=lambda x: x["score"], reverse=True)
     return results[:top_k]

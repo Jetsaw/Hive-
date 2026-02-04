@@ -1,30 +1,46 @@
-# Git
+# Frontend Build Context Optimization
+# Exclude unnecessary files from Docker build context
+
+# Version control
 .git
 .gitignore
 
-# Dependencies (not needed - using static files only)
+# Node modules (if added later)
 node_modules
+npm-debug.log
 
-# Test artifacts (CRITICAL - saves 100KB+)
+# Test files
+tests/
 test-results/
 playwright-report/
-tests/
 *.spec.js
-playwright.config.js
+*.test.js
 
-# Development/Documentation
-README-TESTING.md
-package.json
-package-lock.json
+# Old/backup files
+*-old.*
+*-new.*
+backup/
+minimal-*.css
+minimal-*.js
+*.bak
 
-# Build files
-Dockerfile
-.dockerignore
+# Documentation
+README*.md
+*.md
+
+# Test results
+chatbot_*.json
+*_test_results.json
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
 
 # OS files
 .DS_Store
 Thumbs.db
-.vscode/
-.idea/
-*.swp
-*.swo
+
+# Logs
+*.log

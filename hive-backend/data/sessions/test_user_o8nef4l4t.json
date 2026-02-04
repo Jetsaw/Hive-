@@ -1,0 +1,46 @@
+{
+  "session_id": "test_user_o8nef4l4t",
+  "programme": "Applied AI",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is AAC6133 about?",
+        "assistant_message": "AAC6133 covers responsible AI development and governance frameworks.",
+        "timestamp": "2026-02-04T19:22:12.975477",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-02-04T19:21:55.993102",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is AAC6133 about?",
+      "timestamp": "2026-02-04T19:22:12.975477",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAC6133 covers responsible AI development and governance frameworks.",
+      "timestamp": "2026-02-04T19:22:12.977536",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:21:55.985841",
+  "updated_at": "2026-02-04T19:22:12.977536",
+  "metadata": {}
+}

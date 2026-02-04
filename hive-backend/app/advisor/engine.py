@@ -85,18 +85,21 @@ def load_faie_kb() -> Tuple[Dict, Dict, Dict]:
 
         # Otherwise: fall through to course_catalog.json
 
-    # --- 2) Fallback to course_catalog.json ---
-    cat_path = Path("data/kb/course_catalog.json")
-    catalog = json.loads(cat_path.read_text(encoding="utf-8"))
-
-    # catalog schema: { "ACE6143": {"code": "...", "name": "...", ...}, ... }
+    # --- 2) Fallback to hive_course_catalog_master.jsonl ---
+    cat_path = Path("data/kb/hive_course_catalog_master.jsonl")
+    
+    # Load JSONL format (one course object per line)
     courses = []
-    if isinstance(catalog, dict):
-        for code, obj in catalog.items():
-            if isinstance(obj, dict):
-                c = dict(obj)
-                c.setdefault("code", code)
-                courses.append(c)
+    catalog = {}  # Build dict for backward compatibility
+    
+    with open(cat_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                course = json.loads(line)
+                code = course.get("code", "").upper().strip()
+                if code:
+                    catalog[code] = course
+                    courses.append(course)
 
     code_map, name_map = build_maps_from_courses(courses)
     return catalog, code_map, name_map
@@ -177,7 +180,18 @@ def resolve_course_mentions(text: str, code_map: Dict, name_map: Dict) -> List[s
 
 def load_kb() -> Tuple[dict, dict, dict]:
     kb = Path("./data/kb")
-    course_catalog = json.loads((kb / "course_catalog.json").read_text(encoding="utf-8"))
+    
+    # Load course catalog from JSONL
+    course_catalog = {}
+    cat_path = kb / "hive_course_catalog_master.jsonl"
+    with open(cat_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            if line.strip():
+                course = json.loads(line)
+                code = course.get("code", "").upper().strip()
+                if code:
+                    course_catalog[code] = course
+    
     programme_plan = json.loads((kb / "programme_plan.json").read_text(encoding="utf-8"))
     prereq_graph = json.loads((kb / "prereq_graph.json").read_text(encoding="utf-8"))
     return course_catalog, programme_plan, prereq_graph

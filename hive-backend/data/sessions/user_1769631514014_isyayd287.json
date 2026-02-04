@@ -1,0 +1,196 @@
+{
+  "session_id": "user_1769631514014_isyayd287",
+  "programme": "Applied AI",
+  "user_name": "Sarah",
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is AAC6133 about?",
+        "assistant_message": "AAC6133 covers advanced AI concepts including machine learning algorithms and intelligent systems.",
+        "timestamp": "2026-02-04T18:45:32.290586",
+        "metadata": {}
+      },
+      {
+        "user_message": "hi",
+        "assistant_message": "Hi 👋 I’m HIVE, your Intelligent Robotics academic advisor.",
+        "timestamp": "2026-02-04T18:47:37.476627",
+        "metadata": {}
+      },
+      {
+        "user_message": "math 1",
+        "assistant_message": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+        "timestamp": "2026-02-04T18:47:52.562455",
+        "metadata": {}
+      },
+      {
+        "user_message": "Intelligent Robotics",
+        "assistant_message": "The context provided does not contain the specific assessment breakdown for ACE6123. I don't have that information.",
+        "timestamp": "2026-02-04T18:48:08.438690",
+        "metadata": {}
+      },
+      {
+        "user_message": "How many contact hours does ARE6113 have",
+        "assistant_message": "Contact hours are not specified in the provided outline.",
+        "timestamp": "2026-02-04T18:48:40.524736",
+        "metadata": {}
+      }
+    ],
+    "summary": "📚 Recommended courses for Year1 Semester 2:\n- ACE6123\n- AMT6123\n- ALE6123\n- AEE6113\n\n🔒 Not eligible yet:\n- (none)",
+    "summarized_pair_count": 6,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi Sarah! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-01-28T20:18:34.130507",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I'm Sarah and I want to study Applied Artificial Intelligence.",
+      "timestamp": "2026-01-28T20:19:25.362194",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6233 — Artificial Intelligence Systems and Applications\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T20:19:25.393210",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I'm Sarah and I want to study Applied Artificial Intelligence.",
+      "timestamp": "2026-01-28T20:20:45.296194",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6233 — Artificial Intelligence Systems and Applications\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T20:20:45.317720",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I want to study Intelligent Robotics.",
+      "timestamp": "2026-01-28T20:21:17.336795",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Which year and trimester are you planning for? I can provide the course list.",
+      "timestamp": "2026-01-28T20:21:17.360788",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "My name is Sarah.",
+      "timestamp": "2026-01-28T20:21:34.208584",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+      "timestamp": "2026-01-28T20:21:34.233957",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "You're interested in Applied Ai.",
+      "timestamp": "2026-01-28T20:22:03.722538",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses will I take in my first year?",
+      "timestamp": "2026-01-28T20:23:06.886556",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T20:23:06.916732",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi, I'm interested in Applied AI",
+      "timestamp": "2026-02-04T18:45:16.331688",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+      "timestamp": "2026-02-04T18:45:16.332730",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is AAC6133 about?",
+      "timestamp": "2026-02-04T18:45:32.293731",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAC6133 covers advanced AI concepts including machine learning algorithms and intelligent systems.",
+      "timestamp": "2026-02-04T18:45:32.294743",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "hi",
+      "timestamp": "2026-02-04T18:47:37.479812",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Hi 👋 I’m HIVE, your Intelligent Robotics academic advisor.",
+      "timestamp": "2026-02-04T18:47:37.480328",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "math 1",
+      "timestamp": "2026-02-04T18:47:52.564540",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Which programme? (1) Applied AI or (2) Intelligent Robotics?",
+      "timestamp": "2026-02-04T18:47:52.565578",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Intelligent Robotics",
+      "timestamp": "2026-02-04T18:48:08.441488",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "The context provided does not contain the specific assessment breakdown for ACE6123. I don't have that information.",
+      "timestamp": "2026-02-04T18:48:08.442528",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "How many contact hours does ARE6113 have",
+      "timestamp": "2026-02-04T18:48:40.527778",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Contact hours are not specified in the provided outline.",
+      "timestamp": "2026-02-04T18:48:40.532364",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T20:18:34.066924",
+  "updated_at": "2026-02-04T18:48:40.532364",
+  "metadata": {}
+}

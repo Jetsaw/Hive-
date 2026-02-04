@@ -1,0 +1,64 @@
+{
+  "session_id": "test_user_2hziain0o",
+  "programme": "Applied AI",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is the prerequisite for AAC6133?",
+        "assistant_message": "I don't have information about AAC6133 in my database. Please check the course code.",
+        "timestamp": "2026-02-04T19:27:33.881796",
+        "metadata": {}
+      },
+      {
+        "user_message": "What is ACE6113 about?",
+        "assistant_message": "I don't have that information in my knowledge base.",
+        "timestamp": "2026-02-04T19:27:57.563260",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-02-04T19:27:16.825065",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is the prerequisite for AAC6133?",
+      "timestamp": "2026-02-04T19:27:33.883312",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have information about AAC6133 in my database. Please check the course code.",
+      "timestamp": "2026-02-04T19:27:33.883312",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is ACE6113 about?",
+      "timestamp": "2026-02-04T19:27:57.564529",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have that information in my knowledge base.",
+      "timestamp": "2026-02-04T19:27:57.565116",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:27:16.816108",
+  "updated_at": "2026-02-04T19:27:57.565116",
+  "metadata": {}
+}

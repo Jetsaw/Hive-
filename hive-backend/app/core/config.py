@@ -10,6 +10,9 @@ class Settings(BaseSettings):
     DEEPSEEK_BASE_URL: str = Field(default="https://api.deepseek.com")
     DEEPSEEK_MODEL: str = Field(default="deepseek-chat")
 
+    # LLM Control
+    USE_LLM: bool = Field(default=False, description="Enable LLM generation (set to False for RAG-only mode)")
+
     # Paths
     DATA_DIR: str = Field(default="./data")
     KB_DIR: str = Field(default="./data/kb")

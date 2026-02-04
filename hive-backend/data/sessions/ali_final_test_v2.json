@@ -1,0 +1,79 @@
+{
+  "session_id": "ali_final_test_v2",
+  "programme": "Intelligent Robotics",
+  "current_term": null,
+  "selected_course_code": null,
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What's my name?",
+        "assistant_message": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+        "timestamp": "2026-01-28T19:57:44.369354",
+        "metadata": {}
+      },
+      {
+        "user_message": "What courses will I take in my first year?",
+        "assistant_message": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T19:57:46.259757",
+        "metadata": {}
+      },
+      {
+        "user_message": "Can you remind me what programme I'm studying?",
+        "assistant_message": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+        "timestamp": "2026-01-28T19:57:47.722706",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Programme.INTELLIGENT_ROBOTICS. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-01-28T19:57:42.828347",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What's my name?",
+      "timestamp": "2026-01-28T19:57:44.373948",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+      "timestamp": "2026-01-28T19:57:44.396786",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses will I take in my first year?",
+      "timestamp": "2026-01-28T19:57:46.266115",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T19:57:46.299498",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Can you remind me what programme I'm studying?",
+      "timestamp": "2026-01-28T19:57:47.735894",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+      "timestamp": "2026-01-28T19:57:47.761066",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T19:57:42.788113",
+  "updated_at": "2026-01-28T19:57:47.761084",
+  "metadata": {}
+}

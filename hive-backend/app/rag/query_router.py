@@ -237,10 +237,49 @@ class QueryRouter:
             if re.search(pattern, query_lower):
                 return True
         
-        # Check keywords
+        # Comprehensive keywords for all detailed question types
         details_keywords = [
-            'about', 'learning outcomes', 'assessment', 'topics',
-            'what will i learn', 'content', 'syllabus', 'objectives'
+            # Basic info questions
+            'what is',
+            'about',
+            'tell me about',
+            
+            # Specific detail types
+            'learning outcomes',
+            'assessment',
+            'how is',
+            'how many credits',
+            'how many',
+            'topics',
+            'what will i learn',
+            'content',
+            'syllabus',
+            'objectives',
+            'main objective',
+            'covered in',
+            'key contents',
+            'key topics',
+            
+            # Format/structure questions
+            'theory',
+            'practical',
+            'lab work',
+            'laboratory',
+            'contact hours',
+            'hours',
+            
+            # Skills/outcomes
+            'skills',
+            'outcomes',
+            'expect from',
+            'can a student expect',
+            
+            # Location/reference questions
+            'where in',
+            'pdf',
+            'page',
+            'listed',
+            'original pdf'
         ]
         
         return any(kw in query_lower for kw in details_keywords)

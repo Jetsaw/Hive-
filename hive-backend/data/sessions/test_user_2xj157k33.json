@@ -1,0 +1,64 @@
+{
+  "session_id": "test_user_2xj157k33",
+  "programme": "Applied AI",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is AAC6133 about?",
+        "assistant_message": "Q: Does AAC6133 have lab work?\nA: Lab/practical details are not specified in the provided outline (or may be included under tutorials/lab assessments).",
+        "timestamp": "2026-02-04T19:14:49.399988",
+        "metadata": {}
+      },
+      {
+        "user_message": "About AAC6133",
+        "assistant_message": "Q: How many contact hours does AAC6133 have?\nA: Contact hours are not specified in the provided outline.",
+        "timestamp": "2026-02-04T19:15:02.864093",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-02-04T19:14:38.398968",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is AAC6133 about?",
+      "timestamp": "2026-02-04T19:14:49.401051",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Q: Does AAC6133 have lab work?\nA: Lab/practical details are not specified in the provided outline (or may be included under tutorials/lab assessments).",
+      "timestamp": "2026-02-04T19:14:49.401573",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "About AAC6133",
+      "timestamp": "2026-02-04T19:15:02.865159",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Q: How many contact hours does AAC6133 have?\nA: Contact hours are not specified in the provided outline.",
+      "timestamp": "2026-02-04T19:15:02.865690",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:14:38.392301",
+  "updated_at": "2026-02-04T19:15:02.865690",
+  "metadata": {}
+}

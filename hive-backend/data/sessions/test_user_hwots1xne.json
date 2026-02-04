@@ -1,0 +1,40 @@
+{
+  "session_id": "test_user_hwots1xne",
+  "programme": "Intelligent Robotics",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is ARE6133 about?",
+        "assistant_message": "I don't have that information in my knowledge base.",
+        "timestamp": "2026-02-04T19:51:46.071056",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "What is ARE6133 about?",
+      "timestamp": "2026-02-04T19:51:46.072801",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I don't have that information in my knowledge base.",
+      "timestamp": "2026-02-04T19:51:46.073988",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:51:44.357187",
+  "updated_at": "2026-02-04T19:51:46.073988",
+  "metadata": {}
+}

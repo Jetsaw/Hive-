@@ -1,0 +1,76 @@
+{
+  "session_id": "test_user_9zaodbqq5",
+  "programme": "Applied AI",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is AAC6113 about?",
+        "assistant_message": "AAC6113 covers computer hardware fundamentals including CPU, memory, I/O systems, instruction sets, and high-performance architectures.",
+        "timestamp": "2026-02-04T19:49:05.768209",
+        "metadata": {}
+      },
+      {
+        "user_message": "What is AAC6133 about?",
+        "assistant_message": "AAC6133 covers responsible AI development and governance frameworks.",
+        "timestamp": "2026-02-04T19:49:16.248613",
+        "metadata": {}
+      },
+      {
+        "user_message": "What is AAE6113 about?",
+        "assistant_message": "AAE6113 covers electronic components, circuit design, laboratory tools, and PCB design with hands-on practice.",
+        "timestamp": "2026-02-04T19:49:28.920746",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "What is AAC6113 about?",
+      "timestamp": "2026-02-04T19:49:05.769231",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAC6113 covers computer hardware fundamentals including CPU, memory, I/O systems, instruction sets, and high-performance architectures.",
+      "timestamp": "2026-02-04T19:49:05.769755",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is AAC6133 about?",
+      "timestamp": "2026-02-04T19:49:16.249832",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAC6133 covers responsible AI development and governance frameworks.",
+      "timestamp": "2026-02-04T19:49:16.250838",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is AAE6113 about?",
+      "timestamp": "2026-02-04T19:49:28.922436",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAE6113 covers electronic components, circuit design, laboratory tools, and PCB design with hands-on practice.",
+      "timestamp": "2026-02-04T19:49:28.923536",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:49:03.677463",
+  "updated_at": "2026-02-04T19:49:28.923536",
+  "metadata": {}
+}

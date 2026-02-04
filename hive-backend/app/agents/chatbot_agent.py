@@ -47,11 +47,12 @@ class ChatbotAgent:
 
         q_low = question.lower()
         answer_type = "fallback"
+        answer = None  # Initialize - will be set by logic or greeting check at end
 
         if q_low in ["hi", "hello", "hey", "hai", "helo"]:
             answer = "Hi 👋 I’m HIVE, your Intelligent Robotics academic advisor."
             answer_type = "greeting"
-        elif is_planning_intent(question):
+        if is_planning_intent(question):
             passed = extract_course_codes(question) if "passed" in q_low else []
             failed = extract_course_codes(question) if ("failed" in q_low or "fail" in q_low) else []
 
@@ -128,81 +129,271 @@ class ChatbotAgent:
                 )
                 answer_type = "advising"
             else:
-                code = resolve_course_from_text(
-                    question,
-                    self._faie_code_map or {},
-                    self._faie_name_map or {},
-                )
-                if code and code in (self._faie_code_map or {}):
-                    c = (self._faie_code_map or {})[code]
-                    name = c.get("name", "")
-                    credits = c.get("credits", "")
-                    prereq = c.get("prerequisite") or c.get("prereq") or []
-                    prereq_str = ", ".join(prereq) if prereq else "None"
-
-                    answer = (
-                        f"{code} — {name}\nCredits: {credits}\n"
-                        f"Prerequisite: {prereq_str}"
+                # Check if this is a detailed question (should use RAG) or basic lookup
+                detailed_keywords = [
+                    "what is",
+                    "about",
+                    "objective",
+                    "assessment",
+                    "assess",
+                    "content",
+                    "topics",
+                    "cover",
+                    "theory",
+                    "practical",
+                    "skills",
+                    "outcomes",
+                    "learning",
+                    "lab",
+                    "contact hours",
+                    "how is",
+                    "where in",
+                    "pdf",
+                    "page"
+                ]
+                
+                is_detailed_question = any(k in q_low for k in detailed_keywords)
+                
+                # Only use basic course lookup for simple direct queries
+                if not is_detailed_question:
+                    code = resolve_course_from_text(
+                        question,
+                        self._faie_code_map or {},
+                        self._faie_name_map or {},
                     )
-                    answer_type = "course_info"
+                    if code and code in (self._faie_code_map or {}):
+                        c = (self._faie_code_map or {})[code]
+                        name = c.get("name", "")
+                        credits = c.get("credits", "")
+                        prereq = c.get("prerequisite") or c.get("prereq") or []
+                        prereq_str = ", ".join(prereq) if prereq else "None"
+
+                        answer = (
+                            f"{code} — {name}\nCredits: {credits}\n"
+                            f"Prerequisite: {prereq_str}"
+                        )
+                        answer_type = "course_info"
+                    else:
+                        if use_context and context:
+                            # Check if LLM is enabled
+                            from app.core.config import settings
+                            
+                            if not settings.USE_LLM:
+                                # NO-LLM MODE: Extract answer from RAG context
+                                # Context format: "[DETAILS - COURSE_CODE] answer text"
+                                # or from QA pairs with "answer" field
+                                
+                                import re
+                                import json
+                                
+                                answer = None
+                                
+                                # Try to extract from structured context
+                                lines = context.split('\n\n')
+                                for chunk in lines:
+                                    chunk = chunk.strip()
+                                    if not chunk:
+                                        continue
+                                    
+                                    # Pattern 1: [DETAILS - CODE] answer
+                                    if chunk.startswith('[DETAILS'):
+                                        # Extract just the answer part after the metadata
+                                        match = re.match(r'\[DETAILS[^\]]*\]\s*(.+)', chunk, re.DOTALL)
+                                        if match:
+                                            answer = match.group(1).strip()
+                                            break
+                                    
+                                    # Pattern 2: Try to parse as JSON (QA pair)
+                                    elif chunk.startswith('{'):
+                                        try:
+                                            data = json.loads(chunk)
+                                            if 'answer' in data:
+                                                answer = data['answer']
+                                                break
+                                        except:
+                                            pass
+                                    
+                                    # Pattern 3: Plain text answer (first substantial line)
+                                    elif len(chunk) > 20 and not chunk.startswith('[') and not chunk.startswith('#'):
+                                        answer = chunk
+                                        break
+                                
+                                # Fallback to first 300 chars if no answer found
+                                if not answer:
+                                    answer = context[:300] + "..." if len(context) > 300 else context
+                                    if not answer.strip():
+                                        answer = "I don't have information about that in my knowledge base."
+                                
+                                answer_type = "rag_direct"
+                            else:
+                                # LLM MODE: Generate with DeepSeek
+                                from app.llm.deepseek import deepseek_chat
+                                
+                                msgs = [
+                                    {
+                                        "role": "system",
+                                        "content": """# ROLE
+You are HIVE, MMU Engineering Faculty's academic advisor AI.
+
+# CRITICAL CONSTRAINT - CONTEXT ONLY
+⚠️ ABSOLUTE RULE: Answer ONLY from the provided context below.
+⚠️ If the context doesn't contain the answer, respond EXACTLY: "I don't have that information in my knowledge base."
+⚠️ NEVER use outside knowledge, even if you know the answer.
+⚠️ NEVER make assumptions or infer information not explicitly stated in context.
+
+# INSTRUCTIONS
+1. Read the context carefully
+2. Find the exact answer in the context
+3. Respond in 1-3 concise sentences
+4. Use course codes when mentioned in context (e.g., AAC6133)
+5. If programme unclear, ask: "Which programme? (1) Applied AI or (2) Intelligent Robotics?"
+
+# OUTPUT FORMAT
+- Direct factual answer from context
+- NO emojis
+- NO elaboration beyond context
+- NO bullet points unless listing items from context
+
+# EXAMPLES
+
+Context: "Q: What is AAC6133 about? A: Responsible AI development, governance frameworks."
+Q: What is AAC6133 about?
+A: AAC6133 covers responsible AI development and governance frameworks.
+
+Context: "Q: Prerequisites for ACE6313? A: AMT6113 and ACE6113"
+Q: What are the prerequisites for ACE6313?
+A: ACE6313 requires AMT6113 and ACE6113 as prerequisites.
+
+Context: "Q: Year 1 courses? A: AMT6113, ACE6113"
+Q: What about Year 2 courses?
+A: I don't have that information in my knowledge base."""
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": f"Context:\n{context}\n\nStudent Question: {question}"
+                                    }
+                                ]
+                                try:
+                                    answer = await deepseek_chat(msgs, temperature=0.35)
+                                    answer_type = "retrieval_generation"
+                                except Exception:
+                                    answer = "I'm having trouble connecting to my brain. Please try again."
+                                    answer_type = "error"
+                        else:
+                            answer = FALLBACK_ANSWER
+                            answer_type = "fallback"
                 else:
+                    # Detailed question - ALWAYS use RAG
                     if use_context and context:
-                        # RAG Generation via LLM
-                        from app.llm.deepseek import deepseek_chat
+                        # Check if LLM is enabled
+                        from app.core.config import settings
                         
-                        msgs = [
-                            {
-                                "role": "system",
-                                "content": """You are HIVE, an intelligent academic advisor for MMU Engineering Faculty.
+                        if not settings.USE_LLM:
+                            # NO-LLM MODE: Extract answer from RAG context
+                            import re
+                            import json
+                            
+                            answer = None
+                            
+                            # Try to extract from structured context
+                            lines = context.split('\n\n')
+                            for chunk in lines:
+                                chunk = chunk.strip()
+                                if not chunk:
+                                    continue
+                                
+                                # Pattern 1: [DETAILS - CODE] answer
+                                if chunk.startswith('[DETAILS'):
+                                    match = re.match(r'\[DETAILS[^\]]*\]\s*(.+)', chunk, re.DOTALL)
+                                    if match:
+                                        answer = match.group(1).strip()
+                                        break
+                                
+                                # Pattern 2: Try to parse as JSON (QA pair)
+                                elif chunk.startswith('{'):
+                                    try:
+                                        data = json.loads(chunk)
+                                        if 'answer' in data:
+                                            answer = data['answer']
+                                            break
+                                    except:
+                                        pass
+                                
+                                # Pattern 3: Plain text answer
+                                elif len(chunk) > 20 and not chunk.startswith('[') and not chunk.startswith('#'):
+                                    answer = chunk
+                                    break
+                            
+                            if not answer:
+                                answer = context[:300] + "..." if len(context) > 300 else context
+                                if not answer.strip():
+                                    answer = "I don't have information about that in my knowledge base."
+                            
+                            answer_type = "rag_direct"
+                        else:
+                            # LLM MODE: Generate with DeepSeek
+                            from app.llm.deepseek import deepseek_chat
+                            
+                            msgs = [
+                                {
+                                    "role": "system",
+                                    "content": """# ROLE
+You are HIVE, MMU Engineering Faculty's academic advisor AI.
 
-CRITICAL RULES:
-1. ALWAYS be concise - maximum 2-3 sentences per response
-2. NO emojis in responses
-3. If question is about course structure and programme is unclear, ASK which programme first:
-   - "Which programme? (1) Applied AI or (2) Intelligent Robotics?"
-4. Use bullet points ONLY when listing multiple items
-5. If context doesn't have the answer, say "I don't have that information" - don't elaborate
+# CRITICAL CONSTRAINT - CONTEXT ONLY
+⚠️ ABSOLUTE RULE: Answer ONLY from the provided context below.
+⚠️ If the context doesn't contain the answer, respond EXACTLY: "I don't have that information in my knowledge base."
+⚠️ NEVER use outside knowledge, even if you know the answer.
+⚠️ NEVER make assumptions or infer information not explicitly stated in context.
 
-Your role:
-- Help with course requirements, prerequisites, and program structures
-- Guide academic planning for Intelligent Robotics and Applied AI programs
-- Provide accurate, brief answers
+# INSTRUCTIONS
+1. Read the context carefully
+2. Find the exact answer in the context
+3. Respond in 1-3 concise sentences
+4. Use course codes when mentioned in context (e.g., AAC6133)
+5. If programme unclear, ask: "Which programme? (1) Applied AI or (2) Intelligent Robotics?"
 
-Response format:
-- Direct answer first
-- Course codes when relevant (e.g., ACE6143)
-- No unnecessary explanations
-- No emojis
+# OUTPUT FORMAT
+- Direct factual answer from context
+- NO emojis
+- NO elaboration beyond context
+- NO bullet points unless listing items from context
 
-Example good responses:
-- "ACE6313 requires AMT6113 and ACE6113 as prerequisites."
-- "Year 1 Trimester 1 has 5 courses: AMT6113, ACE6113, ALE6113, AHS6113, AEE6113."
-- "Which programme? (1) Applied AI or (2) Intelligent Robotics?"
+# EXAMPLES
 
-Example bad responses:
-- Long paragraphs with multiple explanations
-- Responses with emojis like 👋 or 📚
-- Answering without clarifying which programme when structure is asked
+Context: "Q: What is AAC6133 about? A: Responsible AI development, governance frameworks."
+Q: What is AAC6133 about?
+A: AAC6133 covers responsible AI development and governance frameworks.
 
-Context from:
-- Course catalog with detailed information
-- Program structures for both programmes
-- Common Q&A pairs"""
-                            },
-                            {
-                                "role": "user",
-                                "content": f"Context:\n{context}\n\nStudent Question: {question}"
-                            }
-                        ]
-                        try:
-                            answer = await deepseek_chat(msgs, temperature=0.3)
-                            answer_type = "retrieval_generation"
-                        except Exception:
-                            answer = "I'm having trouble connecting to my brain. Please try again."
-                            answer_type = "error"
+Context: "Q: Prerequisites for ACE6313? A: AMT6113 and ACE6113"
+Q: What are the prerequisites for ACE6313?
+A: ACE6313 requires AMT6113 and ACE6113 as prerequisites.
+
+Context: "Q: Year 1 courses? A: AMT6113, ACE6113"
+Q: What about Year 2 courses?
+A: I don't have that information in my knowledge base."""
+                                },
+                                {
+                                    "role": "user",
+                                    "content": f"Context:\n{context}\n\nStudent Question: {question}"
+                                }
+                            ]
+                            try:
+                                answer = await deepseek_chat(msgs, temperature=0.35)
+                                answer_type = "retrieval_generation"
+                            except Exception:
+                                answer = "I'm having trouble connecting to my brain. Please try again."
+                                answer_type = "error"
                     else:
                         answer = FALLBACK_ANSWER
                         answer_type = "fallback"
+        
+        # PRIORITY FIX: Check for greeting AFTER all RAG/context checks
+        # This ensures course questions get answers even on fresh page loads
+        if not answer or answer == FALLBACK_ANSWER:
+            if q_low in ["hi", "hello", "hey", "hai", "helo"]:
+                answer = "Hi 👋 I'm HIVE, your Intelligent Robotics academic advisor."
+                answer_type = "greeting"
 
         trace.add(
             name="chatbot",

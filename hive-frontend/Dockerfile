@@ -1,11 +1,11 @@
 FROM nginx:alpine
 
-# Copy only necessary static files (not all files)
+# Copy frontend files with proper structure
 COPY index.html /usr/share/nginx/html/
 COPY admin-enhanced.html /usr/share/nginx/html/
-COPY *.css /usr/share/nginx/html/
-COPY *.js /usr/share/nginx/html/
-COPY logo.png /usr/share/nginx/html/
+COPY assets/ /usr/share/nginx/html/assets/
+COPY css/ /usr/share/nginx/html/css/
+COPY js/ /usr/share/nginx/html/js/
 
 # Health check for container monitoring
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
