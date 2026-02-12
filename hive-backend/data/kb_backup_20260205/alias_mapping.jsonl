@@ -1,0 +1,54 @@
+{"pattern": "^math\\s*1$", "course_code": "AMT6113", "course_name": "Engineering Mathematics I", "match_type": "regex", "programme": "ALL"}
+{"pattern": "^math\\s*2$", "course_code": "AMT6123", "course_name": "Engineering Mathematics II", "match_type": "regex", "programme": "ALL"}
+{"pattern": "^math\\s*3$", "course_code": "AMT6143", "course_name": "Linear Algebra", "match_type": "regex", "programme": "ALL"}
+{"pattern": "engineering math 1", "course_code": "AMT6113", "course_name": "Engineering Mathematics I", "match_type": "contains", "programme": "ALL"}
+{"pattern": "engineering math 2", "course_code": "AMT6123", "course_name": "Engineering Mathematics II", "match_type": "contains", "programme": "ALL"}
+{"pattern": "linear algebra", "course_code": "AMT6143", "course_name": "Linear Algebra", "match_type": "contains", "programme": "ALL"}
+{"pattern": "statistics", "course_code": "AMT6133", "course_name": "Statistics and Probability", "match_type": "contains", "programme": "ALL"}
+{"pattern": "optimization", "course_code": "AMT6153", "course_name": "Optimization Methods", "match_type": "contains", "programme": "ALL"}
+{"pattern": "programming fundamentals", "course_code": "ACE6113", "course_name": "Programming Fundamentals", "match_type": "contains", "programme": "ALL"}
+{"pattern": "intro to programming", "course_code": "ACE6113", "course_name": "Programming Fundamentals", "match_type": "contains", "programme": "ALL"}
+{"pattern": "oop", "course_code": "ACE6123", "course_name": "Object-Oriented Programming", "match_type": "exact", "programme": "ALL"}
+{"pattern": "object oriented", "course_code": "ACE6123", "course_name": "Object-Oriented Programming", "match_type": "contains", "programme": "ALL"}
+{"pattern": "data structures", "course_code": "ACE6133", "course_name": "Data Structures and Algorithms", "match_type": "contains", "programme": "ALL"}
+{"pattern": "algorithms", "course_code": "ACE6133", "course_name": "Data Structures and Algorithms", "match_type": "contains", "programme": "ALL"}
+{"pattern": "networking", "course_code": "ACE6143", "course_name": "Data Communications and Networking", "match_type": "contains", "programme": "ALL"}
+{"pattern": "data communication", "course_code": "ACE6143", "course_name": "Data Communications and Networking", "match_type": "contains", "programme": "ALL"}
+{"pattern": "database", "course_code": "ACE6153", "course_name": "Database Systems", "match_type": "contains", "programme": "ALL"}
+{"pattern": "software engineering", "course_code": "ACE6243", "course_name": "Software Engineering", "match_type": "contains", "programme": "ALL"}
+{"pattern": "machine learning", "course_code": "ACE6313", "course_name": "Machine Learning Fundamentals", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "ml fundamentals", "course_code": "ACE6313", "course_name": "Machine Learning Fundamentals", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "nlp", "course_code": "ACE6283", "course_name": "Natural Language Processing", "match_type": "exact", "programme": "Applied AI"}
+{"pattern": "natural language", "course_code": "ACE6283", "course_name": "Natural Language Processing", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "deep learning", "course_code": "ACE6323", "course_name": "Deep Learning", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "computer vision", "course_code": "ACE6333", "course_name": "Computer Vision", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "generative ai", "course_code": "ACE6343", "course_name": "Generative AI", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "gen ai", "course_code": "ACE6343", "course_name": "Generative AI", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "ai ethics", "course_code": "ACE6253", "course_name": "AI Ethics and Governance", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "ai deployment", "course_code": "ACE6263", "course_name": "AI Systems Deployment", "match_type": "contains", "programme": "Applied AI"}
+{"pattern": "control systems", "course_code": "ACE6163", "course_name": "Control Systems", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "robotics fundamentals", "course_code": "ACE6173", "course_name": "Robotics Fundamentals", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "intro to robotics", "course_code": "ACE6173", "course_name": "Robotics Fundamentals", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "robot vision", "course_code": "ACE6183", "course_name": "Robot Vision", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "autonomous systems", "course_code": "ACE6193", "course_name": "Autonomous Systems", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "mechatronics", "course_code": "ACE6203", "course_name": "Mechatronics", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "advanced robotics", "course_code": "ACE6213", "course_name": "Advanced Robotics", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "hri", "course_code": "ACE6223", "course_name": "Human-Robot Interaction", "match_type": "exact", "programme": "Intelligent Robotics"}
+{"pattern": "human robot interaction", "course_code": "ACE6223", "course_name": "Human-Robot Interaction", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "drone", "course_code": "ACE6233", "course_name": "Drone Systems", "match_type": "contains", "programme": "Intelligent Robotics"}
+{"pattern": "uav", "course_code": "ACE6233", "course_name": "Drone Systems", "match_type": "exact", "programme": "Intelligent Robotics"}
+{"pattern": "english communication", "course_code": "ALE6113", "course_name": "English for Communication", "match_type": "contains", "programme": "ALL"}
+{"pattern": "professional communication", "course_code": "ALE6123", "course_name": "English for Professional Communication", "match_type": "contains", "programme": "ALL"}
+{"pattern": "technical writing", "course_code": "ALE6133", "course_name": "Technical Writing", "match_type": "contains", "programme": "ALL"}
+{"pattern": "presentation skills", "course_code": "ALE6143", "course_name": "Presentation Skills", "match_type": "contains", "programme": "ALL"}
+{"pattern": "critical thinking", "course_code": "AHS6113", "course_name": "Critical Thinking", "match_type": "contains", "programme": "ALL"}
+{"pattern": "ethics", "course_code": "AHS6123", "course_name": "Ethics and Professional Practice", "match_type": "contains", "programme": "ALL"}
+{"pattern": "electrical technology", "course_code": "AEE6113", "course_name": "Electrical Technology", "match_type": "contains", "programme": "ALL"}
+{"pattern": "digital electronics", "course_code": "AEE6123", "course_name": "Digital Electronics", "match_type": "contains", "programme": "ALL"}
+{"pattern": "microprocessor", "course_code": "AEE6133", "course_name": "Microprocessor Systems", "match_type": "contains", "programme": "ALL"}
+{"pattern": "project 1", "course_code": "AAP6136", "course_name": "Project I", "match_type": "contains", "programme": "ALL"}
+{"pattern": "project i", "course_code": "AAP6136", "course_name": "Project I", "match_type": "contains", "programme": "ALL"}
+{"pattern": "project 2", "course_code": "AAP6146", "course_name": "Project II", "match_type": "contains", "programme": "ALL"}
+{"pattern": "project ii", "course_code": "AAP6146", "course_name": "Project II", "match_type": "contains", "programme": "ALL"}
+{"pattern": "industrial training", "course_code": "ITT", "course_name": "Industrial Training", "match_type": "contains", "programme": "ALL"}
+{"pattern": "internship", "course_code": "ITT", "course_name": "Industrial Training", "match_type": "contains", "programme": "ALL"}

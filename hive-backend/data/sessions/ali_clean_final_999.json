@@ -1,0 +1,37 @@
+{
+  "session_id": "ali_clean_final_999",
+  "programme": "Intelligent Robotics",
+  "current_term": null,
+  "selected_course_code": null,
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "Hi! I'm Ali and I'm interested in studying Intelligent Robotics at MMU.",
+        "assistant_message": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T18:24:37.734892",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "Hi! I'm Ali and I'm interested in studying Intelligent Robotics at MMU.",
+      "timestamp": "2026-01-28T18:24:37.740847",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T18:24:37.767656",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T18:24:35.166873",
+  "updated_at": "2026-01-28T18:24:37.767675",
+  "metadata": {}
+}

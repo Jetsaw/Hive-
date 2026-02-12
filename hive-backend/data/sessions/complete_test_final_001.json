@@ -1,0 +1,94 @@
+{
+  "session_id": "complete_test_final_001",
+  "programme": "Applied AI",
+  "user_name": "Sarah",
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is my name?",
+        "assistant_message": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+        "timestamp": "2026-01-28T20:19:48.763552",
+        "metadata": {}
+      },
+      {
+        "user_message": "Hi! I'm Sarah and I want to study Applied Artificial Intelligence.",
+        "assistant_message": "ACE6233 — Artificial Intelligence Systems and Applications\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T20:21:04.692765",
+        "metadata": {}
+      },
+      {
+        "user_message": "What courses will I take in my first year?",
+        "assistant_message": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T20:26:58.264196",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi Sarah! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-01-28T20:18:53.945300",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is my name?",
+      "timestamp": "2026-01-28T20:19:48.768297",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "I can help with prerequisites and planning.\nTry: “If I fail Math 1, can I take Math 2?” or “Plan Year 1 Sem 2”.",
+      "timestamp": "2026-01-28T20:19:48.792526",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I'm Sarah and I want to study Applied Artificial Intelligence.",
+      "timestamp": "2026-01-28T20:21:04.701851",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6233 — Artificial Intelligence Systems and Applications\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T20:21:04.732448",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "You're interested in Applied Ai.",
+      "timestamp": "2026-01-28T20:22:34.719484",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Your name is Sarah.",
+      "timestamp": "2026-01-28T20:22:52.785434",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses will I take in my first year?",
+      "timestamp": "2026-01-28T20:26:58.275512",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T20:26:58.304062",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T20:18:53.883366",
+  "updated_at": "2026-01-28T20:26:58.304083",
+  "metadata": {}
+}

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIVE Admin - Enhanced Dashboard</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./admin-enhanced.css">
+</head>
+
+<body>
+    <div class="admin-layout">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-left">
+                <h1>Question Management</h1>
+            </div>
+            <div class="header-right">
+                <div class="status-indicator online">
+                    <span class="status-dot"></span>
+                    HIVE AI ONLINE
+                </div>
+                <button class="btn btn-ghost btn-icon">
+                    🔔
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="admin-content">
+            <!-- Left Panel: Terminal Console -->
+            <aside class="console-panel">
+                <div class="console-header">
+                    <h3>🖥️ SYSTEM CONSOLE</h3>
+                    <div class="console-actions">
+                        <button class="btn btn-sm btn-ghost" id="clearLogs">Clear</button>
+                        <button class="btn btn-sm btn-ghost" id="exportLogs">Export</button>
+                    </div>
+                </div>
+                <div class="console-body" id="consoleBody">
+                    <div class="console-log info">
+                        <span class="log-time">[12:34:56]</span>
+                        <span class="log-message">System initialized</span>
+                    </div>
+                </div>
+                <div class="console-footer">
+                    <select id="logLevel" class="log-filter">
+                        <option value="all">All Logs</option>
+                        <option value="info">INFO</option>
+                        <option value="success">SUCCESS</option>
+                        <option value="warning">WARNING</option>
+                        <option value="error">ERROR</option>
+                    </select>
+                </div>
+            </aside>
+
+            <!-- Right Panel: Dashboard -->
+            <main class="dashboard-panel">
+                <!-- Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📊</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="statPending">12</div>
+                            <div class="stat-label">Pending Questions</div>
+                            <div class="stat-trend positive">+3 TODAY</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon success">✓</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="statAnswered">148</div>
+                            <div class="stat-label">Answered</div>
+                            <div class="stat-trend positive">84% RATE</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon warning">⊘</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="statIgnored">4</div>
+                            <div class="stat-label">Ignored</div>
+                            <div class="stat-trend negative">-2% DEC</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">📈</div>
+                        <div class="stat-info">
+                            <div class="stat-value" id="statTotal">164</div>
+                            <div class="stat-label">Total Requests</div>
+                            <div class="stat-trend">TOTAL</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- System Health -->
+                <div class="health-panel">
+                    <h3>🏥 System Health</h3>
+                    <div class="health-grid" id="healthGrid">
+                        <div class="health-item">
+                            <span class="health-status online"></span>
+                            <span class="health-name">Backend API</span>
+                            <span class="health-time">50ms</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-status online"></span>
+                            <span class="health-name">Database</span>
+                            <span class="health-time">30ms</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-status online"></span>
+                            <span class="health-name">RAG System</span>
+                            <span class="health-time">150ms</span>
+                        </div>
+                        <div class="health-item">
+                            <span class="health-status online"></span>
+                            <span class="health-name">LLM Service</span>
+                            <span class="health-time">800ms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Questions Section -->
+                <div class="questions-section">
+                    <div class="section-header">
+                        <div class="filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="pending">Pending</button>
+                            <button class="filter-btn" data-filter="answered">Answered</button>
+                            <button class="filter-btn" data-filter="ignored">Ignored</button>
+                        </div>
+                        <div class="section-actions">
+                            <input type="text" class="input" placeholder="Search questions..." id="searchInput">
+                            <button class="btn btn-primary" id="refreshBtn">🔄 Refresh</button>
+                        </div>
+                    </div>
+
+                    <!-- Questions Table -->
+                    <div class="questions-table">
+                        <div class="table-header">
+                            <div class="th student-id">STUDENT ID</div>
+                            <div class="th question">QUESTION</div>
+                            <div class="th status">STATUS</div>
+                            <div class="th actions">ACTIONS</div>
+                        </div>
+                        <div class="table-body" id="questionsBody">
+                            <!-- Questions will be loaded here -->
+                            <div class="empty-state">
+                                <h3>No questions found</h3>
+                                <p>There are no questions at the moment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Answer Modal -->
+    <div class="dialog-overlay" id="answerModal">
+        <div class="dialog">
+            <div class="dialog-header">
+                <h2 class="dialog-title">Add Answer</h2>
+                <button class="btn btn-ghost btn-icon" id="closeModal">×</button>
+            </div>
+            <div class="dialog-content">
+                <div style="margin-bottom: 1rem;">
+                    <label class="label">Question</label>
+                    <p id="modalQuestion"
+                        style="padding: 0.75rem; background: hsl(var(--muted)); border-radius: var(--radius);"></p>
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <label class="label" for="answerText">Your Answer</label>
+                    <textarea id="answerText" class="textarea" rows="5"
+                        placeholder="Enter the correct answer..."></textarea>
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" id="addToKB" checked>
+                    <label for="addToKB">Add to knowledge base (future feature)</label>
+                </div>
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-ghost" id="cancelAnswer">Cancel</button>
+                <button class="btn btn-primary" id="submitAnswer">Submit Answer</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./admin-enhanced.js"></script>
+</body>
+
+</html>
