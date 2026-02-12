@@ -1,15 +1,12 @@
 /**
  * Chat Area Component
- * Manages chat message rendering and scrolling
+ * Manages chat message rendering, scrolling, and suggestion chips
  */
 
 let messageIdCounter = 0;
 
 /**
  * Add a message to the chat
- * @param {string} role - 'user' or 'assistant'
- * @param {string} text - Message text
- * @returns {string} Message ID
  */
 export function addMessage(role, text) {
     const chatMessages = document.getElementById('chatMessages');
@@ -37,7 +34,6 @@ export function addMessage(role, text) {
 
 /**
  * Add typing indicator
- * @returns {string} Indicator ID
  */
 export function addTypingIndicator() {
     const chatMessages = document.getElementById('chatMessages');
@@ -62,8 +58,39 @@ export function addTypingIndicator() {
 }
 
 /**
+ * Add suggestion chips below the last assistant message
+ */
+export function addSuggestionChips(suggestions, onClick) {
+    const chatMessages = document.getElementById('chatMessages');
+
+    // Remove any existing chips
+    const existing = document.querySelector('.suggestion-chips');
+    if (existing) existing.remove();
+
+    const chipsHTML = `
+        <div class="suggestion-chips">
+            ${suggestions.map(s => `<button class="suggestion-chip">${escapeHtml(s)}</button>`).join('')}
+        </div>
+    `;
+
+    chatMessages.insertAdjacentHTML('beforeend', chipsHTML);
+
+    // Attach click handlers
+    document.querySelectorAll('.suggestion-chip').forEach(chip => {
+        chip.addEventListener('click', () => {
+            const text = chip.textContent.trim();
+            // Remove chips after clicking
+            const container = document.querySelector('.suggestion-chips');
+            if (container) container.remove();
+            if (onClick) onClick(text);
+        });
+    });
+
+    scrollToBottom();
+}
+
+/**
  * Remove a message by ID
- * @param {string} messageId - Message ID
  */
 export function removeMessage(messageId) {
     const element = document.getElementById(messageId);
@@ -84,8 +111,6 @@ export function scrollToBottom() {
 
 /**
  * Escape HTML to prevent XSS
- * @param {string} text - Text to escape
- * @returns {string} Escaped text
  */
 function escapeHtml(text) {
     const div = document.createElement('div');
