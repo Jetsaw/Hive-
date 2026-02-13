@@ -1,0 +1,40 @@
+{
+  "session_id": "test_user_mcjzo9z2a",
+  "programme": null,
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is AAP6118 about?",
+        "assistant_message": "AAP6118 is a capstone project involving analysis, design, implementation, evaluation, and presentation.",
+        "timestamp": "2026-02-04T19:50:24.760023",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "What is AAP6118 about?",
+      "timestamp": "2026-02-04T19:50:24.761337",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6118 is a capstone project involving analysis, design, implementation, evaluation, and presentation.",
+      "timestamp": "2026-02-04T19:50:24.762390",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:50:22.757945",
+  "updated_at": "2026-02-04T19:50:24.762390",
+  "metadata": {}
+}

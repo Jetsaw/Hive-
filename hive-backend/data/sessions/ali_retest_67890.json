@@ -1,0 +1,145 @@
+{
+  "session_id": "ali_retest_67890",
+  "programme": "Intelligent Robotics",
+  "current_term": null,
+  "selected_course_code": null,
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "How is it assessed?",
+        "assistant_message": "The assessment for ACE6253 is not provided in the context. I don't have that information.",
+        "timestamp": "2026-01-28T16:55:55.388243",
+        "metadata": {}
+      },
+      {
+        "user_message": "What should I take in my second semester?",
+        "assistant_message": "Tell me the course name or code so I can check eligibility.",
+        "timestamp": "2026-01-28T16:56:21.499102",
+        "metadata": {}
+      },
+      {
+        "user_message": "What courses should I take in Year 1 Semester 2?",
+        "assistant_message": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T16:59:14.955321",
+        "metadata": {}
+      },
+      {
+        "user_message": "Tell me about ACE6143.",
+        "assistant_message": "ACE6143 is Data Communications and Networking, covering topics like security, access control, and network architecture. It has no prerequisites.",
+        "timestamp": "2026-01-28T16:59:57.037050",
+        "metadata": {}
+      },
+      {
+        "user_message": "Can I take this in my first year?",
+        "assistant_message": "Tell me the course name or code so I can check eligibility.",
+        "timestamp": "2026-01-28T17:00:39.622688",
+        "metadata": {}
+      }
+    ],
+    "summary": "Yes, you can take ACE6143. Its prerequisites are satisfied.",
+    "summarized_pair_count": 3,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "Hi! I'm Ali and I'm interested in studying Intelligent Robotics at MMU.",
+      "timestamp": "2026-01-28T16:53:44.591885",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T16:53:44.621808",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses will I take in my first year?",
+      "timestamp": "2026-01-28T16:54:08.953387",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T16:54:08.981158",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What is Computer and Program Design about?",
+      "timestamp": "2026-01-28T16:55:32.255152",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Computer and Program Design (ACE6143) covers computer organization, architecture, and design principles at different levels of abstraction. It includes topics like microprocessor architecture, microcontroller programming, and hardware interfacing.",
+      "timestamp": "2026-01-28T16:55:32.286891",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "How is it assessed?",
+      "timestamp": "2026-01-28T16:55:55.393860",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "The assessment for ACE6253 is not provided in the context. I don't have that information.",
+      "timestamp": "2026-01-28T16:55:55.418373",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What should I take in my second semester?",
+      "timestamp": "2026-01-28T16:56:21.510791",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Tell me the course name or code so I can check eligibility.",
+      "timestamp": "2026-01-28T16:56:21.535231",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "What courses should I take in Year 1 Semester 2?",
+      "timestamp": "2026-01-28T16:59:15.002451",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "AAP6136 — Final Year Project 1\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T16:59:15.027446",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Tell me about ACE6143.",
+      "timestamp": "2026-01-28T16:59:57.071928",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 is Data Communications and Networking, covering topics like security, access control, and network architecture. It has no prerequisites.",
+      "timestamp": "2026-01-28T16:59:57.104160",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Can I take this in my first year?",
+      "timestamp": "2026-01-28T17:00:39.678550",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "Tell me the course name or code so I can check eligibility.",
+      "timestamp": "2026-01-28T17:00:39.700340",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T16:53:42.878789",
+  "updated_at": "2026-01-28T17:00:39.700361",
+  "metadata": {}
+}

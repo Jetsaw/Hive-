@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="HIVE - Your AI Academic Advisor for MMU Engineering. Get instant answers about courses, prerequisites, and academic planning.">
+    <meta name="theme-color" content="#3B82F6">
+
+    <title>HIVE - Academic Companion</title>
+
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles-new.css">
+</head>
+
+<body data-theme="dark">
+    <div class="app-container">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle between light and dark theme">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+        </button>
+
+        <!-- Main Chat Area -->
+        <main class="chat-area" role="main" aria-label="Chat interface">
+            <div class="chat-messages" id="chatMessages" role="log" aria-live="polite" aria-atomic="false">
+                <!-- Welcome Screen -->
+                <div class="welcome-screen" id="welcomeScreen">
+                    <div class="hexagon-logo" role="img" aria-label="HIVE Logo">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <polygon points="50,5 90,27.5 90,72.5 50,95 10,72.5 10,27.5" fill="currentColor" />
+                        </svg>
+                    </div>
+                    <h1 class="welcome-text">How can I help you today?</h1>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-container">
+                    <button class="voice-btn" id="voiceBtn" aria-label="Start voice input" title="Voice input">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+                        </svg>
+                    </button>
+                    <textarea class="message-input" id="messageInput"
+                        placeholder="Ask me anything about your courses..." rows="1" aria-label="Type your message here"
+                        maxlength="1000"></textarea>
+                    <button class="send-btn" id="sendBtn" aria-label="Send message" title="Send message">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                            aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 10l7-7m0 0l7 7m-7-7v18" />
+                        </svg>
+                    </button>
+                </div>
+                <p class="disclaimer">HIVE CAN MAKE MISTAKES. CROSS-CHECK VIA THE MMU STUDENT PORTAL.</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./app.js" type="module"></script>
+</body>
+
+</html>

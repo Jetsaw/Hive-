@@ -1,0 +1,37 @@
+{"pattern": "ai ethics", "course_code": "AAC6133", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "ethics", "course_code": "AAC6133", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "responsible ai", "course_code": "AAC6133", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "networking", "course_code": "AAC6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "data communications", "course_code": "AAC6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "nlp", "course_code": "AAC6233", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "natural language", "course_code": "AAC6233", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "database", "course_code": "AAC6173", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "sql", "course_code": "AAC6173", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "data analytics", "course_code": "AAC6223", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "data engineering", "course_code": "AAC6193", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "machine vision", "course_code": "AAE6134", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "computer vision", "course_code": "AAE6134", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "image processing", "course_code": "AAE6134", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "embedded systems", "course_code": "AAE6143", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "iot", "course_code": "AAE6173", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "microcontroller", "course_code": "ARC6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "microcontrollers", "course_code": "ARC6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "programming", "course_code": "ARC6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "c programming", "course_code": "ARC6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "calculus", "course_code": "ARM6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "differential equations", "course_code": "ARM6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "probability", "course_code": "AAM6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "statistics", "course_code": "AAM6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "capstone", "course_code": "AAP6118", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "fyp", "course_code": "AAP6118", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "industrial training", "course_code": "AAP6126", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "internship", "course_code": "AAP6126", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "rapid modelling", "course_code": "MID6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "pcb design", "course_code": "AAE6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "electronics lab", "course_code": "AAE6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "digital logic", "course_code": "ARE6123", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "analog electronics", "course_code": "ARE6133", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "basic electronics", "course_code": "ARE6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "circuits", "course_code": "ARL6113", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "autonomous systems", "course_code": "AAE6163", "match_type": "contains", "programme": "ALL", "course_name": ""}
+{"pattern": "robotics perception", "course_code": "AAE6153", "match_type": "contains", "programme": "ALL", "course_name": ""}

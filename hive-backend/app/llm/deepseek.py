@@ -2,7 +2,7 @@ import httpx
 from app.core.config import settings
 
 
-async def deepseek_chat(messages: list[dict], temperature: float = 0.2) -> str:
+async def deepseek_chat(messages: list[dict], temperature: float = 0.35) -> str:
     """
     DeepSeek is OpenAI-compatible. Endpoint: {base}/chat/completions
     """

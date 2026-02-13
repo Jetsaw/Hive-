@@ -1,0 +1,117 @@
+{"category": "Engineering Maths", "course_code": "AMT6143", "course_name": "Industrial Mathematics", "credit_hours": 3}
+{"category": "Engineering Maths", "course_code": "AMT6153", "course_name": "Industrial Engineering Analysis", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6113", "course_name": "Electronics I", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6123", "course_name": "Electronics II", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6133", "course_name": "Electronics III", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6143", "course_name": "Digital Logic Design", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6153", "course_name": "Microelectronics Circuit Analysis & Design", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6163", "course_name": "Physical Electronics", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6173", "course_name": "Power Electronics", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6213", "course_name": "Digital System", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6223", "course_name": "Integrated VLSI Systems", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6233", "course_name": "Digital Integrated Circuits", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6243", "course_name": "Processing and Fabrication Technology", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6313", "course_name": "Analog Integrated Circuits", "credit_hours": 3}
+{"category": "Electronics", "course_code": "AEE6323", "course_name": "VLSI System Design & Modeling Technique", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6113", "course_name": "Computer and Program Design", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6123", "course_name": "Algorithms and Data Structures", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6133", "course_name": "Computer Organization and Architecture", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6143", "course_name": "Data Communications and Networking", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6153", "course_name": "Operating Systems", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6163", "course_name": "Microcontroller and Microprocessor Systems", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6173", "course_name": "Software Engineering", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6183", "course_name": "Advanced Microprocessors", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6193", "course_name": "Object Oriented Programming with C++", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6203", "course_name": "Digital Computer Design", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6213", "course_name": "CyberSecurity", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6223", "course_name": "Multimedia Technology and Applications", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6233", "course_name": "Artificial Intelligence Systems and Applications", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6243", "course_name": "Java Technology", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6253", "course_name": "Digital Image and Video Processing", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6263", "course_name": "Embedded Iot Systems and Applications", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6273", "course_name": "Advanced Object-Oriented Design with Java", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6283", "course_name": "Database Systems", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6293", "course_name": "Advanced Computer Architecture and Parallel Computing", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6313", "course_name": "Machine Learning Concepts and Technologies", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6323", "course_name": "Cloud Computing", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6333", "course_name": "Deep Learning and Generative AI Technology", "credit_hours": 3}
+{"category": "Computer", "course_code": "ACE6343", "course_name": "System Administration", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6113", "course_name": "Electromagnetics Theory", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6123", "course_name": "Fundamental of Wireless Communications", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6133", "course_name": "Information Theory and Error Coding", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6143", "course_name": "Analog and Digital Communications", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6153", "course_name": "Analog Communications", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6163", "course_name": "Digital Communications", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6173", "course_name": "Communications Networks", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6183", "course_name": "Antenna and Propagation", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6193", "course_name": "Digital Signal Processing", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6213", "course_name": "Electromagnetic Interference", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6223", "course_name": "Optoelectronics and Optical Communications", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6233", "course_name": "Advanced Networking Techniques", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6313", "course_name": "RF Measurement Techniques", "credit_hours": 3}
+{"category": "Telecommunication", "course_code": "ATE6323", "course_name": "RF Circuit Design", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6113", "course_name": "Circuit Theory", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6123", "course_name": "Field Theory", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6133", "course_name": "Instrumentation and Measurement Techniques", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6143", "course_name": "Introduction to Machines and Power Systems", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6153", "course_name": "Circuits and Signals", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6163", "course_name": "Control Theory", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6173", "course_name": "Switchgear and Protection", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6213", "course_name": "Energy Conversion I", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6223", "course_name": "Energy Conversion II", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6233", "course_name": "Power Transmission and Distribution", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6243", "course_name": "Electrical Engineering Materials", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6253", "course_name": "Power System Analysis", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6263", "course_name": "Electrical Drive", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6273", "course_name": "Electric Power Utilization and Installation", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6283", "course_name": "Electrical Drives / High Voltage Engineering", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6293", "course_name": "Power Stations", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6303", "course_name": "Power System Operation and Control", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6313", "course_name": "Renewable Energy Technology", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6323", "course_name": "Energy Management and Auditing", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6333", "course_name": "Electric Vehicle Technology", "credit_hours": 3}
+{"category": "Electrical", "course_code": "ALE6343", "course_name": "Electric Vehicle Charging Station Planning for Installation", "credit_hours": 3}
+{"category": "Nanotechnology", "course_code": "ANE6123", "course_name": "Semiconductor Devices", "credit_hours": 3}
+{"category": "Nanotechnology", "course_code": "ANE6153", "course_name": "N/MEMs", "credit_hours": 3}
+{"category": "Nanotechnology", "course_code": "ANE6163", "course_name": "Nanoelectronics Materials and Devices", "credit_hours": 3}
+{"category": "Project and Industrial Training", "course_code": "APM6143", "course_name": "Capstone Project", "credit_hours": 3}
+{"category": "Project and Industrial Training", "course_code": "APM6155", "course_name": "Industrial Training", "credit_hours": 5}
+{"category": "Project and Industrial Training", "course_code": "APM6168", "course_name": "Project", "credit_hours": 8}
+{"category": "Intelligent Robotics", "course_code": "ARC6113", "course_name": "Computer and Programming", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARC6123", "course_name": "Micro-controllers and Micro-processors", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARE6113", "course_name": "Basic Electronics", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARE6123", "course_name": "Digital Design", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARE6133", "course_name": "Analog Electronics", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARL6113", "course_name": "Electrical Circuits", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARM6113", "course_name": "Engineering Calculus", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ARM6123", "course_name": "Differential Equations", "credit_hours": 3}
+{"category": "Intelligent Robotics", "course_code": "ART6116", "course_name": "Industrial Training", "credit_hours": 6}
+{"category": "Intelligent Robotics", "course_code": "MID6113", "course_name": "Rapid Modelling", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6113", "course_name": "Fundamental of Computer System", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6123", "course_name": "Data Communications and Networking", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6133", "course_name": "AI Governance and Ethics", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6153", "course_name": "Artificial Intelligence Fundamentals", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6164", "course_name": "Fundamental of Computer Science", "credit_hours": 4}
+{"category": "Applied AI", "course_code": "AAC6173", "course_name": "Database Systems", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6193", "course_name": "Data Acquisition, Engineering and Visualisation", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6213", "course_name": "Algorithms and Data Structures for AI", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6223", "course_name": "Data Analytics Fundamentals", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAC6233", "course_name": "Natural Language Processing", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAE6113", "course_name": "Applied Electronics and Practical Techniques", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAE6134", "course_name": "Machine Vision and Image Processing", "credit_hours": 4}
+{"category": "Applied AI", "course_code": "AAE6143", "course_name": "Embedded Systems for AI", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAE6153", "course_name": "Robotics and Perceptions", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAE6163", "course_name": "Artificial Intelligence in Autonomous Systems", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAE6173", "course_name": "IoT Systems and Applications", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAM6113", "course_name": "Probability and Statistics", "credit_hours": 3}
+{"category": "Applied AI", "course_code": "AAP6118", "course_name": "Project", "credit_hours": 8}
+{"category": "Applied AI", "course_code": "AAP6126", "course_name": "Industrial Training", "credit_hours": 6}
+{"category": "Humanity (FOE)", "course_code": "APM6123", "course_name": "Engineer and Society", "credit_hours": 3}
+{"category": "Humanity (FOE)", "course_code": "APM6131", "course_name": "Project Management", "credit_hours": 1}
+{"category": "Humanity (LiFE & FOM)", "course_code": "APM6113", "course_name": "Law for Engineers", "credit_hours": 3}
+{"category": "University Course", "course_code": "LDCW6123", "course_name": "Digital Competence for Programmers", "credit_hours": 3}
+{"category": "University Course", "course_code": "LSSW6112", "course_name": "Sustainable Society", "credit_hours": 2}
+{"category": "MPU", "course_code": "MPU(U1)", "course_name": "Mata Pelajaran Umum (U1)", "credit_hours": null}
+{"category": "MPU", "course_code": "MPU(U2)", "course_name": "Mata Pelajaran Umum (U2)", "credit_hours": null}
+{"category": "MPU", "course_code": "MPU(U3)", "course_name": "Mata Pelajaran Umum (U3)", "credit_hours": null}
+{"category": "MPU", "course_code": "MPU(U4)", "course_name": "Mata Pelajaran Umum (U4)", "credit_hours": null}

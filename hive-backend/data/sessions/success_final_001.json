@@ -1,0 +1,61 @@
+{
+  "session_id": "success_final_001",
+  "programme": "Intelligent Robotics",
+  "current_term": null,
+  "selected_course_code": null,
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "Hi! I want to study Intelligent Robotics at MMU.",
+        "assistant_message": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T19:40:24.396079",
+        "metadata": {}
+      },
+      {
+        "user_message": "Hi! I want to study Intelligent Robotics at MMU.",
+        "assistant_message": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+        "timestamp": "2026-01-28T19:46:53.068948",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Programme.INTELLIGENT_ROBOTICS. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-01-28T19:34:39.873070",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I want to study Intelligent Robotics at MMU.",
+      "timestamp": "2026-01-28T19:40:24.403112",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T19:40:24.430358",
+      "metadata": {}
+    },
+    {
+      "role": "user",
+      "content": "Hi! I want to study Intelligent Robotics at MMU.",
+      "timestamp": "2026-01-28T19:46:53.079159",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ACE6143 — Data Communications and Networking\nCredits: 3\nPrerequisite: None",
+      "timestamp": "2026-01-28T19:46:53.117935",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-01-28T19:34:39.640401",
+  "updated_at": "2026-01-28T19:46:53.117959",
+  "metadata": {}
+}

@@ -1,12 +1,63 @@
-.env
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-data/indexes/
-data/global_docs/
+# Environment
+.env
+.env.local
+.env.*.local
 
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test Results
+hive-backend/test-results/*.json
+!hive-backend/test-results/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Database
 *.db
 *.sqlite
 
+# FAISS Indices (uncomment if you want to exclude from git)
+# hive-backend/data/indexes/
+
+# Node modules (if any)
 node_modules/
-dist/
+
+# Temporary files
+*.tmp
+*.temp
+.cache/

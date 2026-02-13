@@ -1,0 +1,27 @@
+{
+  "session_id": "test_user_fg4tknczi",
+  "programme": "Applied AI",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "assistant",
+      "content": "Hi! Great to meet you! I see you're interested in Applied Ai. I'm here to help you with course planning, prerequisites, and any questions about the programme. What would you like to know?",
+      "timestamp": "2026-02-04T19:30:40.882503",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:30:40.874670",
+  "updated_at": "2026-02-04T19:30:40.882503",
+  "metadata": {}
+}

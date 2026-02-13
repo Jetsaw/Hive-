@@ -1,0 +1,40 @@
+{
+  "session_id": "test_user_023p7l8yz",
+  "programme": "Intelligent Robotics",
+  "user_name": null,
+  "current_term": null,
+  "selected_course_code": null,
+  "passed_courses": [],
+  "failed_courses": [],
+  "mode": "GENERAL",
+  "conversation_window": {
+    "pairs": [
+      {
+        "user_message": "What is ARM6113 about?",
+        "assistant_message": "ARM6113 details are not specified in the provided outline.",
+        "timestamp": "2026-02-04T19:52:05.987902",
+        "metadata": {}
+      }
+    ],
+    "summary": null,
+    "summarized_pair_count": 0,
+    "max_pairs": 5
+  },
+  "history": [
+    {
+      "role": "user",
+      "content": "What is ARM6113 about?",
+      "timestamp": "2026-02-04T19:52:05.989030",
+      "metadata": {}
+    },
+    {
+      "role": "assistant",
+      "content": "ARM6113 details are not specified in the provided outline.",
+      "timestamp": "2026-02-04T19:52:05.990108",
+      "metadata": {}
+    }
+  ],
+  "created_at": "2026-02-04T19:52:03.438961",
+  "updated_at": "2026-02-04T19:52:05.990108",
+  "metadata": {}
+}
